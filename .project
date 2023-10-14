@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>VDIC</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ro.amiq.dvt.MixedLangBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>ro.amiq.dvt.DVTExternBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ro.amiq.vlogdt.VlogNature</nature>
+	</natures>
+	<filteredResources>
+		<filter>
+			<id>1697295986179</id>
+			<name></name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-true-xcelium.d|INCA.*|waves.shm|.simvision|cov_work</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1697295986186</id>
+			<name></name>
+			<type>22</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-true-.*\.log|.*\.history|.*\.key</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
+</projectDescription>

@@ -1,0 +1,13 @@
+xrun: 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun	21.03-s009: Started on Oct 14, 2023 at 17:07:13 CEST
+xrun
+	+compile
+	+sv
+	-f /home/student/afudali/Desktop/VDIC/.dvt/lab01example.build
+		+dvt_init_auto
+
+   User defined plus("+") options:
+	+dvt_init_auto
+
+xrun: *E,NOMOPT: You have not specified a -R (or a -r <snapshot>) option, nor have you specified a source file for compilation.
+TOOL:	xrun	21.03-s009: Exiting on Oct 14, 2023 at 17:07:13 CEST  (total: 00:00:00)
