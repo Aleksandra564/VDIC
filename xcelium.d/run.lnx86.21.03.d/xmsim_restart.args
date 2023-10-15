@@ -1,0 +1,25 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++compile
++sv
+-MESSAGES
++EMGRLOG
+xrun.log
+-XLSTIME
+1697366493
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx86.21.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx86.21.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx86.21.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun	21.03-s009"
+-XLNAME
+./xcelium.d/run.lnx86.21.03.d/cadence25_12024

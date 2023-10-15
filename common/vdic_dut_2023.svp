@@ -1,0 +1,182 @@
+/******************************************************************************
+ * (C) Copyright 2023 AGH UST All Rights Reserved
+ ******************************************************************************
+ * MODULE NAME: vdic_dut_2023
+ * VERSION:     1.0
+ * DATE:        26-09-2023
+ *
+ * ABSTRACT:   DUT module for VDIC 2023 labs.
+ *              The DUT is signed 16-bit integer multiplier.
+ *******************************************************************************
+ * HISTORY:
+ * 26-09-2023 v1.0 Initial version
+ * 
+ *******************************************************************************
+ * INPUTS
+ *    clk          - posedge active clock, always running
+ *    rst_n        - synchronous reset active low
+ *    arg_a [15:0] - multiplicand, signed 16-bit integer
+ *    arg_a_parity - partity for the arg_a (even parity)
+ *    arg_b [15:0] - multiplier, signed 16-bit integer
+ *    arg_b_parity - partity for the arg_b (even parity)
+ *    req          - request signal for the data processing
+
+ * OUTPUTS
+ *    ack           - acknowledge for the input request
+ *    result [31:0] - product, 32-bit signed integer
+ *    result_parity - parity for the result (even parity)
+ *    arg_parity_error - flags incorrect parity of one of the arguments
+ *
+ *******************************************************************************
+
+ The clock is always active.
+ The DUT operates on the posedge of the clock.
+
+ --------------------------------------------------------------------------------
+ --- Data processing
+ --------------------------------------------------------------------------------
+
+ 1. To multiply two numbers set arg_a, arg_a_parity, arg_b, arg_b_parity and req.
+ 2. Wait for the ack to go high.
+ 3. The multiplier latches the data, there is not need to keep the stable after ack received.
+ 4. The multiplier will take a variable number of clock cycles to process.
+ 5. The output data will be ready for one clock cycle, when result_rdy flag is high.
+ 6. When the input data has parity error(s), the arg_parity_error output will be
+    set together with result_rdy. The result will be equeal to 0 in this case.
+
+ --------------------------------------------------------------------------------
+ */
+
+module vdic_dut_2023(
+    input  logic               clk,
+    input  logic               rst_n,
+    input  logic signed [15:0] arg_a,
+    input  logic               arg_a_parity,     // parity bit for arg b (even parity)
+    input  logic signed [15:0] arg_b,        
+    input  logic               arg_b_parity,     // parity bit for arg_a (even parity)
+    input  logic               req,              // arguments are valid
+    output logic               ack,              // acknowledge for the arguments
+    output logic signed [31:0] result,           // result of multiplication
+    output logic               result_parity,    // parity bit for result (even parity)
+    output logic               result_rdy,       // result is ready
+    output logic               arg_parity_error  // set to 1 when input data has parity errors
+);
+
+//pragma protect begin_protected
+//pragma protect encrypt_agent="NCPROTECT"
+//pragma protect encrypt_agent_info="Encrypted using API"
+//pragma protect key_keyowner=Cadence Design Systems.
+//pragma protect key_keyname=prv(CDS_RSA_KEY_VER_1)
+//pragma protect key_method=RSA
+//pragma protect key_block
+eBksWnhApPjNpXAdOUMSq4csMS7cMHX+BVzfo4k93ltGw9oT9z3Kt96+P8Sb5pI7
+7JMumoKwHAo9qfavNQypMXL32tOj/48T61bsO6rP+4QtvuAMXeMZ4cSvJYQe/f19
+ElKPsKqfc5ABUIGSoX2hrSX3v7f8X0JRLX0XH2Udxqru3aQfbo1Bzz4lDvUyU2Uo
+pmBVpTf5fgcynjaxBJL1TehOUbQS9m9se68AFlvBrrYA05V/eDgwRUCH6VGwqKMF
+1IB55Pku/qb/VMQ4TwcDZRoQ5Yp2tCz+eSAdA7TqT8BQTIkyPtdmfDcZ8qyv6WIS
+Ld3sBEGHTs0bZm7WlCWCeg==
+//pragma protect end_key_block
+//pragma protect digest_block
+KFsFGpxkw0mrKtYm8/OGSs8O0B0=
+//pragma protect end_digest_block
+//pragma protect data_block
+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
+//pragma protect end_data_block
+//pragma protect digest_block
+XCeqOHqeH6khdchRWc+b0xFKog8=
+//pragma protect end_digest_block
+//pragma protect end_protected
+
+endmodule

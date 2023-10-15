@@ -1,13 +1,25 @@
 xrun: 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun	21.03-s009: Started on Oct 14, 2023 at 17:07:13 CEST
+TOOL:	xrun	21.03-s009: Started on Oct 15, 2023 at 12:41:33 CEST
 xrun
 	+compile
 	+sv
 	-f /home/student/afudali/Desktop/VDIC/.dvt/lab01example.build
-		+dvt_init_auto
-
-   User defined plus("+") options:
-	+dvt_init_auto
-
-xrun: *E,NOMOPT: You have not specified a -R (or a -r <snapshot>) option, nor have you specified a source file for compilation.
-TOOL:	xrun	21.03-s009: Exiting on Oct 14, 2023 at 17:07:13 CEST  (total: 00:00:00)
+		-F lab01example/tb/tb.f
+			-F lab01example/tb/../../common/tinyalu/tinyalu.f
+				single_cycle.sv
+				three_cycle.sv
+				tinyalu.sv
+			tinyalu_tb.sv
+file: lab01example/tb/../../common/tinyalu/single_cycle.sv
+	module worklib.single_cycle:sv
+		errors: 0, warnings: 0
+file: lab01example/tb/../../common/tinyalu/three_cycle.sv
+	module worklib.three_cycle:sv
+		errors: 0, warnings: 0
+file: lab01example/tb/../../common/tinyalu/tinyalu.sv
+	module worklib.tinyalu:sv
+		errors: 0, warnings: 0
+file: lab01example/tb/tinyalu_tb.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+TOOL:	xrun	21.03-s009: Exiting on Oct 15, 2023 at 12:41:34 CEST  (total: 00:00:01)

@@ -1,0 +1,21 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx86.21.03.d
+-RUNMODE
+-sv
+lab01example/tb/../../common/tinyalu/single_cycle.sv
+lab01example/tb/../../common/tinyalu/three_cycle.sv
+lab01example/tb/../../common/tinyalu/tinyalu.sv
+lab01example/tb/tinyalu_tb.sv
+-CDSLIB
+./xcelium.d/run.lnx86.21.03.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx86.21.03.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx86.21.03.d/xllibs
+-ALLOWUNBOUND
