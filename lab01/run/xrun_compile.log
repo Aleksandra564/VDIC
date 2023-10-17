@@ -1,0 +1,30 @@
+TOOL:	xrun	21.03-s009: Started on Oct 17, 2023 at 20:45:21 CEST
+xrun
+	-compile
+	-l xrun_compile.log
+	-F ../tb/tb.f
+		../../common/vdic_dut_2023.svp
+		vdic_dut_2023_tb.sv
+	-v93
+	-define DEBUG
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+file: ../tb/../../common/vdic_dut_2023.svp
+	module worklib.vdic_dut_2023:svp
+		errors: 0, warnings: 0
+file: ../tb/vdic_dut_2023_tb.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+TOOL:	xrun	21.03-s009: Exiting on Oct 17, 2023 at 20:45:22 CEST  (total: 00:00:01)

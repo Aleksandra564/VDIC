@@ -42,7 +42,7 @@
  4. The multiplier will take a variable number of clock cycles to process.
  5. The output data will be ready for one clock cycle, when result_rdy flag is high.
  6. When the input data has parity error(s), the arg_parity_error output will be
-    set together with result_rdy. The result will be equeal to 0 in this case.
+    set together with result_rdy. The result will be equal to 0 in this case.
 
  --------------------------------------------------------------------------------
  */

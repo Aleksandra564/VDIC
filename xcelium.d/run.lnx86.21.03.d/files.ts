@@ -1,4 +1,2 @@
-1696514400 /home/student/afudali/Desktop/VDIC/common/tinyalu/single_cycle.sv
-1696515437 /home/student/afudali/Desktop/VDIC/common/tinyalu/three_cycle.sv
-1696516184 /home/student/afudali/Desktop/VDIC/common/tinyalu/tinyalu.sv
-1697365724 /home/student/afudali/Desktop/VDIC/lab01example/tb/tinyalu_tb.sv
+1697478212 /home/student/afudali/Desktop/VDIC/common/vdic_dut_2023.svp
+1697568096 /home/student/afudali/Desktop/VDIC/lab01/tb/vdic_dut_2023_tb.sv

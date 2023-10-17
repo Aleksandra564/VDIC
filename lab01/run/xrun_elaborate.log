@@ -1,0 +1,54 @@
+TOOL:	xrun	21.03-s009: Started on Oct 17, 2023 at 20:45:22 CEST
+xrun
+	-elaborate
+	-l xrun_elaborate.log
+	-F ../tb/tb.f
+		../../common/vdic_dut_2023.svp
+		vdic_dut_2023_tb.sv
+	-v93
+	-define DEBUG
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+
+	Extracting FSMs for coverage:
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+	Generating native compiled code:
+		worklib.vdic_dut_2023:svp <0x1e06991a>
+			streams:  25, words: 13928
+		worklib.top:sv <0x68536543>
+			streams:  22, words: 36351
+	Building instance specific data structures.
+	Performing constant object marking (COM) analysis.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           56      56
+		Scalar wires:        17       -
+		Vectored wires:      10       -
+		Always blocks:        1       1
+		Initial blocks:       4       4
+		Final blocks:         1       1
+		Cont. assignments:    8      10
+		Pseudo assignments:  10      10
+	Writing initial simulation snapshot: worklib.top:sv
+TOOL:	xrun	21.03-s009: Exiting on Oct 17, 2023 at 20:45:23 CEST  (total: 00:00:01)
