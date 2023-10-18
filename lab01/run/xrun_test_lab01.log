@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Oct 17, 2023 at 20:45:23 CEST
+TOOL:	xrun	21.03-s009: Started on Oct 18, 2023 at 08:33:06 CEST
 xrun
 	-F ../tb/tb.f
 		../../common/vdic_dut_2023.svp
@@ -59,7 +59,7 @@ MUL test PASSED for arg_a=-2164 arg_b=9414
 Parity test PASSED
 MUL test PASSED for arg_a=29303 arg_b=-9329
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=18780
+MUL test PASSED for arg_a=-32768 arg_b=18780
 Parity test PASSED
 MUL test PASSED for arg_a=25187 arg_b=8832
 Parity test PASSED
@@ -75,12 +75,12 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=32767 arg_b=-16293
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=32767
+MUL test PASSED for arg_a=-32768 arg_b=32767
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=3214
+MUL test PASSED for arg_a=-32768 arg_b=3214
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-521 arg_b=6886
@@ -89,7 +89,7 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=3280 arg_b=-21077
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-17994 arg_b=-28673
+MUL test PASSED for arg_a=-17994 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=9837 arg_b=18890
@@ -106,14 +106,14 @@ MUL test PASSED for arg_a=32767 arg_b=8640
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28282 arg_b=-28673
+MUL test PASSED for arg_a=-28282 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=5770 arg_b=-32600
 Parity test PASSED
 MUL test PASSED for arg_a=26342 arg_b=32767
 Parity test PASSED
-MUL test PASSED for arg_a=-98 arg_b=-28673
+MUL test PASSED for arg_a=-98 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=16659 arg_b=-20793
 Parity test PASSED
@@ -128,7 +128,7 @@ MUL test PASSED for arg_a=24395 arg_b=-2530
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=883 arg_b=-28673
+MUL test PASSED for arg_a=883 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-18715 arg_b=3883
 Parity test PASSED
@@ -145,7 +145,7 @@ MUL test PASSED for arg_a=1411 arg_b=5234
 Parity test PASSED
 MUL test PASSED for arg_a=32767 arg_b=8688
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=6853
+MUL test PASSED for arg_a=-32768 arg_b=6853
 Parity test PASSED
 MUL test PASSED for arg_a=27312 arg_b=-27862
 Parity test PASSED
@@ -155,15 +155,15 @@ MUL test PASSED for arg_a=-23923 arg_b=9991
 Parity test PASSED
 MUL test PASSED for arg_a=31803 arg_b=-15625
 Parity test PASSED
-MUL test PASSED for arg_a=14880 arg_b=-28673
+MUL test PASSED for arg_a=14880 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-4083 arg_b=17017
 Parity test PASSED
 MUL test PASSED for arg_a=29583 arg_b=10723
 Parity test PASSED
-MUL test PASSED for arg_a=-17259 arg_b=-28673
+MUL test PASSED for arg_a=-17259 arg_b=-32768
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-15278
+MUL test PASSED for arg_a=-32768 arg_b=-15278
 Parity test PASSED
 MUL test PASSED for arg_a=32144 arg_b=32767
 Parity test PASSED
@@ -187,7 +187,7 @@ Parity test PASSED
 MUL test PASSED for arg_a=18885 arg_b=32767
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=32767
+MUL test PASSED for arg_a=-32768 arg_b=32767
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-29813 arg_b=-29733
@@ -199,7 +199,7 @@ MUL test PASSED for arg_a=19808 arg_b=-5592
 Parity test PASSED
 MUL test PASSED for arg_a=21111 arg_b=-2687
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-15601
+MUL test PASSED for arg_a=-32768 arg_b=-15601
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -219,24 +219,24 @@ MUL test PASSED for arg_a=-16396 arg_b=-3828
 Parity test PASSED
 MUL test PASSED for arg_a=-1787 arg_b=10498
 Parity test PASSED
-MUL test PASSED for arg_a=-29009 arg_b=-28673
+MUL test PASSED for arg_a=-29009 arg_b=-32768
 Parity test PASSED
-MUL test PASSED for arg_a=-17029 arg_b=-28673
+MUL test PASSED for arg_a=-17029 arg_b=-32768
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-10199
+MUL test PASSED for arg_a=-32768 arg_b=-10199
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-28673
+MUL test PASSED for arg_a=-32768 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-20491 arg_b=4756
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-12762 arg_b=-28673
+MUL test PASSED for arg_a=-12762 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=17244
+MUL test PASSED for arg_a=-32768 arg_b=17244
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -252,9 +252,9 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=5361 arg_b=17157
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=3646 arg_b=-28673
+MUL test PASSED for arg_a=3646 arg_b=-32768
 Parity test PASSED
-MUL test PASSED for arg_a=19730 arg_b=-28673
+MUL test PASSED for arg_a=19730 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -269,20 +269,20 @@ MUL test PASSED for arg_a=-16366 arg_b=27405
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-5205 arg_b=-28673
+MUL test PASSED for arg_a=-5205 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=5128 arg_b=7605
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=32767
+MUL test PASSED for arg_a=-32768 arg_b=32767
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=32767 arg_b=-28673
+MUL test PASSED for arg_a=32767 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=11475 arg_b=-28673
+MUL test PASSED for arg_a=11475 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-6717 arg_b=32164
 Parity test PASSED
@@ -310,7 +310,7 @@ Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-28673
+MUL test PASSED for arg_a=-32768 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -332,7 +332,7 @@ MUL test PASSED for arg_a=16752 arg_b=-15279
 Parity test PASSED
 MUL test PASSED for arg_a=-4858 arg_b=25823
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-31472
+MUL test PASSED for arg_a=-32768 arg_b=-31472
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-30929 arg_b=-31817
@@ -340,7 +340,7 @@ Parity test PASSED
 MUL test PASSED for arg_a=32559 arg_b=15003
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-28673
+MUL test PASSED for arg_a=-32768 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=11817 arg_b=-2345
@@ -356,14 +356,14 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=20736 arg_b=-28952
 Parity test PASSED
-MUL test PASSED for arg_a=20433 arg_b=-28673
+MUL test PASSED for arg_a=20433 arg_b=-32768
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-20271
+MUL test PASSED for arg_a=-32768 arg_b=-20271
 Parity test PASSED
 MUL test PASSED for arg_a=26547 arg_b=-14720
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-27778
+MUL test PASSED for arg_a=-32768 arg_b=-27778
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -375,7 +375,7 @@ MUL test PASSED for arg_a=23011 arg_b=-20277
 Parity test PASSED
 MUL test PASSED for arg_a=-14251 arg_b=21342
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-26561
+MUL test PASSED for arg_a=-32768 arg_b=-26561
 Parity test PASSED
 MUL test PASSED for arg_a=1285 arg_b=-10056
 Parity test PASSED
@@ -393,10 +393,10 @@ MUL test PASSED for arg_a=-24035 arg_b=32767
 Parity test PASSED
 MUL test PASSED for arg_a=-11969 arg_b=24404
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-9082
+MUL test PASSED for arg_a=-32768 arg_b=-9082
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=26142
+MUL test PASSED for arg_a=-32768 arg_b=26142
 Parity test PASSED
 MUL test PASSED for arg_a=28709 arg_b=29903
 Parity test PASSED
@@ -418,7 +418,6 @@ MUL test PASSED for arg_a=17184 arg_b=-19847
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-19990 Clock cycles elapsed: 1000
 MUL test PASSED for arg_a=-14852 arg_b=32767
 Parity test PASSED
 MUL test PASSED for arg_a=-39 arg_b=12583
@@ -434,6 +433,7 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=-8698 arg_b=14666
 Parity test PASSED
 Parity error flag test PASSED
+19990 Clock cycles elapsed: 1000
 MUL test PASSED for arg_a=26622 arg_b=32767
 Parity test PASSED
 MUL test PASSED for arg_a=8728 arg_b=-12295
@@ -443,13 +443,13 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=27122 arg_b=26856
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=16532
+MUL test PASSED for arg_a=-32768 arg_b=16532
 Parity test PASSED
 MUL test PASSED for arg_a=-6421 arg_b=-16850
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-1899
+MUL test PASSED for arg_a=-32768 arg_b=-1899
 Parity test PASSED
-MUL test PASSED for arg_a=32767 arg_b=-28673
+MUL test PASSED for arg_a=32767 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-29327 arg_b=628
@@ -470,7 +470,7 @@ MUL test PASSED for arg_a=32767 arg_b=-25812
 Parity test PASSED
 MUL test PASSED for arg_a=29571 arg_b=26032
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=6530
+MUL test PASSED for arg_a=-32768 arg_b=6530
 Parity test PASSED
 MUL test PASSED for arg_a=32767 arg_b=20492
 Parity test PASSED
@@ -488,7 +488,7 @@ Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=21541
+MUL test PASSED for arg_a=-32768 arg_b=21541
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=30773 arg_b=-22066
@@ -498,22 +498,22 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=26462 arg_b=25371
 Parity test PASSED
-MUL test PASSED for arg_a=30024 arg_b=-28673
+MUL test PASSED for arg_a=30024 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-31617 arg_b=-28673
+MUL test PASSED for arg_a=-31617 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=32767
+MUL test PASSED for arg_a=-32768 arg_b=32767
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-5044 arg_b=25168
 Parity test PASSED
-MUL test PASSED for arg_a=12462 arg_b=-28673
+MUL test PASSED for arg_a=12462 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-22813 arg_b=32767
@@ -524,7 +524,7 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=26906 arg_b=26396
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-17941
+MUL test PASSED for arg_a=-32768 arg_b=-17941
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-6976 arg_b=32767
@@ -532,7 +532,7 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=32767 arg_b=406
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-32103
+MUL test PASSED for arg_a=-32768 arg_b=-32103
 Parity test PASSED
 MUL test PASSED for arg_a=6360 arg_b=-11292
 Parity test PASSED
@@ -559,27 +559,27 @@ MUL test PASSED for arg_a=-26943 arg_b=-19479
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=1974
+MUL test PASSED for arg_a=-32768 arg_b=1974
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=31172 arg_b=-28673
+MUL test PASSED for arg_a=31172 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=25993
+MUL test PASSED for arg_a=-32768 arg_b=25993
 Parity test PASSED
 MUL test PASSED for arg_a=10474 arg_b=10592
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-23014
+MUL test PASSED for arg_a=-32768 arg_b=-23014
 Parity test PASSED
 MUL test PASSED for arg_a=-21456 arg_b=32767
 Parity test PASSED
 MUL test PASSED for arg_a=3931 arg_b=-6020
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-28673
+MUL test PASSED for arg_a=-32768 arg_b=-32768
 Parity test PASSED
-MUL test PASSED for arg_a=-845 arg_b=-28673
+MUL test PASSED for arg_a=-845 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -610,7 +610,7 @@ Parity test PASSED
 MUL test PASSED for arg_a=32767 arg_b=31494
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-19216 arg_b=-28673
+MUL test PASSED for arg_a=-19216 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-19583 arg_b=32767
 Parity test PASSED
@@ -618,17 +618,17 @@ Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=32767
+MUL test PASSED for arg_a=-32768 arg_b=32767
 Parity test PASSED
 MUL test PASSED for arg_a=-15425 arg_b=18603
 Parity test PASSED
 MUL test PASSED for arg_a=32767 arg_b=-20054
 Parity test PASSED
-MUL test PASSED for arg_a=3680 arg_b=-28673
+MUL test PASSED for arg_a=3680 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=32321 arg_b=-4531
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-20829
+MUL test PASSED for arg_a=-32768 arg_b=-20829
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=11929 arg_b=-28000
@@ -636,15 +636,15 @@ Parity test PASSED
 MUL test PASSED for arg_a=31449 arg_b=32767
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-5406 arg_b=-28673
+MUL test PASSED for arg_a=-5406 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=4696 arg_b=-24428
 Parity test PASSED
-MUL test PASSED for arg_a=15117 arg_b=-28673
+MUL test PASSED for arg_a=15117 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=17512 arg_b=-3886
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-23974
+MUL test PASSED for arg_a=-32768 arg_b=-23974
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -653,7 +653,7 @@ Parity test PASSED
 MUL test PASSED for arg_a=29394 arg_b=32767
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=32767
+MUL test PASSED for arg_a=-32768 arg_b=32767
 Parity test PASSED
 MUL test PASSED for arg_a=32767 arg_b=11884
 Parity test PASSED
@@ -661,18 +661,18 @@ MUL test PASSED for arg_a=32767 arg_b=-18733
 Parity test PASSED
 MUL test PASSED for arg_a=30408 arg_b=-23163
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=22845
+MUL test PASSED for arg_a=-32768 arg_b=22845
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-20708 arg_b=5548
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-28673
+MUL test PASSED for arg_a=-32768 arg_b=-32768
 Parity test PASSED
-MUL test PASSED for arg_a=-1388 arg_b=-28673
+MUL test PASSED for arg_a=-1388 arg_b=-32768
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=1453
+MUL test PASSED for arg_a=-32768 arg_b=1453
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -707,7 +707,7 @@ Parity test PASSED
 MUL test PASSED for arg_a=10950 arg_b=21413
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-24443
+MUL test PASSED for arg_a=-32768 arg_b=-24443
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=27847 arg_b=32767
@@ -782,14 +782,13 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=16552 arg_b=32767
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-21067
+MUL test PASSED for arg_a=-32768 arg_b=-21067
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-2713 arg_b=13947
 Parity test PASSED
 Parity error flag test PASSED
-39990 Clock cycles elapsed: 2000
-MUL test PASSED for arg_a=-18324 arg_b=-28673
+MUL test PASSED for arg_a=-18324 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=8747 arg_b=32654
@@ -799,12 +798,12 @@ MUL test PASSED for arg_a=-9524 arg_b=13157
 Parity test PASSED
 MUL test PASSED for arg_a=31621 arg_b=18551
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=8443
+MUL test PASSED for arg_a=-32768 arg_b=8443
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=4364 arg_b=-28673
+MUL test PASSED for arg_a=4364 arg_b=-32768
 Parity test PASSED
-MUL test PASSED for arg_a=32767 arg_b=-28673
+MUL test PASSED for arg_a=32767 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-23368 arg_b=16334
 Parity test PASSED
@@ -815,6 +814,7 @@ Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
+39990 Clock cycles elapsed: 2000
 MUL test PASSED for arg_a=23506 arg_b=10340
 Parity test PASSED
 Parity error flag test PASSED
@@ -823,7 +823,7 @@ Parity test PASSED
 MUL test PASSED for arg_a=-32144 arg_b=-18326
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=23433
+MUL test PASSED for arg_a=-32768 arg_b=23433
 Parity test PASSED
 MUL test PASSED for arg_a=-14901 arg_b=8559
 Parity test PASSED
@@ -844,7 +844,7 @@ MUL test PASSED for arg_a=-1733 arg_b=5449
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-3381
+MUL test PASSED for arg_a=-32768 arg_b=-3381
 Parity test PASSED
 MUL test PASSED for arg_a=27606 arg_b=26849
 Parity test PASSED
@@ -864,21 +864,21 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=18366 arg_b=27571
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-11115
+MUL test PASSED for arg_a=-32768 arg_b=-11115
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-6178
-Parity test PASSED
-Parity error flag test PASSED
-MUL test PASSED for arg_a=-3663 arg_b=-28673
+MUL test PASSED for arg_a=-32768 arg_b=-6178
 Parity test PASSED
 Parity error flag test PASSED
+MUL test PASSED for arg_a=-3663 arg_b=-32768
+Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=13818
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=13818
 Parity test PASSED
 MUL test PASSED for arg_a=19168 arg_b=-11715
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=13523 arg_b=-28673
+MUL test PASSED for arg_a=13523 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=32767 arg_b=31182
@@ -894,7 +894,7 @@ MUL test PASSED for arg_a=32767 arg_b=3699
 Parity test PASSED
 MUL test PASSED for arg_a=32767 arg_b=20754
 Parity test PASSED
-MUL test PASSED for arg_a=31604 arg_b=-28673
+MUL test PASSED for arg_a=31604 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -902,7 +902,7 @@ Parity error flag test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-13377 arg_b=1898
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=15400
+MUL test PASSED for arg_a=-32768 arg_b=15400
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=28547 arg_b=-1228
@@ -910,14 +910,14 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=27022 arg_b=16468
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-28673
+MUL test PASSED for arg_a=-32768 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-14098 arg_b=-9934
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-9305
+MUL test PASSED for arg_a=-32768 arg_b=-9305
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=15337 arg_b=-7189
@@ -928,7 +928,7 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-5936 arg_b=-1223
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=2825
+MUL test PASSED for arg_a=-32768 arg_b=2825
 Parity test PASSED
 MUL test PASSED for arg_a=-9063 arg_b=-1076
 Parity test PASSED
@@ -948,7 +948,7 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-19930 arg_b=-8593
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-9686
+MUL test PASSED for arg_a=-32768 arg_b=-9686
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -960,7 +960,7 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=32767 arg_b=32767
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=24310 arg_b=-28673
+MUL test PASSED for arg_a=24310 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -991,7 +991,7 @@ MUL test PASSED for arg_a=-19834 arg_b=-3723
 Parity test PASSED
 MUL test PASSED for arg_a=-19837 arg_b=-14179
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-24038
+MUL test PASSED for arg_a=-32768 arg_b=-24038
 Parity test PASSED
 MUL test PASSED for arg_a=-32631 arg_b=16235
 Parity test PASSED
@@ -1016,13 +1016,13 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=22955 arg_b=4363
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-32427
+MUL test PASSED for arg_a=-32768 arg_b=-32427
 Parity test PASSED
-MUL test PASSED for arg_a=9991 arg_b=-28673
+MUL test PASSED for arg_a=9991 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=26403 arg_b=90
 Parity test PASSED
-MUL test PASSED for arg_a=-2174 arg_b=-28673
+MUL test PASSED for arg_a=-2174 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-391 arg_b=18365
 Parity test PASSED
@@ -1033,15 +1033,15 @@ MUL test PASSED for arg_a=29787 arg_b=-3975
 Parity test PASSED
 MUL test PASSED for arg_a=-11051 arg_b=32767
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-31323
+MUL test PASSED for arg_a=-32768 arg_b=-31323
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=21795 arg_b=-1715
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-18339
+MUL test PASSED for arg_a=-32768 arg_b=-18339
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=21222
+MUL test PASSED for arg_a=-32768 arg_b=21222
 Parity test PASSED
 MUL test PASSED for arg_a=16987 arg_b=30509
 Parity test PASSED
@@ -1067,21 +1067,21 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=26817 arg_b=32767
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=6504 arg_b=-28673
+MUL test PASSED for arg_a=6504 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-28673
+MUL test PASSED for arg_a=-32768 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=21730 arg_b=-27016
 Parity test PASSED
 MUL test PASSED for arg_a=27858 arg_b=-26753
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=6086 arg_b=-28673
+MUL test PASSED for arg_a=6086 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-27194 arg_b=4146
 Parity test PASSED
@@ -1091,20 +1091,20 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-16588 arg_b=32767
 Parity test PASSED
-MUL test PASSED for arg_a=22759 arg_b=-28673
+MUL test PASSED for arg_a=22759 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=11457 arg_b=32767
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=10148 arg_b=-11176
 Parity test PASSED
-MUL test PASSED for arg_a=32767 arg_b=-28673
+MUL test PASSED for arg_a=32767 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=25933 arg_b=32767
 Parity test PASSED
 MUL test PASSED for arg_a=-11624 arg_b=-10453
 Parity test PASSED
-MUL test PASSED for arg_a=5709 arg_b=-28673
+MUL test PASSED for arg_a=5709 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-5343 arg_b=-30981
 Parity test PASSED
@@ -1115,7 +1115,7 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=32767 arg_b=-31544
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-18202
+MUL test PASSED for arg_a=-32768 arg_b=-18202
 Parity test PASSED
 MUL test PASSED for arg_a=14291 arg_b=-9456
 Parity test PASSED
@@ -1127,7 +1127,7 @@ Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=16206
+MUL test PASSED for arg_a=-32768 arg_b=16206
 Parity test PASSED
 MUL test PASSED for arg_a=-31203 arg_b=-26627
 Parity test PASSED
@@ -1137,7 +1137,7 @@ MUL test PASSED for arg_a=-12732 arg_b=-26724
 Parity test PASSED
 MUL test PASSED for arg_a=32767 arg_b=11925
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=14177
+MUL test PASSED for arg_a=-32768 arg_b=14177
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -1145,11 +1145,11 @@ Parity error flag test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=16333 arg_b=-10372
 Parity test PASSED
-MUL test PASSED for arg_a=32767 arg_b=-28673
+MUL test PASSED for arg_a=32767 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-14003 arg_b=-28673
+MUL test PASSED for arg_a=-14003 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=15766 arg_b=-27143
@@ -1161,17 +1161,16 @@ Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-59990 Clock cycles elapsed: 3000
 Parity error flag test PASSED
 MUL test PASSED for arg_a=17913 arg_b=11592
 Parity test PASSED
-MUL test PASSED for arg_a=-31124 arg_b=-28673
+MUL test PASSED for arg_a=-31124 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=32767 arg_b=-19954
 Parity test PASSED
 MUL test PASSED for arg_a=676 arg_b=-485
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-31163
+MUL test PASSED for arg_a=-32768 arg_b=-31163
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -1189,25 +1188,26 @@ MUL test PASSED for arg_a=-16214 arg_b=2236
 Parity test PASSED
 MUL test PASSED for arg_a=-2565 arg_b=29087
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-26918
+MUL test PASSED for arg_a=-32768 arg_b=-26918
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-1233
+MUL test PASSED for arg_a=-32768 arg_b=-1233
 Parity test PASSED
 MUL test PASSED for arg_a=28433 arg_b=-26192
 Parity test PASSED
-MUL test PASSED for arg_a=6018 arg_b=-28673
+MUL test PASSED for arg_a=6018 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-363 arg_b=-2291
 Parity test PASSED
 MUL test PASSED for arg_a=14464 arg_b=11568
 Parity test PASSED
+59990 Clock cycles elapsed: 3000
 MUL test PASSED for arg_a=4317 arg_b=5310
 Parity test PASSED
 MUL test PASSED for arg_a=-13968 arg_b=-19238
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-16338
+MUL test PASSED for arg_a=-32768 arg_b=-16338
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=18670
+MUL test PASSED for arg_a=-32768 arg_b=18670
 Parity test PASSED
 MUL test PASSED for arg_a=9987 arg_b=-6048
 Parity test PASSED
@@ -1238,7 +1238,7 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=1648 arg_b=-3978
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-8789
+MUL test PASSED for arg_a=-32768 arg_b=-8789
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-30592 arg_b=24074
@@ -1250,11 +1250,11 @@ MUL test PASSED for arg_a=-22579 arg_b=-13371
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=7335
+MUL test PASSED for arg_a=-32768 arg_b=7335
 Parity test PASSED
 MUL test PASSED for arg_a=-6082 arg_b=13853
 Parity test PASSED
-MUL test PASSED for arg_a=-8707 arg_b=-28673
+MUL test PASSED for arg_a=-8707 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=2877 arg_b=32767
@@ -1274,7 +1274,7 @@ MUL test PASSED for arg_a=30806 arg_b=-6937
 Parity test PASSED
 MUL test PASSED for arg_a=-19831 arg_b=1715
 Parity test PASSED
-MUL test PASSED for arg_a=31928 arg_b=-28673
+MUL test PASSED for arg_a=31928 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -1296,26 +1296,26 @@ Parity error flag test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-24465 arg_b=-31599
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=4866
+MUL test PASSED for arg_a=-32768 arg_b=4866
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=32767 arg_b=-28673
+MUL test PASSED for arg_a=32767 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=26074
+MUL test PASSED for arg_a=-32768 arg_b=26074
 Parity test PASSED
 MUL test PASSED for arg_a=32767 arg_b=29897
 Parity test PASSED
-MUL test PASSED for arg_a=21038 arg_b=-28673
+MUL test PASSED for arg_a=21038 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=27303 arg_b=-18213
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-6803 arg_b=-28673
+MUL test PASSED for arg_a=-6803 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -1329,7 +1329,7 @@ MUL test PASSED for arg_a=25133 arg_b=-10991
 Parity test PASSED
 MUL test PASSED for arg_a=32767 arg_b=-13776
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=29261
+MUL test PASSED for arg_a=-32768 arg_b=29261
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=1824 arg_b=6213
@@ -1337,7 +1337,7 @@ Parity test PASSED
 MUL test PASSED for arg_a=27651 arg_b=18270
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=5507 arg_b=-28673
+MUL test PASSED for arg_a=5507 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -1351,7 +1351,7 @@ MUL test PASSED for arg_a=17448 arg_b=26749
 Parity test PASSED
 MUL test PASSED for arg_a=29275 arg_b=-5064
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-28673
+MUL test PASSED for arg_a=-32768 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-13682 arg_b=-8747
 Parity test PASSED
@@ -1362,14 +1362,14 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=32767 arg_b=20892
 Parity test PASSED
-MUL test PASSED for arg_a=-29014 arg_b=-28673
+MUL test PASSED for arg_a=-29014 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=32767
+MUL test PASSED for arg_a=-32768 arg_b=32767
 Parity test PASSED
 MUL test PASSED for arg_a=32767 arg_b=4293
 Parity test PASSED
-MUL test PASSED for arg_a=28346 arg_b=-28673
+MUL test PASSED for arg_a=28346 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-15725 arg_b=32767
@@ -1389,7 +1389,7 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=5237 arg_b=-17994
 Parity test PASSED
-MUL test PASSED for arg_a=32767 arg_b=-28673
+MUL test PASSED for arg_a=32767 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=-16787 arg_b=-8908
 Parity test PASSED
@@ -1406,7 +1406,7 @@ MUL test PASSED for arg_a=21910 arg_b=-22746
 Parity test PASSED
 MUL test PASSED for arg_a=-10148 arg_b=-2767
 Parity test PASSED
-MUL test PASSED for arg_a=-11579 arg_b=-28673
+MUL test PASSED for arg_a=-11579 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -1425,7 +1425,7 @@ Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=4083
+MUL test PASSED for arg_a=-32768 arg_b=4083
 Parity test PASSED
 MUL test PASSED for arg_a=19099 arg_b=29463
 Parity test PASSED
@@ -1442,7 +1442,7 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=-11592 arg_b=-30922
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=4774
+MUL test PASSED for arg_a=-32768 arg_b=4774
 Parity test PASSED
 MUL test PASSED for arg_a=-5278 arg_b=32767
 Parity test PASSED
@@ -1450,7 +1450,7 @@ Parity error flag test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-28465 arg_b=-31852
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=32767
+MUL test PASSED for arg_a=-32768 arg_b=32767
 Parity test PASSED
 MUL test PASSED for arg_a=15025 arg_b=11896
 Parity test PASSED
@@ -1462,18 +1462,18 @@ Parity error flag test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-20333 arg_b=32767
 Parity test PASSED
-MUL test PASSED for arg_a=-30316 arg_b=-28673
+MUL test PASSED for arg_a=-30316 arg_b=-32768
 Parity test PASSED
 MUL test PASSED for arg_a=22831 arg_b=24082
 Parity test PASSED
-MUL test PASSED for arg_a=28217 arg_b=-28673
+MUL test PASSED for arg_a=28217 arg_b=-32768
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=21874
+MUL test PASSED for arg_a=-32768 arg_b=21874
 Parity test PASSED
 MUL test PASSED for arg_a=13112 arg_b=-6540
 Parity test PASSED
@@ -1489,7 +1489,7 @@ MUL test PASSED for arg_a=32767 arg_b=32767
 Parity test PASSED
 MUL test PASSED for arg_a=24090 arg_b=12763
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=27249
+MUL test PASSED for arg_a=-32768 arg_b=27249
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=-1262 arg_b=10895
@@ -1498,7 +1498,7 @@ Parity error flag test PASSED
 MUL test PASSED for arg_a=27510 arg_b=32206
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-10473
+MUL test PASSED for arg_a=-32768 arg_b=-10473
 Parity test PASSED
 MUL test PASSED for arg_a=29824 arg_b=10762
 Parity test PASSED
@@ -1507,7 +1507,7 @@ Parity test PASSED
 MUL test PASSED for arg_a=10902 arg_b=16341
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-4309
+MUL test PASSED for arg_a=-32768 arg_b=-4309
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -1528,8 +1528,7 @@ Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-79990 Clock cycles elapsed: 4000
-MUL test PASSED for arg_a=-28673 arg_b=18218
+MUL test PASSED for arg_a=-32768 arg_b=18218
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -1554,9 +1553,9 @@ MUL test PASSED for arg_a=24150 arg_b=2121
 Parity test PASSED
 MUL test PASSED for arg_a=-695 arg_b=-18778
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=10460
+MUL test PASSED for arg_a=-32768 arg_b=10460
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=27947
+MUL test PASSED for arg_a=-32768 arg_b=27947
 Parity test PASSED
 MUL test PASSED for arg_a=17262 arg_b=32767
 Parity test PASSED
@@ -1568,7 +1567,7 @@ MUL test PASSED for arg_a=-24287 arg_b=9303
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=3581
+MUL test PASSED for arg_a=-32768 arg_b=3581
 Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=32767 arg_b=32767
@@ -1581,17 +1580,18 @@ Parity test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=28009 arg_b=8671
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-32293
+MUL test PASSED for arg_a=-32768 arg_b=-32293
 Parity test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=22121
+79990 Clock cycles elapsed: 4000
+MUL test PASSED for arg_a=-32768 arg_b=22121
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
 MUL test PASSED for arg_a=32767 arg_b=-13734
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=8601
+MUL test PASSED for arg_a=-32768 arg_b=8601
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
@@ -1606,23 +1606,23 @@ MUL test PASSED for arg_a=-25683 arg_b=-28517
 Parity test PASSED
 MUL test PASSED for arg_a=12240 arg_b=-22987
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-16746
+MUL test PASSED for arg_a=-32768 arg_b=-16746
 Parity test PASSED
 MUL test PASSED for arg_a=-2372 arg_b=9663
 Parity test PASSED
 MUL test PASSED for arg_a=29841 arg_b=6091
 Parity test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-2843
+MUL test PASSED for arg_a=-32768 arg_b=-2843
 Parity test PASSED
 Parity error flag test PASSED
 Parity error flag test PASSED
-MUL test PASSED for arg_a=32767 arg_b=-28673
+MUL test PASSED for arg_a=32767 arg_b=-32768
 Parity test PASSED
 [1;30m[102m-----------------------------------
 ----------- Test PASSED -----------
 -----------------------------------[0m
 
-Simulation complete via $finish(1) at time 84730 NS + 3
+Simulation complete via $finish(1) at time 81710 NS + 3
 ../tb/vdic_dut_2023_tb.sv:135     $finish;
 xcelium> exit
 See ./cov_work/scope/test/icc.com file for message(s) on coverage constant object marking
@@ -1636,4 +1636,4 @@ coverage setup:
 coverage files:
   model(design data) :  ./cov_work/scope/icc_429014c8_00000000.ucm
   data               :  ./cov_work/scope/test/icc_429014c8_00000000.ucd
-TOOL:	xrun	21.03-s009: Exiting on Oct 17, 2023 at 20:45:26 CEST  (total: 00:00:03)
+TOOL:	xrun	21.03-s009: Exiting on Oct 18, 2023 at 08:33:08 CEST  (total: 00:00:02)

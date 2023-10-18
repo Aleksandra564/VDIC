@@ -1060,38 +1060,22 @@ PARITY ERROR FLAG test PASSED
 PARITY ERROR FLAG test PASSED
 PARITY ERROR FLAG test PASSED
 PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-MUL test PASSED for arg_a=-19854 arg_b=-18203
-PARITY test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-MUL test PASSED for arg_a=-26809 arg_b=-28673
-PARITY test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-PARITY ERROR FLAG test PASSED
-MUL test PASSED for arg_a=-28673 arg_b=-26755
+PARITY ERROR Fxmsim: *W,NCTERM: Simulation received SIGTERM signal from process 12275, user id 4095 (<unknown>).
+See ./cov_work/scope/test/icc.com file for message(s) on coverage constant object marking
+xmsim: *F,INTERR: INTERNAL EXCEPTION
+Observed simulation time : 40010 NS + 3
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim	21.03-s009
+  HOSTNAME: cadence25
+  OPERATING SYSTEM: Linux 3.10.0-1160.90.1.el7.x86_64 #1 SMP Thu May 4 15:21:22 UTC 2023 x86_64
+  MESSAGE: sv_seghandler - trapno -1 addr(0x18)
+-----------------------------------------------------------------
+csi-xmsim - CSI: Cadence Support Investigation, sending details to /home/student/afudali/Desktop/VDIC/lab01/run/xmsim_12945.err
+rg_b=-26755
 PARITY test PASSED
 PARITY ERROR FLAG test PASSED
 PARITY ERROR FLAG test PASSED

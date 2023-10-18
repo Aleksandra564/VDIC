@@ -161,9 +161,9 @@ function logic signed [15:0] get_data();
     zero_ones = 3'($random);
 
     if (zero_ones == 3'b000)
-        return 16'sh8FFF;				// 16-bit data SIGNED min
-    else if (zero_ones == 3'b111)		// 16-bit data SIGNED max
-        return 16'sh7FFF;
+        return 16'sh8000;				// 16-bit data SIGNED min
+    else if (zero_ones == 3'b111)		
+        return 16'sh7FFF;				// 16-bit data SIGNED max
     else
         return 16'($random);
 endfunction : get_data
