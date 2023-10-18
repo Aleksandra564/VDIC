@@ -11,8 +11,6 @@
 UVM_PLI
 ../tb/../../common/vdic_dut_2023.svp
 ../tb/vdic_dut_2023_tb.sv
--DEFINE
-DEBUG
 -NOWARN
 DSEM2009
 -NOWARN

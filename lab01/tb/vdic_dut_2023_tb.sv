@@ -64,7 +64,9 @@ initial begin
     forever begin
         @(posedge clk) clk_counter++;
         if(clk_counter % 1000 == 0) begin
+	        `ifdef DEBUG
             $display("%0t Clock cycles elapsed: %0d", $time, clk_counter);
+        	`endif
         end
     end
 end
@@ -102,32 +104,43 @@ initial begin : tester
 		    // PARITY ERROR TEST
 		    if(arg_parity_error == 1) begin		// parity error
 			    if(result == 0) begin	// parity error -> result == 0
+			    	`ifdef DEBUG
 			    	$display("Parity error flag test PASSED");
+			    	`endif
 			    end
 			    else begin
 				    test_result = TEST_FAILED;
+			    	`ifdef DEBUG
 			    	$display("Parity error flag test FAILED");
+					`endif
 				end
 			end
 		    
 		    else begin		// no parity error
 		    	// MULTIPLICATION TEST
 		        if(result == expected_data) begin
+		            `ifdef DEBUG
 		            $display("MUL test PASSED for arg_a=%0d arg_b=%0d", arg_a, arg_b);
+		        	`endif
 		        end
 		        else begin
-		            $display("MUL test FAILED for arg_a=%0d arg_b=%0d", arg_a, arg_b);
-		            $display("Expected: %d, received: %d", expected_data, result);
+		            `ifdef DEBUG
+		            $display("MUL test FAILED for arg_a=%0d arg_b=%0d. Expected: %d, received: %d", arg_a, arg_b, expected_data, result);
+		            `endif
 		            test_result = TEST_FAILED;
 		        end;
 
 			    // PARITY TEST
 			    if(result_parity != parity_expected) begin
 				    test_result = TEST_FAILED;
+				    `ifdef DEBUG
 				    $display("Parity test FAILED for arg_a=%0d arg_b=%0d, arg_a_parity=%0d, arg_b_parity=%0d. Result parity=%0d, expected parity=%0d.", arg_a, arg_b, arg_a_parity, arg_b_parity, result_parity, parity_expected);
+			    	`endif
 			    end
 			    else begin
+					`ifdef DEBUG
 					$display("Parity test PASSED");
+			    	`endif
 			    end
 		    end
 		end
