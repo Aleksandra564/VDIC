@@ -1,9 +1,10 @@
-TOOL:	xrun	21.03-s009: Started on Oct 18, 2023 at 20:31:12 CEST
+TOOL:	xrun	21.03-s009: Started on Oct 22, 2023 at 20:25:11 CEST
 xrun
 	-F ../tb/tb.f
 		../../common/vdic_dut_2023.svp
 		vdic_dut_2023_tb.sv
 	-v93
+	-define DEBUG
 	+nowarnDSEM2009
 	+nowarnDSEMEL
 	+nowarnCGDEFN
@@ -20,7 +21,189 @@ xrun
 	-covfile xrun_covfile.txt
 	+UVM_TESTNAME=lab01
 	-l xrun_test_lab01.log
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
 Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 6
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
@@ -44,17 +227,1602 @@ Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/
 		Initial blocks:       4       4
 		Final blocks:         1       1
 		Cont. assignments:    8      10
-		Pseudo assignments:   6       6
+		Pseudo assignments:  10      10
 	Writing initial simulation snapshot: worklib.top:sv
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
 Loading snapshot worklib.top:sv .................... Done
 xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/xcelium/files/xmsimrc
 xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
 xcelium> run
+MUL test PASSED for arg_a=24193 arg_b=22115
+Parity test PASSED
+MUL test PASSED for arg_a=21010 arg_b=-13043
+Parity test PASSED
+MUL test PASSED for arg_a=-2164 arg_b=9414
+Parity test PASSED
+MUL test PASSED for arg_a=29303 arg_b=-9329
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=18780
+Parity test PASSED
+MUL test PASSED for arg_a=25187 arg_b=8832
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=2762 arg_b=-16910
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=19221 arg_b=19417
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-16293
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=3214
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-521 arg_b=6886
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=3280 arg_b=-21077
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-17994 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=9837 arg_b=18890
+Parity test PASSED
+MUL test PASSED for arg_a=-25852 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-7160 arg_b=-22787
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-19618 arg_b=1493
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=8640
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-28282 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=5770 arg_b=-32600
+Parity test PASSED
+MUL test PASSED for arg_a=26342 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=-98 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=16659 arg_b=-20793
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-27406 arg_b=24253
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-6264 arg_b=-32357
+Parity test PASSED
+MUL test PASSED for arg_a=24395 arg_b=-2530
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=883 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-18715 arg_b=3883
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=28191
+Parity test PASSED
+MUL test PASSED for arg_a=-27884 arg_b=28822
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=4041 arg_b=24225
+Parity test PASSED
+MUL test PASSED for arg_a=1411 arg_b=5234
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=8688
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=6853
+Parity test PASSED
+MUL test PASSED for arg_a=27312 arg_b=-27862
+Parity test PASSED
+MUL test PASSED for arg_a=-25321 arg_b=-7223
+Parity test PASSED
+MUL test PASSED for arg_a=-23923 arg_b=9991
+Parity test PASSED
+MUL test PASSED for arg_a=31803 arg_b=-15625
+Parity test PASSED
+MUL test PASSED for arg_a=14880 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-4083 arg_b=17017
+Parity test PASSED
+MUL test PASSED for arg_a=29583 arg_b=10723
+Parity test PASSED
+MUL test PASSED for arg_a=-17259 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-15278
+Parity test PASSED
+MUL test PASSED for arg_a=32144 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=7717 arg_b=1186
+Parity test PASSED
+MUL test PASSED for arg_a=843 arg_b=30023
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=9648 arg_b=-16567
+Parity test PASSED
+MUL test PASSED for arg_a=28563 arg_b=-32214
+Parity test PASSED
+MUL test PASSED for arg_a=-22140 arg_b=32569
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=31744 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=18885 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-29813 arg_b=-29733
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-20488 arg_b=30447
+Parity test PASSED
+MUL test PASSED for arg_a=19808 arg_b=-5592
+Parity test PASSED
+MUL test PASSED for arg_a=21111 arg_b=-2687
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-15601
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=10065 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=1890 arg_b=-8918
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-24720 arg_b=8354
+Parity test PASSED
+MUL test PASSED for arg_a=24144 arg_b=22565
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=780 arg_b=25044
+Parity test PASSED
+MUL test PASSED for arg_a=-16396 arg_b=-3828
+Parity test PASSED
+MUL test PASSED for arg_a=-1787 arg_b=10498
+Parity test PASSED
+MUL test PASSED for arg_a=-29009 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-17029 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-10199
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-20491 arg_b=4756
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-12762 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=17244
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=818 arg_b=-20764
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=5361 arg_b=17157
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=3646 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=19730 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=13044 arg_b=28897
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-11762 arg_b=-15568
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-16366 arg_b=27405
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-5205 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=5128 arg_b=7605
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=11475 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-6717 arg_b=32164
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=15991 arg_b=4213
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=26217 arg_b=-24866
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=29323 arg_b=10444
+Parity test PASSED
+MUL test PASSED for arg_a=18555 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=24550 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=31677 arg_b=4020
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-17097 arg_b=225
+Parity test PASSED
+MUL test PASSED for arg_a=1997 arg_b=-29452
+Parity test PASSED
+MUL test PASSED for arg_a=-31508 arg_b=18221
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=14921 arg_b=-2550
+Parity test PASSED
+MUL test PASSED for arg_a=28974 arg_b=-30362
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=16752 arg_b=-15279
+Parity test PASSED
+MUL test PASSED for arg_a=-4858 arg_b=25823
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-31472
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-30929 arg_b=-31817
+Parity test PASSED
+MUL test PASSED for arg_a=32559 arg_b=15003
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=11817 arg_b=-2345
+Parity test PASSED
+MUL test PASSED for arg_a=10879 arg_b=26041
+Parity test PASSED
+MUL test PASSED for arg_a=-31951 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-10903
+Parity test PASSED
+MUL test PASSED for arg_a=1865 arg_b=31290
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=20736 arg_b=-28952
+Parity test PASSED
+MUL test PASSED for arg_a=20433 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-20271
+Parity test PASSED
+MUL test PASSED for arg_a=26547 arg_b=-14720
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-27778
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=21287 arg_b=17556
+Parity test PASSED
+MUL test PASSED for arg_a=10863 arg_b=5623
+Parity test PASSED
+MUL test PASSED for arg_a=23011 arg_b=-20277
+Parity test PASSED
+MUL test PASSED for arg_a=-14251 arg_b=21342
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-26561
+Parity test PASSED
+MUL test PASSED for arg_a=1285 arg_b=-10056
+Parity test PASSED
+MUL test PASSED for arg_a=14793 arg_b=-8524
+Parity test PASSED
+MUL test PASSED for arg_a=-23763 arg_b=-15010
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-1429 arg_b=-23837
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-24035 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=-11969 arg_b=24404
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-9082
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=26142
+Parity test PASSED
+MUL test PASSED for arg_a=28709 arg_b=29903
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=18041 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=-25211 arg_b=2440
+Parity test PASSED
+MUL test PASSED for arg_a=-3759 arg_b=-28644
+Parity test PASSED
+MUL test PASSED for arg_a=16175 arg_b=-788
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=18249 arg_b=-8013
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=17184 arg_b=-19847
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-14852 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=-39 arg_b=12583
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-25167 arg_b=12321
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-8698 arg_b=14666
+Parity test PASSED
+19990 Clock cycles elapsed: 1000
+Parity error flag test PASSED
+MUL test PASSED for arg_a=26622 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=8728 arg_b=-12295
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=27122 arg_b=26856
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=16532
+Parity test PASSED
+MUL test PASSED for arg_a=-6421 arg_b=-16850
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-1899
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-29327 arg_b=628
+Parity test PASSED
+MUL test PASSED for arg_a=-18296 arg_b=19330
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-15981 arg_b=7364
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-25742 arg_b=-3219
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-14898
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-25812
+Parity test PASSED
+MUL test PASSED for arg_a=29571 arg_b=26032
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=6530
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=20492
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-27863 arg_b=-2010
+Parity test PASSED
+MUL test PASSED for arg_a=9870 arg_b=-11529
+Parity test PASSED
+MUL test PASSED for arg_a=20589 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=21541
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=30773 arg_b=-22066
+Parity test PASSED
+MUL test PASSED for arg_a=27738 arg_b=2566
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=26462 arg_b=25371
+Parity test PASSED
+MUL test PASSED for arg_a=30024 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-31617 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-5044 arg_b=25168
+Parity test PASSED
+MUL test PASSED for arg_a=12462 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-22813 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-19727 arg_b=12105
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=26906 arg_b=26396
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-17941
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-6976 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=406
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-32103
+Parity test PASSED
+MUL test PASSED for arg_a=6360 arg_b=-11292
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=10718 arg_b=24636
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=13943 arg_b=11070
+Parity test PASSED
+MUL test PASSED for arg_a=-25630 arg_b=7276
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32005 arg_b=12006
+Parity test PASSED
+MUL test PASSED for arg_a=-9316 arg_b=18163
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-26943 arg_b=-19479
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=1974
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=31172 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=25993
+Parity test PASSED
+MUL test PASSED for arg_a=10474 arg_b=10592
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-23014
+Parity test PASSED
+MUL test PASSED for arg_a=-21456 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=3931 arg_b=-6020
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-845 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-29668 arg_b=11090
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=22113 arg_b=-6232
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-3223
+Parity test PASSED
+MUL test PASSED for arg_a=24857 arg_b=28338
+Parity test PASSED
+MUL test PASSED for arg_a=-14990 arg_b=3937
+Parity test PASSED
+MUL test PASSED for arg_a=-7598 arg_b=6187
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=24256 arg_b=2091
+Parity test PASSED
+MUL test PASSED for arg_a=22755 arg_b=-550
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=31494
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-19216 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-19583 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=-15425 arg_b=18603
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-20054
+Parity test PASSED
+MUL test PASSED for arg_a=3680 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=32321 arg_b=-4531
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-20829
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=11929 arg_b=-28000
+Parity test PASSED
+MUL test PASSED for arg_a=31449 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-5406 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=4696 arg_b=-24428
+Parity test PASSED
+MUL test PASSED for arg_a=15117 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=17512 arg_b=-3886
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-23974
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=20618
+Parity test PASSED
+MUL test PASSED for arg_a=29394 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=11884
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-18733
+Parity test PASSED
+MUL test PASSED for arg_a=30408 arg_b=-23163
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=22845
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-20708 arg_b=5548
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-1388 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=1453
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=5304
+Parity test PASSED
+MUL test PASSED for arg_a=5821 arg_b=7833
+Parity test PASSED
+MUL test PASSED for arg_a=-6109 arg_b=-11558
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-17057 arg_b=16296
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=2736 arg_b=7289
+Parity test PASSED
+MUL test PASSED for arg_a=-12456 arg_b=-2097
+Parity test PASSED
+MUL test PASSED for arg_a=12280 arg_b=13063
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-20372 arg_b=-23700
+Parity test PASSED
+MUL test PASSED for arg_a=4688 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=-18410 arg_b=-31442
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-6394 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=10950 arg_b=21413
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-24443
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=27847 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=14029 arg_b=-29070
+Parity test PASSED
+MUL test PASSED for arg_a=13030 arg_b=-676
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-25911
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-3054 arg_b=13537
+Parity test PASSED
+MUL test PASSED for arg_a=-14452 arg_b=15204
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-142 arg_b=28510
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=31731 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=26074 arg_b=-20807
+Parity test PASSED
+MUL test PASSED for arg_a=-19792 arg_b=-18455
+Parity test PASSED
+MUL test PASSED for arg_a=27326 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-1064
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-29307 arg_b=-3795
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=4931 arg_b=15803
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=22676
+Parity test PASSED
+MUL test PASSED for arg_a=10121 arg_b=9395
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=31892
+Parity test PASSED
+MUL test PASSED for arg_a=-1381 arg_b=11465
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=30451 arg_b=-18022
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=6274 arg_b=-12150
+Parity test PASSED
+MUL test PASSED for arg_a=25744 arg_b=14488
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-21565 arg_b=-6851
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-17284 arg_b=25927
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-18835 arg_b=-11695
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=29783 arg_b=1239
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=16552 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-21067
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-2713 arg_b=13947
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-18324 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=8747 arg_b=32654
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-9524 arg_b=13157
+Parity test PASSED
+MUL test PASSED for arg_a=31621 arg_b=18551
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=8443
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=4364 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-23368 arg_b=16334
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-8855 arg_b=23608
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+39990 Clock cycles elapsed: 2000
+MUL test PASSED for arg_a=23506 arg_b=10340
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-2857 arg_b=28758
+Parity test PASSED
+MUL test PASSED for arg_a=-32144 arg_b=-18326
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=23433
+Parity test PASSED
+MUL test PASSED for arg_a=-14901 arg_b=8559
+Parity test PASSED
+MUL test PASSED for arg_a=14674 arg_b=12074
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-2712 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=20061 arg_b=15755
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-15467 arg_b=-27069
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-1733 arg_b=5449
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-3381
+Parity test PASSED
+MUL test PASSED for arg_a=27606 arg_b=26849
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-1328 arg_b=11417
+Parity test PASSED
+MUL test PASSED for arg_a=-22416 arg_b=32408
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=266 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=18366 arg_b=27571
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-11115
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-6178
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-3663 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=13818
+Parity test PASSED
+MUL test PASSED for arg_a=19168 arg_b=-11715
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=13523 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=31182
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=23096 arg_b=750
+Parity test PASSED
+MUL test PASSED for arg_a=-14593 arg_b=4968
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=3699
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=20754
+Parity test PASSED
+MUL test PASSED for arg_a=31604 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-13377 arg_b=1898
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=15400
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=28547 arg_b=-1228
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=27022 arg_b=16468
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-14098 arg_b=-9934
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-9305
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=15337 arg_b=-7189
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=8092 arg_b=-14290
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-5936 arg_b=-1223
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=2825
+Parity test PASSED
+MUL test PASSED for arg_a=-9063 arg_b=-1076
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=9949 arg_b=24313
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-5218
+Parity test PASSED
+MUL test PASSED for arg_a=-12936 arg_b=6951
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-19930 arg_b=-8593
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-9686
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-23406 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=24310 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-8957 arg_b=-10969
+Parity test PASSED
+MUL test PASSED for arg_a=-29804 arg_b=5125
+Parity test PASSED
+MUL test PASSED for arg_a=27599 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=-21434 arg_b=19352
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-30624 arg_b=19672
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-8495 arg_b=-5231
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=4116 arg_b=10515
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-19834 arg_b=-3723
+Parity test PASSED
+MUL test PASSED for arg_a=-19837 arg_b=-14179
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-24038
+Parity test PASSED
+MUL test PASSED for arg_a=-32631 arg_b=16235
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=18042 arg_b=12612
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=29387 arg_b=-14660
+Parity test PASSED
+MUL test PASSED for arg_a=21730 arg_b=22962
+Parity test PASSED
+MUL test PASSED for arg_a=-14605 arg_b=25195
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-9854 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=21611 arg_b=-6861
+Parity test PASSED
+MUL test PASSED for arg_a=-15313 arg_b=9623
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=22955 arg_b=4363
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-32427
+Parity test PASSED
+MUL test PASSED for arg_a=9991 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=26403 arg_b=90
+Parity test PASSED
+MUL test PASSED for arg_a=-2174 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-391 arg_b=18365
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=31171 arg_b=-12012
+Parity test PASSED
+MUL test PASSED for arg_a=29787 arg_b=-3975
+Parity test PASSED
+MUL test PASSED for arg_a=-11051 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-31323
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=21795 arg_b=-1715
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-18339
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=21222
+Parity test PASSED
+MUL test PASSED for arg_a=16987 arg_b=30509
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-30463 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-1042 arg_b=-9665
+Parity test PASSED
+MUL test PASSED for arg_a=-3473 arg_b=-2122
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=2360 arg_b=2323
+Parity test PASSED
+MUL test PASSED for arg_a=-17086 arg_b=10457
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=26817 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=6504 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=21730 arg_b=-27016
+Parity test PASSED
+MUL test PASSED for arg_a=27858 arg_b=-26753
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=6086 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-27194 arg_b=4146
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-16588 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=22759 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=11457 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=10148 arg_b=-11176
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=25933 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=-11624 arg_b=-10453
+Parity test PASSED
+MUL test PASSED for arg_a=5709 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-5343 arg_b=-30981
+Parity test PASSED
+MUL test PASSED for arg_a=13934 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-31544
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-18202
+Parity test PASSED
+MUL test PASSED for arg_a=14291 arg_b=-9456
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-18394 arg_b=-21387
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=16206
+Parity test PASSED
+MUL test PASSED for arg_a=-31203 arg_b=-26627
+Parity test PASSED
+MUL test PASSED for arg_a=-23127 arg_b=21039
+Parity test PASSED
+MUL test PASSED for arg_a=-12732 arg_b=-26724
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=11925
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=14177
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=16333 arg_b=-10372
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-14003 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=15766 arg_b=-27143
+Parity test PASSED
+MUL test PASSED for arg_a=8880 arg_b=7622
+Parity test PASSED
+MUL test PASSED for arg_a=24467 arg_b=-3228
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=17913 arg_b=11592
+Parity test PASSED
+MUL test PASSED for arg_a=-31124 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-19954
+Parity test PASSED
+MUL test PASSED for arg_a=676 arg_b=-485
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-31163
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=16629 arg_b=5084
+Parity test PASSED
+MUL test PASSED for arg_a=5228 arg_b=-18257
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-16214 arg_b=2236
+Parity test PASSED
+MUL test PASSED for arg_a=-2565 arg_b=29087
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-26918
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-1233
+Parity test PASSED
+MUL test PASSED for arg_a=28433 arg_b=-26192
+Parity test PASSED
+MUL test PASSED for arg_a=6018 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-363 arg_b=-2291
+Parity test PASSED
+MUL test PASSED for arg_a=14464 arg_b=11568
+Parity test PASSED
+59990 Clock cycles elapsed: 3000
+MUL test PASSED for arg_a=4317 arg_b=5310
+Parity test PASSED
+MUL test PASSED for arg_a=-13968 arg_b=-19238
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-16338
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=18670
+Parity test PASSED
+MUL test PASSED for arg_a=9987 arg_b=-6048
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=25813 arg_b=-31168
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=17091 arg_b=25451
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-30429 arg_b=4973
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-14803 arg_b=-25876
+Parity test PASSED
+MUL test PASSED for arg_a=-7545 arg_b=21973
+Parity test PASSED
+MUL test PASSED for arg_a=20826 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=15497 arg_b=-22109
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=1648 arg_b=-3978
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-8789
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-30592 arg_b=24074
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-23390 arg_b=655
+Parity test PASSED
+MUL test PASSED for arg_a=-22579 arg_b=-13371
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=7335
+Parity test PASSED
+MUL test PASSED for arg_a=-6082 arg_b=13853
+Parity test PASSED
+MUL test PASSED for arg_a=-8707 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=2877 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=22072 arg_b=13594
+Parity test PASSED
+MUL test PASSED for arg_a=13347 arg_b=-20103
+Parity test PASSED
+MUL test PASSED for arg_a=20174 arg_b=-19666
+Parity test PASSED
+MUL test PASSED for arg_a=-13385 arg_b=26474
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=30806 arg_b=-6937
+Parity test PASSED
+MUL test PASSED for arg_a=-19831 arg_b=1715
+Parity test PASSED
+MUL test PASSED for arg_a=31928 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-24332
+Parity test PASSED
+MUL test PASSED for arg_a=-29682 arg_b=-29395
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-23153 arg_b=-19248
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-24465 arg_b=-31599
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=4866
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=26074
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=29897
+Parity test PASSED
+MUL test PASSED for arg_a=21038 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=27303 arg_b=-18213
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-6803 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-6854 arg_b=27256
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=25133 arg_b=-10991
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-13776
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=29261
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=1824 arg_b=6213
+Parity test PASSED
+MUL test PASSED for arg_a=27651 arg_b=18270
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=5507 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=14886 arg_b=-12321
+Parity test PASSED
+MUL test PASSED for arg_a=3069 arg_b=7887
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=17448 arg_b=26749
+Parity test PASSED
+MUL test PASSED for arg_a=29275 arg_b=-5064
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-13682 arg_b=-8747
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=42
+Parity test PASSED
+MUL test PASSED for arg_a=23538 arg_b=-18969
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=20892
+Parity test PASSED
+MUL test PASSED for arg_a=-29014 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=4293
+Parity test PASSED
+MUL test PASSED for arg_a=28346 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-15725 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=16618 arg_b=-10330
+Parity test PASSED
+MUL test PASSED for arg_a=10581 arg_b=218
+Parity test PASSED
+MUL test PASSED for arg_a=7126 arg_b=24123
+Parity test PASSED
+MUL test PASSED for arg_a=-10280 arg_b=-18301
+Parity test PASSED
+MUL test PASSED for arg_a=5311 arg_b=-23146
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=5237 arg_b=-17994
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=-16787 arg_b=-8908
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=2178
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-10126 arg_b=17258
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-19849 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=21910 arg_b=-22746
+Parity test PASSED
+MUL test PASSED for arg_a=-10148 arg_b=-2767
+Parity test PASSED
+MUL test PASSED for arg_a=-11579 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=14833 arg_b=31543
+Parity test PASSED
+MUL test PASSED for arg_a=3355 arg_b=-6981
+Parity test PASSED
+MUL test PASSED for arg_a=-762 arg_b=12688
+Parity test PASSED
+MUL test PASSED for arg_a=-9292 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=7765
+Parity test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=4083
+Parity test PASSED
+MUL test PASSED for arg_a=19099 arg_b=29463
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=21474 arg_b=17701
+Parity test PASSED
+MUL test PASSED for arg_a=16589 arg_b=-10456
+Parity test PASSED
+MUL test PASSED for arg_a=-814 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=4815 arg_b=-8644
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-11592 arg_b=-30922
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=4774
+Parity test PASSED
+MUL test PASSED for arg_a=-5278 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-28465 arg_b=-31852
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=15025 arg_b=11896
+Parity test PASSED
+MUL test PASSED for arg_a=10864 arg_b=-13937
+Parity test PASSED
+MUL test PASSED for arg_a=-29034 arg_b=22242
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-20333 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=-30316 arg_b=-32768
+Parity test PASSED
+MUL test PASSED for arg_a=22831 arg_b=24082
+Parity test PASSED
+MUL test PASSED for arg_a=28217 arg_b=-32768
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=21874
+Parity test PASSED
+MUL test PASSED for arg_a=13112 arg_b=-6540
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=29438 arg_b=-24873
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=16443 arg_b=25276
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=24090 arg_b=12763
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=27249
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-1262 arg_b=10895
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=27510 arg_b=32206
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-10473
+Parity test PASSED
+MUL test PASSED for arg_a=29824 arg_b=10762
+Parity test PASSED
+MUL test PASSED for arg_a=30982 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=10902 arg_b=16341
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-4309
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=7994
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=13294
+Parity test PASSED
+MUL test PASSED for arg_a=-4727 arg_b=32767
+Parity test PASSED
+MUL test PASSED for arg_a=21919 arg_b=22626
+Parity test PASSED
+MUL test PASSED for arg_a=9587 arg_b=-6758
+Parity test PASSED
+MUL test PASSED for arg_a=6409 arg_b=28430
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=18218
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=3365 arg_b=-11550
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-14086 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-10402 arg_b=31248
+Parity test PASSED
+MUL test PASSED for arg_a=28197 arg_b=13672
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-30439 arg_b=9638
+Parity test PASSED
+MUL test PASSED for arg_a=24150 arg_b=2121
+Parity test PASSED
+MUL test PASSED for arg_a=-695 arg_b=-18778
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=10460
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=27947
+Parity test PASSED
+MUL test PASSED for arg_a=17262 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=27850 arg_b=18036
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-24287 arg_b=9303
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=3581
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=32767
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=10021 arg_b=-20570
+Parity test PASSED
+MUL test PASSED for arg_a=-28513 arg_b=7455
+Parity test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=28009 arg_b=8671
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-32293
+Parity test PASSED
+79990 Clock cycles elapsed: 4000
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=22121
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-13734
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=8601
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=16403 arg_b=-20112
+Parity test PASSED
+MUL test PASSED for arg_a=27041 arg_b=21044
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=-25683 arg_b=-28517
+Parity test PASSED
+MUL test PASSED for arg_a=12240 arg_b=-22987
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-16746
+Parity test PASSED
+MUL test PASSED for arg_a=-2372 arg_b=9663
+Parity test PASSED
+MUL test PASSED for arg_a=29841 arg_b=6091
+Parity test PASSED
+MUL test PASSED for arg_a=-32768 arg_b=-2843
+Parity test PASSED
+Parity error flag test PASSED
+Parity error flag test PASSED
+MUL test PASSED for arg_a=32767 arg_b=-32768
+Parity test PASSED
 [1;30m[102m-----------------------------------
 ----------- Test PASSED -----------
 -----------------------------------[0m
 
-Simulation complete via $finish(1) at time 81710 NS + 3
+Simulation complete via $finish(1) at time 81730 NS + 3
 ../tb/vdic_dut_2023_tb.sv:148     $finish;
 xcelium> exit
 See ./cov_work/scope/test/icc.com file for message(s) on coverage constant object marking
@@ -66,6 +1834,6 @@ coverage setup:
   testname :  test
 
 coverage files:
-  model(design data) :  ./cov_work/scope/icc_429014c8_00000000.ucm
-  data               :  ./cov_work/scope/test/icc_429014c8_00000000.ucd
-TOOL:	xrun	21.03-s009: Exiting on Oct 18, 2023 at 20:31:13 CEST  (total: 00:00:01)
+  model(design data) :  ./cov_work/scope/icc_25da0b5a_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_25da0b5a_00000000.ucd
+TOOL:	xrun	21.03-s009: Exiting on Oct 22, 2023 at 20:25:12 CEST  (total: 00:00:01)

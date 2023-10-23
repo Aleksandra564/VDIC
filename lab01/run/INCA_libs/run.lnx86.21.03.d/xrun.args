@@ -5,6 +5,8 @@
 -F
 ../tb/tb.f
 -v93
+-define
+DEBUG
 +nowarnDSEM2009
 +nowarnDSEMEL
 +nowarnCGDEFN

@@ -1,0 +1,284 @@
+TOOL:	xrun	21.03-s009: Started on Oct 23, 2023 at 19:45:23 CEST
+xrun
+	-F ../tb/tb.f
+		-F ../tb/../../common/tinyalu/tinyalu.f
+			single_cycle.sv
+			three_cycle.sv
+			tinyalu.sv
+			../vdic_dut_2023.svp
+		tinyalu_tb.sv
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+	-covtest lab02_example
+	+UVM_TESTNAME=lab02_example
+	-l xrun_test_lab02_example.log
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 6
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		vdic_dut_2023
+		top
+
+	Extracting FSMs for coverage:
+		worklib.single_cycle
+		worklib.three_cycle
+		worklib.tinyalu
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVNOEN: By default, toggle coverage is not supported for systemverilog enumerated nets and variables inside structures. To enable toggle coverage of these objects, specify the 'set_toggle_scoring -sv_enum -sv_struct_with_enum' command in the coverage configuration file.
+	Building instance specific data structures.
+	Performing constant object marking (COM) analysis.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                Instances  Unique
+		Modules:                5       5
+		Registers:             58      58
+		Scalar wires:          14       -
+		Vectored wires:        15       -
+		Always blocks:          6       6
+		Initial blocks:         4       4
+		Final blocks:           1       1
+		Cont. assignments:     11      15
+		Pseudo assignments:     3       3
+		Assertions:             2       2
+		Covergroup Instances:   0       2
+	Writing initial simulation snapshot: worklib.vdic_dut_2023:svp
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid environment variable ''.
+DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+xmsim: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
+Loading snapshot worklib.vdic_dut_2023:svp .................... Done
+xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+[1;30m[102m-----------------------------------
+----------- Test PASSED -----------
+-----------------------------------[0m
+
+Simulation complete via $finish(1) at time 449540 NS + 0
+../tb/tinyalu_tb.sv:284     $finish;
+xcelium> exit
+See ./cov_work/scope/lab02_example/icc.com file for message(s) on coverage constant object marking
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  vdic_dut_2023(vdic_dut_2023)
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  lab02_example
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_61b541a0_4eb3c199.ucm
+  data               :  ./cov_work/scope/lab02_example/icc_61b541a0_4eb3c199.ucd
+TOOL:	xrun	21.03-s009: Exiting on Oct 23, 2023 at 19:45:25 CEST  (total: 00:00:02)

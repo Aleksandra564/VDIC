@@ -3,6 +3,8 @@
 // Do not modify this file
 //
 -RUNMODE
+-DEFINE
+DEBUG
 -NOWARN
 DSEM2009
 -NOWARN

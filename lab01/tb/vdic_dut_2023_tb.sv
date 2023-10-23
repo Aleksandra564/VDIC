@@ -83,7 +83,7 @@ initial begin : tester
 	reset_mult();
 	
     repeat (1000) begin : tester_main_blk
-	    @(posedge clk)
+	    @(negedge clk)
 	    arg_a = get_data();
 	    arg_b = get_data();
 	    arg_a_parity = parity_bit_check(arg_a);
@@ -101,7 +101,7 @@ initial begin : tester
 	        expected_data = get_expected(arg_a, arg_b);
 		    parity_expected = get_parity(expected_data);
 		    
-		    // PARITY ERROR TEST
+		    // PARITY ERROR FLAG TEST
 		    if(arg_parity_error == 1) begin		// parity error
 			    if(result == 0) begin	// parity error -> result == 0
 			    	`ifdef DEBUG
@@ -159,7 +159,7 @@ end : tester
 task reset_mult();
 	req = 1'b0;
 	rst_n = 1'b0;
-	@(posedge clk);
+	@(negedge clk);
 	rst_n = 1'b1;
 endtask: reset_mult
 	
@@ -218,7 +218,7 @@ function logic parity_bit_check(
 	
 	zero_ones = 2'($random);	// 75% chance to generate proper parity
 	result = ^ arg;		// xor
-	no_parity_result = ^ arg + 1;	// wrong parity bit
+	no_parity_result = !(^ arg);	// wrong parity bit
 	
 	if(zero_ones == 2'b11) begin	// 25% chance to get wrong parity
 		return(no_parity_result);
@@ -275,6 +275,5 @@ function void print_test_result (test_result_t r);
         $write ("\n");
     end
 endfunction
-
 
 endmodule : top
