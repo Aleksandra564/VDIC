@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Oct 22, 2023 at 17:23:12 CEST
+TOOL:	xrun	21.03-s009: Started on Oct 23, 2023 at 21:40:33 CEST
 xrun
 	-F ../tb/tb.f
 		../../common/vdic_dut_2023.svp
@@ -218,18 +218,24 @@ xmelab: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid 
 	Enabling instrumentation for coverage types: block expression FSM toggle functional
 	Building instance specific data structures.
 	Performing constant object marking (COM) analysis.
+xmelab: *W,OBINVE: (File: ../tb/vdic_dut_2023_tb.sv, Line : 63): Bin value '32768' of bin 'top.edge_cases.a_leg.min' is not within the possible values that coverpoint can store and will be ignored.
+xmelab: *W,OBINRGE: (File: ../tb/vdic_dut_2023_tb.sv, Line : 64): Bin range '[32769 : 65535]' of bin 'top.edge_cases.a_leg.others' is not within the possible values that coverpoint can store. All the values in the range will be ignored.
+xmelab: *W,OBINVE: (File: ../tb/vdic_dut_2023_tb.sv, Line : 70): Bin value '32768' of bin 'top.edge_cases.b_leg.min' is not within the possible values that coverpoint can store and will be ignored.
+xmelab: *W,OBINRGE: (File: ../tb/vdic_dut_2023_tb.sv, Line : 71): Bin range '[32769 : 65535]' of bin 'top.edge_cases.b_leg.others' is not within the possible values that coverpoint can store. All the values in the range will be ignored.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		              Instances  Unique
-		Modules:              2       2
-		Registers:           56      56
-		Scalar wires:        17       -
-		Vectored wires:      10       -
-		Always blocks:        1       1
-		Initial blocks:       4       4
-		Final blocks:         1       1
-		Cont. assignments:    8      10
-		Pseudo assignments:   6       6
+		                Instances  Unique
+		Modules:                2       2
+		Registers:             64      64
+		Scalar wires:          17       -
+		Vectored wires:        10       -
+		Always blocks:          3       3
+		Initial blocks:         6       6
+		Final blocks:           1       1
+		Cont. assignments:      8      10
+		Pseudo assignments:     8       8
+		Assertions:             3       3
+		Covergroup Instances:   0       1
 	Writing initial simulation snapshot: worklib.top:sv
 DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
 |
@@ -255,21 +261,29 @@ Relinquished control to SimVision...
 xcelium> 
 xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/xcelium/files/xmsimrc
 xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
-xcelixmsim: *W,NCTERM: Simulation received SIGTERM signal from process 16633, user id 4095 (<unknown>).
-See ./cov_work/scope/test/icc.com file for message(s) on coverage constant object marking
-
-coverage setup:
-  workdir  :  ./cov_work
-  dutinst  :  top(top)
-  scope    :  scope
-  testname :  test
-
-coverage files:
-  model(design data) :  ./cov_work/scope/icc_25da0b5a_00000000.ucm (reused)
-  data               :  ./cov_work/scope/test/icc_25da0b5a_00000000.ucd
-TOOL:	xrun	21.03-s009: Exiting on Oct 23, 2023 at 16:51:16 CEST  (total: 23:28:26)
-um> ^C
-xcelium> exit
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm top.ack top.arg_a top.arg_a_parity top.arg_b top.arg_b_parity top.arg_parity_error top.clk top.mult_result top.poprawic_to top.req top.result top.result_parity top.result_rdy top.rst_n top.sb_data_q top.start_prev top.test_result
+Created probe 1
+xcelium> run
+160 NS + 0 (Assertion output stop: top.scoreboard_be_blk.verify_result.CHK_MULT_RESULT = failed)
+xmsim: *E,ASRTST (../tb/vdic_dut_2023_tb.sv,395): (time 160 NS) Assertion top.scoreboard_be_blk.verify_result.CHK_MULT_RESULT has failed
+160 Test FAILED for A=24193 B=22115
+Expected:           x  received:   535028195
+160 NS + 0 (Assertion output stop: top.scoreboard_be_blk.verify_result.CHK_PARITY_RESULT = failed)
+xmsim: *E,ASRTST (../tb/vdic_dut_2023_tb.sv,407): (time 160 NS) Assertion top.scoreboard_be_blk.verify_result.CHK_PARITY_RESULT has failed
+160 Test FAILED for A=24193 B=22115
+Expected: x  received: 1
+xcelium> run
+280 NS + 0 (Assertion output stop: top.scoreboard_be_blk.verify_result.CHK_MULT_RESULT = failed)
+xmsim: *E,ASRTST (../tb/vdic_dut_2023_tb.sv,395): (time 280 NS) Assertion top.scoreboard_be_blk.verify_result.CHK_MULT_RESULT has failed
+280 Test FAILED for A=21010 B=-13043
+Expected:   535028195  received:  -274033430
+280 NS + 0 (Assertion output stop: top.scoreboard_be_blk.verify_result.CHK_PARITY_RESULT = failed)
+xmsim: *E,ASRTST (../tb/vdic_dut_2023_tb.sv,407): (time 280 NS) Assertion top.scoreboard_be_blk.verify_result.CHK_PARITY_RESULT has failed
+280 Test FAILED for A=21010 B=-13043
+Expected: x  received: 1
+xcelium> xmsim: *W,NCTERM: Simulation received SIGTERM signal from process 1, user id 0 (/usr/lib/systemd/systemd).
 See ./cov_work/scope/lab01/icc.com file for message(s) on coverage constant object marking
 
 coverage setup:
@@ -279,6 +293,8 @@ coverage setup:
   testname :  lab01
 
 coverage files:
-  model(design data) :  ./cov_work/scope/icc_25da0b5a_00000000.ucm
-  data               :  ./cov_work/scope/lab01/icc_25da0b5a_00000000.ucd
-TOOL:	xrun	21.03-s009: Exiting on Oct 22, 2023 at 18:00:04 CEST  (total: 00:36:52)
+  model(design data) :  ./cov_work/scope/icc_44709de9_484e37a9.ucm (reused)
+  data               :  ./cov_work/scope/lab01/icc_44709de9_484e37a9.ucd
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun	21.03-s009: Exiting on Oct 24, 2023 at 01:30:06 CEST  (total: 03:49:33)

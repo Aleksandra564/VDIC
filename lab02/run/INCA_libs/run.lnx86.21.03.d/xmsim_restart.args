@@ -36,15 +36,17 @@ RNDXCELON
 SAWSTP
 -NOCOPYRIGHT
 -COVOVERWRITE
-+UVM_TESTNAME=lab01
+-COVTEST
+lab02
++UVM_TESTNAME=lab02
 -MESSAGES
 -RUN
 -SV_LIB
 /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/libuvmdpi.so
 +EMGRLOG
-xrun_test_lab01.log
+xrun_test_lab02.log
 -XLSTIME
-1697702889
+1698177430
 -XLKEEP
 -XLMODE
 ./INCA_libs/run.lnx86.21.03.d
@@ -58,4 +60,4 @@ xrun
 -XLVERSION
 "TOOL:	xrun	21.03-s009"
 -XLNAME
-./INCA_libs/run.lnx86.21.03.d/cadence31_19946
+./INCA_libs/run.lnx86.21.03.d/cadence25_7321

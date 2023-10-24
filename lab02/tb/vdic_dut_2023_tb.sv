@@ -34,7 +34,7 @@ logic               	ack;
 logic signed 	[31:0] 	result;
 logic               	result_parity;
 logic               	result_rdy;
-logic               	arg_parity_error;
+logic               	arg_parity_error; // 1, if A_parity or B_parity is invalid
 	
 
 test_result_t        test_result = TEST_PASSED;
@@ -53,69 +53,86 @@ vdic_dut_2023 DUT (.clk, .rst_n, .arg_a, .arg_a_parity, .arg_b, .arg_b_parity, .
 // Coverage block
 //------------------------------------------------------------------------------
 
-// Covergroup checking the multiplication and parity
-covergroup operation_tests;
-
-    option.name = "cg_operation_tests";
-
-    coverpoint op_set {
-        // #A1 test all operations
-        bins A1_single_cycle[] = {[add_op : xor_op], rst_op, no_op};
-    }
-
-endgroup
-
 // Covergroup checking for min and max arguments of the MULT
 covergroup edge_cases;
 
     option.name = "cg_edge_cases";
 
-    all_ops : coverpoint op_set {
-        ignore_bins null_ops = {rst_op, no_op};
-    }
 
     a_leg: coverpoint arg_a {
-	    bins zero = {'sh0000};
-        bins min = {'sh8000};	// signed int MIN
-        bins others= {['sh8001:'shFFFF], ['sh0001:'sh7FFE]};	// [MIN+1:MAX-1] except 0
-        bins max  = {'sh7FFF};	// signed int MAX
+	    bins zeros = {16'sh0000};
+        bins min = {16'sh8000};		// signed int MIN
+        bins max  = {16'sh7FFF};	// signed int MAX
+        bins negative = {[16'sh8001:16'shFFFF]};	// [MIN+1:-1]
+        bins positive = {[16'sh0001:16'sh7FFE]};	// [1:MAX-1]   
     }
 
     b_leg: coverpoint arg_b {
-	    bins zero = {'sh0000};
-        bins min = {'sh8000};
-        bins others= {['sh8001:'shFFFF], ['sh0001:'sh7FFE]};
-        bins max  = {'sh7FFF};
+	    bins zeros = {16'sh0000};
+        bins min = {16'sh8000};		// signed int MIN
+        bins max  = {16'sh7FFF};	// signed int MAX
+        bins negative = {[16'sh8001:16'shFFFF]};	// [MIN+1:-1]
+        bins positive = {[16'sh0001:16'sh7FFE]};	// [1:MAX-1] 
     }
 
-    B_op_00_FF: cross a_leg, b_leg, all_ops {
+    mult_edge_cases: cross a_leg, b_leg {
 
-        // #B1 simulate all zero input for all the operations
+        // min * max
+        bins min_max = binsof (a_leg.min) && binsof (b_leg.max);
 
-        bins B1_add_00          = binsof (all_ops) intersect {add_op} &&
-        (binsof (a_leg.zeros) || binsof (b_leg.zeros));
+        // min * min
+        bins min_min = binsof (a_leg.min) && binsof (b_leg.min);
+	    
+	    // max * max
+        bins max_max = binsof (a_leg.max) && binsof (b_leg.max);
+	    
+	    // zero * anything
+        bins zero_any = binsof (a_leg.zeros) && binsof (b_leg.min);
 
-        // #B2 simulate all one input for all the operations
-
-        bins B2_add_FF          = binsof (all_ops) intersect {add_op} &&
-        (binsof (a_leg.ones) || binsof (b_leg.ones));
-
-        ignore_bins others_only =
-        binsof(a_leg.others) && binsof(b_leg.others);
     }
+    
+    
+    a_par: coverpoint arg_a_parity {
+	    bins zero = {0};
+	    bins one = {1};
+    }
+    
+    b_par: coverpoint arg_b_parity {
+	    bins zero = {0};
+	    bins one = {1};
+    }  
+    
+    a_parity_cases: cross a_leg, a_par {
+	    
+	    bins max_par_correct = binsof(a_leg.max) && binsof(a_par.one);	// checks MAX with correct parity (par = 1)
+		bins max_par_wrong = binsof(a_leg.max) && binsof(a_par.zero);	// checks MAX with wrong parity (par = 0)
+	    
+	    bins zero_par_correct = binsof(a_leg.zeros) && binsof(a_par.zero);	// checks ZERO with correct parity (par = 0)
+		bins zero_par_wrong = binsof(a_leg.zeros) && binsof(a_par.one);	// checks ZERO with wrong parity (par = 1)
+		
+    }
+    
+    b_parity_cases: cross b_leg, b_par {
+	    
+	    bins max_par_correct = binsof(b_leg.max) && binsof(b_par.one);	// checks MAX with correct parity (par = 1)
+		bins max_par_wrong = binsof(b_leg.max) && binsof(b_par.zero);	// checks MAX with wrong parity (par = 0)
+	    
+	    bins zero_par_correct = binsof(b_leg.zeros) && binsof(b_par.zero);	// checks ZERO with correct parity (par = 0)
+		bins zero_par_wrong = binsof(b_leg.zeros) && binsof(b_par.one);	// checks ZERO with wrong parity (par = 1)
+		
+    }
+    
 
 endgroup
 
-operation_tests		op_t;
-edge_cases			a_b_edge_cases;
+edge_cases a_b_edge_cases;
 
 initial begin : coverage
-    op_t = new();
+	
     a_b_edge_cases = new();
     forever begin : sample_cov
         @(posedge clk);
         if(result_rdy || !rst_n) begin
-            op_t.sample();
             a_b_edge_cases.sample();
             
             /* #1step delay is necessary before checking for the coverage
@@ -165,7 +182,7 @@ end
 // Tester
 //------------------------------------------------------------------------------
 
-initial begin : tester
+initial begin : tester					// generates data and signals
 	logic signed [31:0] expected_data;
 	logic parity_expected;
 	
@@ -181,58 +198,9 @@ initial begin : tester
 		req = 1'b1;
 	    
 	    wait(ack);			// wait until ack == 1
-	    wait(result_rdy);	// wait until result is ready
 	    req = 1'b0;
-		    
-	    //------------------------------------------------------------------------------
-	    // temporary data check - scoreboard will do the job later
-	    begin
-	        expected_data = get_expected(arg_a, arg_b);
-		    parity_expected = get_result_parity(expected_data);
-		    
-		    // PARITY ERROR FLAG TEST
-		    if(arg_parity_error == 1) begin		// parity error
-			    if(result == 0) begin	// parity error -> result == 0
-			    	`ifdef DEBUG
-			    	$display("Parity error flag test PASSED");
-			    	`endif
-			    end
-			    else begin
-				    test_result = TEST_FAILED;
-			    	`ifdef DEBUG
-			    	$display("Parity error flag test FAILED");
-					`endif
-				end
-			end
-		    
-		    else begin		// no parity error
-		    	// MULTIPLICATION TEST
-		        if(result == expected_data) begin
-		            `ifdef DEBUG
-		            $display("MUL test PASSED for arg_a=%0d arg_b=%0d", arg_a, arg_b);
-		        	`endif
-		        end
-		        else begin
-		            `ifdef DEBUG
-		            $display("MUL test FAILED for arg_a=%0d arg_b=%0d. Expected: %d, received: %d", arg_a, arg_b, expected_data, result);
-		            `endif
-		            test_result = TEST_FAILED;
-		        end;
+	    wait(result_rdy);	// wait until result is ready
 
-			    // PARITY TEST
-			    if(result_parity != parity_expected) begin
-				    test_result = TEST_FAILED;
-				    `ifdef DEBUG
-				    $display("Parity test FAILED for arg_a=%0d arg_b=%0d, arg_a_parity=%0d, arg_b_parity=%0d. Result parity=%0d, expected parity=%0d.", arg_a, arg_b, arg_a_parity, arg_b_parity, result_parity, parity_expected);
-			    	`endif
-			    end
-			    else begin
-					`ifdef DEBUG
-					$display("Parity test PASSED");
-			    	`endif
-			    end
-		    end
-		end
     end : tester_main_blk
     $finish;
 end : tester
@@ -266,6 +234,8 @@ function logic signed [15:0] get_data();
         return 16'sh8000;				// 16-bit data SIGNED min
     else if (zero_ones == 3'b111)		
         return 16'sh7FFF;				// 16-bit data SIGNED max
+    else if (zero_ones == 3'b001)		
+	    return 16'sh0000;				// generate all zeros
     else
         return 16'($random);
 endfunction : get_data
@@ -279,12 +249,13 @@ function logic get_result_parity(
 	logic result;
 	
 	result = ^ arg;		// xor
+	return(result);
 endfunction : get_result_parity
 
 //------------------------------------------------------------------------------
 // calculate expected result
 //------------------------------------------------------------------------------
-function logic [31:0] get_expected(
+function logic signed [31:0] get_expected(
         logic signed [15:0] a,
         logic signed [15:0] b
 	);
@@ -296,7 +267,7 @@ function logic [31:0] get_expected(
 endfunction : get_expected
 
 //------------------------------------------------------------------------------
-// get_input_parity
+// get_input_parity - CAN RETURN WRONG VALUE FOR TESTS
 //------------------------------------------------------------------------------
 function logic get_input_parity(
 		logic signed [15:0] arg
@@ -317,6 +288,28 @@ function logic get_input_parity(
 	end
 	
 endfunction : get_input_parity
+
+//------------------------------------------------------------------------------
+// checks if any input parity is wrong (then output parity flag should be 1)
+//------------------------------------------------------------------------------
+function logic check_input_parity(
+		logic signed [15:0] A,
+		logic signed [15:0] B,
+		logic A_parity,
+		logic B_parity
+	);
+	logic parity_err_flag;
+	
+	if(A_parity == ^A && B_parity == ^B) begin
+		parity_err_flag = 0;	// no parity error
+	end
+	else begin
+		parity_err_flag = 1;	// parity error
+	end
+	
+	return parity_err_flag;
+	
+endfunction
 
 //------------------------------------------------------------------------------
 // Temporary. The scoreboard will be later used for checking the data
@@ -380,18 +373,20 @@ typedef struct packed {
 	logic B_parity;
     logic signed [31:0] result;
 	logic result_parity;
-	logic parity_error_flag;
+	logic parity_error_flag;	// 1, if A_parity or B_parity is invalid
 } data_packet_t;
 
 data_packet_t sb_data_q [$];
 logic signed [31:0] mult_result;
+logic parity_error_flag;
 
 always @(posedge clk) begin: scoreboard_fe_blk
     if(req == 1 && start_prev == 0) begin
-	    mult_result <= get_expected(arg_a, arg_b);
-        sb_data_q.push_front(data_packet_t'({arg_a, arg_b, arg_a_parity, arg_b_parity, mult_result, get_result_parity(mult_result), arg_parity_error}));
+	    mult_result = get_expected(arg_a, arg_b);
+	    parity_error_flag = check_input_parity(arg_a, arg_b, arg_a_parity, arg_b_parity);
+        sb_data_q.push_front(data_packet_t'({arg_a, arg_b, arg_a_parity, arg_b_parity, mult_result, get_result_parity(mult_result), parity_error_flag}));	// zmienic to zero
     end
-    start_prev <= req;
+    start_prev = req;
 end
 
 always @(negedge clk) begin : scoreboard_be_blk
@@ -400,41 +395,44 @@ always @(negedge clk) begin : scoreboard_be_blk
 
         dp = sb_data_q.pop_back();
 
-	    // MULT TEST
-        CHK_MULT_RESULT: assert(result === dp.result) begin	//checks if result from dut == result from dp
-           `ifdef DEBUG
-            $display("%0t Test passed for A=%0d B=%0d", $time, dp.A, dp.B);
-           `endif
-        end
-        else begin
-            test_result = TEST_FAILED;
-            $error("%0t Test FAILED for A=%0d B=%0d\nExpected: %d  received: %d",
-                $time, dp.A, dp.B, dp.result, result);
-        end;
-        
-        // PARITY TEST
-        CHK_PARITY_RESULT: assert(result_parity === dp.result_parity) begin
-           `ifdef DEBUG
-            $display("%0t Test passed for A=%0d B=%0d", $time, dp.A, dp.B);
-           `endif
-        end
-        else begin
-            test_result = TEST_FAILED;
-            $error("%0t Test FAILED for A=%0d B=%0d\nExpected: %d  received: %d",
-                $time, dp.A, dp.B, dp.result_parity, result_parity);
-        end;
-        
         // PARITY ERROR FLAG TEST
         CHK_PARITY_FLAG_RESULT: assert(arg_parity_error === dp.parity_error_flag) begin
            `ifdef DEBUG
-            $display("%0t Test passed for A=%0d B=%0d", $time, dp.A, dp.B);
+            $display("PARITY ERROR FLAG TEST: %0t Test passed for A=%0d B=%0d", $time, dp.A, dp.B);
            `endif
         end
         else begin
             test_result = TEST_FAILED;
-            $error("%0t Test FAILED for A=%0d B=%0d\nExpected: %d  received: %d",
+            $error("PARITY ERROR FLAG TEST: %0t Test FAILED for A=%0d B=%0d\nExpected: %d  received: %d",
                 $time, dp.A, dp.B, dp.parity_error_flag, arg_parity_error);
-        end;
+        end
+        
+        // PARITY TEST
+        if(dp.parity_error_flag == 0) begin
+	        CHK_PARITY_RESULT: assert(result_parity === dp.result_parity) begin
+	           `ifdef DEBUG
+	            $display("PARITY TEST: %0t Test passed for A=%0d B=%0d", $time, dp.A, dp.B);
+	           `endif
+	        end
+	        else begin
+	            test_result = TEST_FAILED;
+	            $error("PARITY TEST: %0t Test FAILED for A=%0d B=%0d Ap=%0d Bp=%0d\nExpected: %d  received: %d",
+	                $time, dp.A, dp.B, dp.A_parity, dp.B_parity, dp.result_parity, result_parity);
+	        end
+	        
+		    // MULT TEST
+	        CHK_MULT_RESULT: assert(result === dp.result) begin	//checks if result from dut == result from dp
+	           `ifdef DEBUG
+	            $display("MULTIPLICATION TEST: %0t Test passed for A=%0d B=%0d", $time, dp.A, dp.B);
+	           `endif
+	        end
+	        else begin
+	            test_result = TEST_FAILED;
+	            $error("MULTIPLICATION TEST: %0t Test FAILED for A=%0d B=%0d\nExpected: %d  received: %d",
+	                $time, dp.A, dp.B, dp.result, result);
+	        end
+        end
+        
     end
 end : scoreboard_be_blk
 

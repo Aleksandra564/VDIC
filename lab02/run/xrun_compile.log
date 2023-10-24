@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Oct 22, 2023 at 17:23:11 CEST
+TOOL:	xrun	21.03-s009: Started on Oct 24, 2023 at 21:57:09 CEST
 xrun
 	-compile
 	-l xrun_compile.log
@@ -14,9 +14,7 @@ xrun
 	+nowarnXCLGNOPTM
 	+nowarnRNDXCELON
 	+nowarnSAWSTP
-	-xmlibdirname INCA_libs_gui
-	+access+r
-	+gui
+	-xmlibdirname INCA_libs
 	+overwrite
 	-nocopyright
 	-coverage all
@@ -174,4 +172,4 @@ xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid en
 DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
 |
 xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
-TOOL:	xrun	21.03-s009: Exiting on Oct 22, 2023 at 17:23:11 CEST  (total: 00:00:00)
+TOOL:	xrun	21.03-s009: Exiting on Oct 24, 2023 at 21:57:09 CEST  (total: 00:00:00)
