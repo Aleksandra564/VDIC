@@ -42,11 +42,7 @@ test_result_t        test_result = TEST_PASSED;
 //------------------------------------------------------------------------------
 // DUT instantiation
 //------------------------------------------------------------------------------
-
 vdic_dut_2023 DUT (.clk, .rst_n, .arg_a, .arg_a_parity, .arg_b, .arg_b_parity, .req, .ack, .result, .result_parity, .result_rdy, .arg_parity_error);
-
-
-
 
 
 //------------------------------------------------------------------------------
@@ -148,13 +144,9 @@ initial begin : coverage
 end : coverage
 
 
-
-
-
 //------------------------------------------------------------------------------
 // Clock generator
 //------------------------------------------------------------------------------
-
 initial begin : clk_gen_blk
     clk = 0;
     forever begin : clk_frv_blk
@@ -181,7 +173,6 @@ end
 //------------------------------------------------------------------------------
 // Tester
 //------------------------------------------------------------------------------
-
 initial begin : tester					// generates data and signals
 	logic signed [31:0] expected_data;
 	logic parity_expected;
@@ -357,8 +348,6 @@ function void print_test_result (test_result_t r);
         $write ("\n");
     end
 endfunction
-
-
 
 
 //------------------------------------------------------------------------------

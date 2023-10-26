@@ -1,5 +1,5 @@
 xrun: 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun	21.03-s009: Started on Oct 24, 2023 at 21:57:05 CEST
+TOOL:	xrun	21.03-s009: Started on Oct 26, 2023 at 08:06:25 CEST
 xrun
 	+compile
 	+sv
@@ -7,114 +7,6 @@ xrun
 		-F lab02/tb/tb.f
 			../../common/vdic_dut_2023.svp
 			vdic_dut_2023_tb.sv
-DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
-DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
-DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/ahdlLib' (cds.lib command ignored).
-DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/bmslib' (cds.lib command ignored).
-DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/cdslib/sample' (cds.lib command ignored).
-DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
-|
-xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
-DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
-DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
-DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/ahdlLib' (cds.lib command ignored).
-DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/bmslib' (cds.lib command ignored).
-DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/cdslib/sample' (cds.lib command ignored).
-DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
-|
-xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
-DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
-DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
-DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/ahdlLib' (cds.lib command ignored).
-DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/bmslib' (cds.lib command ignored).
-DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/cdslib/sample' (cds.lib command ignored).
-DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
-|
-xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
-DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
-DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
-DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/ahdlLib' (cds.lib command ignored).
-DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/bmslib' (cds.lib command ignored).
-DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/cdslib/sample' (cds.lib command ignored).
-DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
-|
-xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
-DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
-DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
-DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/ahdlLib' (cds.lib command ignored).
-DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/bmslib' (cds.lib command ignored).
-DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/cdslib/sample' (cds.lib command ignored).
-DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
-|
-xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
-DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
-|
-xmvlog: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
-DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
-|
-xmvlog: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
-DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
-|
-xmvlog: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/ahdlLib' (cds.lib command ignored).
-DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
-|
-xmvlog: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/bmslib' (cds.lib command ignored).
-DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
-|
-xmvlog: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/cdslib/sample' (cds.lib command ignored).
-DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
-|
-xmvlog: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
 file: lab02/tb/../../common/vdic_dut_2023.svp
 	module worklib.vdic_dut_2023:svp
 		errors: 0, warnings: 0
@@ -124,42 +16,4 @@ file: lab02/tb/vdic_dut_2023_tb.sv
 xmvlog: *W,SAWSTP (lab02/tb/vdic_dut_2023_tb.sv,141|17): Time unit "step" seen in literal - using local precision.
 	module worklib.top:sv
 		errors: 0, warnings: 1
-	Total errors/warnings found outside modules and primitives:
-		errors: 0, warnings: 6
-DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
-DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
-DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/ahdlLib' (cds.lib command ignored).
-DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/bmslib' (cds.lib command ignored).
-DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/cdslib/sample' (cds.lib command ignored).
-DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
-|
-xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
-DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,1): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/basic' (cds.lib command ignored).
-DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,2): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/etc/cdslib/artist/analogLib' (cds.lib command ignored).
-DEFINE ahdlLib $CDSHOME/tools/dfII/samples/artist/ahdlLib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,3): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/ahdlLib' (cds.lib command ignored).
-DEFINE bmslib $CDSHOME/tools/dfII/samples/artist/bmslib
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,4): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/artist/bmslib' (cds.lib command ignored).
-DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
-|
-xrun: *W,DLCPTH (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,5): cds.lib Invalid path '/eda/cadence/2021-22/RHELx86/IC_6.1.8.210/tools/dfII/samples/cdslib/sample' (cds.lib command ignored).
-DEFINE connectLib $IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
-|
-xrun: *W,DLCVAR (/cad/dk/PDK_CRN45GS_DGO_11_25/RF/cds.lib,6): cds.lib Invalid environment variable ''.
-TOOL:	xrun	21.03-s009: Exiting on Oct 24, 2023 at 21:57:05 CEST  (total: 00:00:00)
+TOOL:	xrun	21.03-s009: Exiting on Oct 26, 2023 at 08:06:25 CEST  (total: 00:00:00)
