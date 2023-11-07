@@ -58,6 +58,7 @@ initial begin
         iA     = get_data();
         iB     = get_data();
         bfm.send_op(iA, iB, op_set, result);
+	    
     end : random_loop
     $finish;
 end // initial begin

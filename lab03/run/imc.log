@@ -1,6 +1,10 @@
-imc: *I,RUNLD: Successfully loaded run /home/student/afudali/Desktop/VDIC/lab02/run/cov_work/scope/merged_results.
+imc: *I,RUNLD: Successfully loaded run /home/student/afudali/Desktop/VDIC/lab03/run/cov_work/scope/merged_results.
 imc: *W,REPDEP: This is a legacy report and no future enhancement is planned for this report. It is recommended that you use the 'report_metrics' command and generate a dynamic report.
 name                                     Overall Average      Overall Covered      Code Average         Code Covered         Fsm Average          Fsm Covered          Functional Average   Functional Covered   
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-top                                      96.62%               95.17% (276/290)     93.25%               93.86% (214/228)     n/a                  n/a                  100.00%              100.00% (62/62)      
+top                                      n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
+|--bfm                                   99.32%               98.78% (81/82)       99.32%               98.78% (81/82)       n/a                  n/a                  n/a                  n/a                  
+|--tpgen_i                               100.00%              100.00% (32/32)      100.00%              100.00% (32/32)      n/a                  n/a                  n/a                  n/a                  
+|--coverage_i                            100.00%              100.00% (106/106)    100.00%              100.00% (47/47)      n/a                  n/a                  100.00%              100.00% (59/59)      
+|--scoreboard_i                          93.07%               86.60% (84/97)       86.14%               86.17% (81/94)       n/a                  n/a                  100.00%              100.00% (3/3)        
 |--DUT                                   98.63%               98.63% (72/73)       98.63%               98.63% (72/73)       n/a                  n/a                  n/a                  n/a                  

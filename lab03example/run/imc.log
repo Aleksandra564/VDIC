@@ -1,0 +1,13 @@
+imc: *I,RUNLD: Successfully loaded run /home/student/afudali/Desktop/VDIC/lab03example/run/cov_work/scope/merged_results.
+imc: *W,REPDEP: This is a legacy report and no future enhancement is planned for this report. It is recommended that you use the 'report_metrics' command and generate a dynamic report.
+name                                     Overall Average      Overall Covered      Code Average         Code Covered         Fsm Average          Fsm Covered          Functional Average   Functional Covered   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vdic_dut_2023                            0.00%                0.00% (0/73)         0.00%                0.00% (0/73)         n/a                  n/a                  n/a                  n/a                  
+top                                      n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
+|--bfm                                   100.00%              100.00% (58/58)      100.00%              100.00% (58/58)      n/a                  n/a                  n/a                  n/a                  
+|--tpgen_i                               98.33%               97.06% (33/34)       98.33%               97.06% (33/34)       n/a                  n/a                  n/a                  n/a                  
+|--coverage_i                            100.00%              100.00% (84/84)      100.00%              100.00% (26/26)      n/a                  n/a                  100.00%              100.00% (58/58)      
+|--scoreboard_i                          77.65%               75.93% (41/54)       55.30%               75.47% (40/53)       n/a                  n/a                  100.00%              100.00% (1/1)        
+|--DUT                                   100.00%              100.00% (86/86)      100.00%              100.00% (86/86)      n/a                  n/a                  n/a                  n/a                  
+| |--u_single_cycle                      100.00%              100.00% (58/58)      100.00%              100.00% (58/58)      n/a                  n/a                  n/a                  n/a                  
+| |--u_three_cycle                       100.00%              100.00% (79/79)      100.00%              100.00% (79/79)      n/a                  n/a                  n/a                  n/a                  

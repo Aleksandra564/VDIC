@@ -3,4 +3,8 @@
 // Do not modify this file
 //
 /home/student/afudali/Desktop/VDIC/common/vdic_dut_2023.svp
-/home/student/afudali/Desktop/VDIC/lab02/tb/vdic_dut_2023_tb.sv
+/home/student/afudali/Desktop/VDIC/lab03/tb/top.sv
+/home/student/afudali/Desktop/VDIC/lab03/tb/tpgen.sv
+/home/student/afudali/Desktop/VDIC/lab03/tb/mult_bfm.sv
+/home/student/afudali/Desktop/VDIC/lab03/tb/coverage.sv
+/home/student/afudali/Desktop/VDIC/lab03/tb/scoreboard.sv

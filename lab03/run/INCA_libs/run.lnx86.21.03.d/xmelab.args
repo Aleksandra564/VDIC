@@ -36,7 +36,7 @@ SAWSTP
 all
 -COVFILE
 xrun_covfile.txt
-+UVM_TESTNAME=lab02
++UVM_TESTNAME=lab03
 -MESSAGES
 -XLMODE
 ./INCA_libs/run.lnx86.21.03.d

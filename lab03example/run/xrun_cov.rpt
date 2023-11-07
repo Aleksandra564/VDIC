@@ -1,0 +1,30 @@
+*I,RUNLD: Successfully loaded run /home/student/afudali/Desktop/VDIC/lab03example/run/cov_work/scope/lab03example.
+*I,MERGL1: Merging Simulation Coverage ...
+----------------------------
+*I,MERGL1: Preparing target model ...
+*I,MERGL1: Reading model of primary run (cov_work/scope/lab03example) as initial model: cov_work/scope/icc_289e5c92_65b44b75.ucm
+*I,MERGL1: Target model generated successfully.
+*I,MERGL1: Projecting Simulation ucd data into the target model ...
+*I,MERGL2:   cov_work/scope/lab03example:
+*I,MERGL3:       Data is projected in to the target model.
+*I,MERGL1: Writing output database cov_work/scope/merged_results:
+*I,MERGL2:   Model: cov_work/scope/merged_results/icc_289e5c92_65b44b75.ucm
+*I,MERGL2:   Data : cov_work/scope/merged_results/icc_289e5c92_65b44b75.ucd
+*I,MERGL1: No Specman coverage databases found in the runs.
+Total conflicts during target model creation: 0
+Total items not merged                      : 0
+Total runs not considered during target model creation: 0
+Total runs not merged                                 : 0
+*I,RUNLD: Successfully loaded run /home/student/afudali/Desktop/VDIC/lab03example/run/cov_work/scope/merged_results.
+*W,REPDEP: This is a legacy report and no future enhancement is planned for this report. It is recommended that you use the 'report_metrics' command and generate a dynamic report.
+name                                     Overall Average      Overall Covered      Code Average         Code Covered         Fsm Average          Fsm Covered          Functional Average   Functional Covered   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vdic_dut_2023                            0.00%                0.00% (0/73)         0.00%                0.00% (0/73)         n/a                  n/a                  n/a                  n/a                  
+top                                      n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
+|--bfm                                   100.00%              100.00% (58/58)      100.00%              100.00% (58/58)      n/a                  n/a                  n/a                  n/a                  
+|--tpgen_i                               98.33%               97.06% (33/34)       98.33%               97.06% (33/34)       n/a                  n/a                  n/a                  n/a                  
+|--coverage_i                            100.00%              100.00% (84/84)      100.00%              100.00% (26/26)      n/a                  n/a                  100.00%              100.00% (58/58)      
+|--scoreboard_i                          77.65%               75.93% (41/54)       55.30%               75.47% (40/53)       n/a                  n/a                  100.00%              100.00% (1/1)        
+|--DUT                                   100.00%              100.00% (86/86)      100.00%              100.00% (86/86)      n/a                  n/a                  n/a                  n/a                  
+| |--u_single_cycle                      100.00%              100.00% (58/58)      100.00%              100.00% (58/58)      n/a                  n/a                  n/a                  n/a                  
+| |--u_three_cycle                       100.00%              100.00% (79/79)      100.00%              100.00% (79/79)      n/a                  n/a                  n/a                  n/a                  

@@ -23,7 +23,7 @@ all
 -covfile
 xrun_covfile.txt
 -covtest
-lab02
-+UVM_TESTNAME=lab02
+lab03
++UVM_TESTNAME=lab03
 -l
-xrun_test_lab02.log
+xrun_test_lab03.log

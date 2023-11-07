@@ -1,0 +1,10 @@
+1696514400 /home/student/afudali/Desktop/VDIC/common/tinyalu/single_cycle.sv
+1696515437 /home/student/afudali/Desktop/VDIC/common/tinyalu/three_cycle.sv
+1696516184 /home/student/afudali/Desktop/VDIC/common/tinyalu/tinyalu.sv
+1697478212 /home/student/afudali/Desktop/VDIC/common/vdic_dut_2023.svp
+1668071959 /home/student/afudali/Desktop/VDIC/lab03example/tb/tinyalu_pkg.sv
+1668072025 /home/student/afudali/Desktop/VDIC/lab03example/tb/tinyalu_bfm.sv
+1697728446 /home/student/afudali/Desktop/VDIC/lab03example/tb/tpgen.sv
+1667922737 /home/student/afudali/Desktop/VDIC/lab03example/tb/coverage.sv
+1697716340 /home/student/afudali/Desktop/VDIC/lab03example/tb/scoreboard.sv
+1697728416 /home/student/afudali/Desktop/VDIC/lab03example/tb/top.sv

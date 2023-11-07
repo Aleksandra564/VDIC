@@ -1,2 +1,6 @@
 ../../common/vdic_dut_2023.svp
-vdic_dut_2023_tb.sv
+top.sv
+tpgen.sv
+mult_bfm.sv
+coverage.sv
+scoreboard.sv

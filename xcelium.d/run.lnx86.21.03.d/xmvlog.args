@@ -6,8 +6,12 @@
 ./xcelium.d/run.lnx86.21.03.d
 -RUNMODE
 -sv
-lab02/tb/../../common/vdic_dut_2023.svp
-lab02/tb/vdic_dut_2023_tb.sv
+lab03/tb/../../common/vdic_dut_2023.svp
+lab03/tb/top.sv
+lab03/tb/tpgen.sv
+lab03/tb/mult_bfm.sv
+lab03/tb/coverage.sv
+lab03/tb/scoreboard.sv
 -CDSLIB
 ./xcelium.d/run.lnx86.21.03.d/cdsrun.lib
 -HDLVAR

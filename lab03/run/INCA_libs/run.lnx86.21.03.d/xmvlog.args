@@ -10,7 +10,11 @@
 -define
 UVM_PLI
 ../tb/../../common/vdic_dut_2023.svp
-../tb/vdic_dut_2023_tb.sv
+../tb/top.sv
+../tb/tpgen.sv
+../tb/mult_bfm.sv
+../tb/coverage.sv
+../tb/scoreboard.sv
 -NOWARN
 DSEM2009
 -NOWARN

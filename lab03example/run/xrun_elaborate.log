@@ -1,0 +1,89 @@
+TOOL:	xrun	21.03-s009: Started on Oct 26, 2023 at 09:25:36 CEST
+xrun
+	-elaborate
+	-l xrun_elaborate.log
+	-F ../tb/tb.f
+		-F ../tb/../../common/tinyalu/tinyalu.f
+			single_cycle.sv
+			three_cycle.sv
+			tinyalu.sv
+			../vdic_dut_2023.svp
+		tinyalu_pkg.sv
+		tinyalu_bfm.sv
+		tpgen.sv
+		coverage.sv
+		scoreboard.sv
+		top.sv
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tinyalu_pkg
+		vdic_dut_2023
+		top
+
+	Extracting FSMs for coverage:
+		worklib.tpgen
+		worklib.coverage
+		worklib.scoreboard
+		worklib.single_cycle
+		worklib.three_cycle
+		worklib.tinyalu
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+	Generating native compiled code:
+		worklib.three_cycle:sv <0x51519400>
+			streams:   3, words:  3846
+		worklib.single_cycle:sv <0x158064cb>
+			streams:   3, words:  2944
+		worklib.tinyalu:sv <0x0e0bc69e>
+			streams:   3, words:  2601
+		worklib.scoreboard:sv <0x557c58f2>
+			streams:   7, words: 14759
+		worklib.coverage:sv <0x0dac4792>
+			streams:   5, words:  5262
+		worklib.tpgen:sv <0x6614f4f1>
+			streams:   3, words:  5458
+		worklib.top:sv <0x153bbbed>
+			streams:   5, words:   503
+		worklib.vdic_dut_2023:svp <0x3c7ce8cf>
+			streams:  25, words: 12773
+		worklib.tinyalu_bfm:sv <0x4bc62187>
+			streams:   4, words:  6971
+xmelab: *W,COVNOEN: By default, toggle coverage is not supported for systemverilog enumerated nets and variables inside structures. To enable toggle coverage of these objects, specify the 'set_toggle_scoring -sv_enum -sv_struct_with_enum' command in the coverage configuration file.
+	Building instance specific data structures.
+	Performing constant object marking (COM) analysis.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                Instances  Unique
+		Modules:                8       8
+		Interfaces:             1       1
+		Verilog packages:       1       1
+		Registers:             66      66
+		Scalar wires:          14       -
+		Vectored wires:        15       -
+		Always blocks:          6       6
+		Initial blocks:         4       4
+		Final blocks:           1       1
+		Cont. assignments:     12      15
+		Pseudo assignments:     5       5
+		Assertions:             1       1
+		Covergroup Instances:   0       2
+	Writing initial simulation snapshot: worklib.vdic_dut_2023:svp
+TOOL:	xrun	21.03-s009: Exiting on Oct 26, 2023 at 09:25:37 CEST  (total: 00:00:01)
