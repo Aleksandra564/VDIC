@@ -60,7 +60,13 @@ initial begin
 	    iA_parity = get_input_parity(iA);
 	    iB_parity = get_input_parity(iB);
         bfm.send_data(iA, iA_parity, iB, iB_parity);
+	    bfm.wait_ready();	// wait until result is ready
     end : random_loop
+    
+    // reset until DUT finish processing data
+    bfm.send_data(iA, iA_parity, iB, iB_parity);
+    bfm.reset_mult();
+    
     $finish;
     
 end // initial begin

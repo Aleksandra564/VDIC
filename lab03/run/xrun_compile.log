@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Nov 07, 2023 at 22:25:25 CET
+TOOL:	xrun	21.03-s009: Started on Nov 08, 2023 at 22:29:44 CET
 xrun
 	-compile
 	-l xrun_compile.log
@@ -42,4 +42,4 @@ file: ../tb/coverage.sv
 file: ../tb/scoreboard.sv
 	module worklib.scoreboard:sv
 		errors: 0, warnings: 0
-TOOL:	xrun	21.03-s009: Exiting on Nov 07, 2023 at 22:25:25 CET  (total: 00:00:00)
+TOOL:	xrun	21.03-s009: Exiting on Nov 08, 2023 at 22:29:44 CET  (total: 00:00:00)

@@ -41,6 +41,15 @@ task reset_mult();
 	rst_n = 1'b1;
 endtask: reset_mult
 
+
+//------------------------------------------------------------------------------
+// wait for ready
+//------------------------------------------------------------------------------
+task wait_ready();
+	wait(result_rdy);
+endtask : wait_ready
+
+
 //------------------------------------------------------------------------------
 // send_data
 //------------------------------------------------------------------------------
@@ -60,7 +69,7 @@ task send_data(
 	    
 	wait(ack);			// wait until ack == 1
 	req = 1'b0;
-	wait(result_rdy);	// wait until result is ready
+//	wait(result_rdy);	// wait until result is ready
 
 endtask : send_data
 

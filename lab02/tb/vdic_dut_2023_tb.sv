@@ -187,12 +187,23 @@ initial begin : tester					// generates data and signals
 	    arg_b_parity = get_input_parity(arg_b);
 	    
 		req = 1'b1;
-	    
 	    wait(ack);			// wait until ack == 1
 	    req = 1'b0;
 	    wait(result_rdy);	// wait until result is ready
 
     end : tester_main_blk
+    
+	// reset until DUT finish processing data (for 100% code coverage)
+	arg_a = get_data();
+	arg_b = get_data();
+	arg_a_parity = get_input_parity(arg_a);
+	arg_b_parity = get_input_parity(arg_b);
+	    
+	req = 1'b1;
+	wait(ack);
+	req = 1'b0;
+	reset_mult();	// reset until DUT finish processing data
+    
     $finish;
 end : tester
 

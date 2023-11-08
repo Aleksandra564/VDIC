@@ -1,5 +1,5 @@
 xrun: 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun	21.03-s009: Started on Nov 07, 2023 at 22:27:07 CET
+TOOL:	xrun	21.03-s009: Started on Nov 08, 2023 at 22:29:42 CET
 xrun
 	+compile
 	+sv
@@ -32,4 +32,4 @@ xmvlog: *W,SAWSTP (lab03/tb/coverage.sv,90|17): Time unit "step" seen in literal
 file: lab03/tb/scoreboard.sv
 	module worklib.scoreboard:sv
 		errors: 0, warnings: 0
-TOOL:	xrun	21.03-s009: Exiting on Nov 07, 2023 at 22:27:08 CET  (total: 00:00:01)
+TOOL:	xrun	21.03-s009: Exiting on Nov 08, 2023 at 22:29:42 CET  (total: 00:00:00)
