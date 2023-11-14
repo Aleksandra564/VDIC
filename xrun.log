@@ -1,35 +1,30 @@
 xrun: 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun	21.03-s009: Started on Nov 14, 2023 at 19:48:18 CET
+TOOL:	xrun	21.03-s009: Started on Nov 14, 2023 at 21:13:23 CET
 xrun
 	+compile
 	+sv
 	-f /home/student/afudali/Desktop/VDIC/.dvt/lab04part2.build
 		-F lab04part2/tb/tb.f
+			mult_bfm.sv
 			../../common/vdic_dut_2023.svp
 			top.sv
-			tpgen.sv
-			mult_bfm.sv
-			coverage.sv
-			scoreboard.sv
+			+incdir+tb_classes
+			+incdir+.
+			+nowarn+DSEMEL
+file: lab04part2/tb/mult_bfm.sv
+	interface worklib.mult_bfm:sv
+		errors: 0, warnings: 0
 file: lab04part2/tb/../../common/vdic_dut_2023.svp
 	module worklib.vdic_dut_2023:svp
 		errors: 0, warnings: 0
 file: lab04part2/tb/top.sv
+	            #1step; 
+	                 |
+xmvlog: *W,SAWSTP (lab04part2/tb/./tb_classes/coverage.svh,95|18): Time unit "step" seen in literal - using local precision.
+(`include file: lab04part2/tb/./tb_classes/coverage.svh line 95, `include file: lab04part2/tb/./tb_classes/testbench.svh line 3, file: lab04part2/tb/top.sv line 2)
 	module worklib.top:sv
-		errors: 0, warnings: 0
-file: lab04part2/tb/tpgen.sv
-	module worklib.tpgen:sv
-		errors: 0, warnings: 0
-file: lab04part2/tb/mult_bfm.sv
-	interface worklib.mult_bfm:sv
-		errors: 0, warnings: 0
-file: lab04part2/tb/coverage.sv
-            #1step; 
-                 |
-xmvlog: *W,SAWSTP (lab04part2/tb/coverage.sv,90|17): Time unit "step" seen in literal - using local precision.
-	module worklib.coverage:sv
 		errors: 0, warnings: 1
-file: lab04part2/tb/scoreboard.sv
-	module worklib.scoreboard:sv
-		errors: 0, warnings: 0
-TOOL:	xrun	21.03-s009: Exiting on Nov 14, 2023 at 19:48:19 CET  (total: 00:00:01)
+xmvlog: *W,SPDUSD: Include directory lab04part2/tb/tb_classes given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	xrun	21.03-s009: Exiting on Nov 14, 2023 at 21:13:24 CET  (total: 00:00:01)

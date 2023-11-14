@@ -4,6 +4,9 @@
 //
 -INPUT
 "@source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl"
++incdir+tb_classes
++incdir+.
++nowarn+DSEMEL
 +nowarnDSEM2009
 +nowarnDSEMEL
 +nowarnCGDEFN
@@ -18,6 +21,8 @@
 /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d
 -sv_lib
 /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/libuvmpli.so
+-NOWARN
+DSEMEL
 -NOWARN
 DSEM2009
 -NOWARN
@@ -46,7 +51,7 @@ lab04part2
 +EMGRLOG
 xrun_test_lab04part2.log
 -XLSTIME
-1699987751
+1699992838
 -XLKEEP
 -XLMODE
 ./INCA_libs/run.lnx86.21.03.d

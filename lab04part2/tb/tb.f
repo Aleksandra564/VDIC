@@ -1,6 +1,6 @@
+mult_bfm.sv
 ../../common/vdic_dut_2023.svp
 top.sv
-tpgen.sv
-mult_bfm.sv
-coverage.sv
-scoreboard.sv
++incdir+tb_classes
++incdir+.
++nowarn+DSEMEL

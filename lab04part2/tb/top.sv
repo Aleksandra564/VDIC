@@ -1,11 +1,6 @@
 module top;
+`include "tb_classes/testbench.svh"
 	
-mult_bfm bfm();
-tpgen tpgen_i (bfm);
-coverage coverage_i (bfm);
-scoreboard scoreboard_i(bfm);
-
-
 //------------------------------------------------------------------------------
 // DUT instantiation
 //------------------------------------------------------------------------------
@@ -25,5 +20,13 @@ vdic_dut_2023 DUT (
 	.arg_parity_error(bfm.arg_parity_error)
 	);
 
+mult_bfm bfm();
+testbench testbench_h;
+	
+initial begin
+    testbench_h = new(bfm);
+    testbench_h.execute();
+    $finish;
+end
 
 endmodule : top

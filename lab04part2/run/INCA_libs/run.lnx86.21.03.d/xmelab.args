@@ -2,6 +2,9 @@
 // File created by:  xrun
 // Do not modify this file
 //
++incdir+tb_classes
++incdir+.
++nowarn+DSEMEL
 +nowarnDSEM2009
 +nowarnDSEMEL
 +nowarnCGDEFN
@@ -14,6 +17,8 @@
 ./INCA_libs/AMSD
 -loadpli
 /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/libuvmpli.so:uvm_pli_boot
+-NOWARN
+DSEMEL
 -V93
 -NOWARN
 DSEM2009

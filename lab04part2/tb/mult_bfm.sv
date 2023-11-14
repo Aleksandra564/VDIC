@@ -1,9 +1,8 @@
 interface mult_bfm;
-	
+
 //------------------------------------------------------------------------------
 // Local variables
 //------------------------------------------------------------------------------
-
 bit               		clk;
 bit 					rst_n;
 logic signed 	[15:0] 	arg_a;
@@ -69,9 +68,7 @@ task send_data(
 	    
 	wait(ack);			// wait until ack == 1
 	req = 1'b0;
-//	wait(result_rdy);	// wait until result is ready
 
 endtask : send_data
 
-	
 endinterface : mult_bfm
