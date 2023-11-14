@@ -19,7 +19,7 @@ virtual class shape_c;
 endclass : shape_c
 
 
-virtual class point_c;
+class point_c;
 	real x;
 	real y;
 	
@@ -98,7 +98,7 @@ class circle_c extends shape_c;
 	function void print();
 		$display("This is: %0s ", name);
 		$display("%0s", points[0]);		// circle center
-		$display("radius: 0.2f", $sqrt(get_radius_2()));
+		$display("radius: %0.2f", $sqrt(get_radius_2()));
 		$display("Area is: %0.2f ", get_area());
 	endfunction : print
 	
@@ -175,13 +175,25 @@ module top;
 	
 	initial begin
 		shape_c shape;
-		polygon_c polygon;
-		rectangle_c rectangle;
-		triangle_c triangle;
-		circle_c circle;
+//		polygon_c polygon;
+//		rectangle_c rectangle;
+//		triangle_c triangle;
+//		circle_c circle;
+		point_c point;
+		point_c points[$];
 		
+		int fd_r;
+		real x;
+		real y;
 		
-		
+		fd_r = $fopen("./lab04part1_shapes.txt", "r");	// open in the read mode 
+		while (!$feof(fd_r)) begin		// do while until end of file
+			$fscanf(fd_r, "%f %f", x, y);
+			
+			point = new(x, y);			// make pair of 2 real numbers (x and y) - point
+			points.push_back(point);	// push points to point_c points
+		end
+		$fclose(fd_r);
 	end
 	
 endmodule : top
