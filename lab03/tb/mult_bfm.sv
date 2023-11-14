@@ -4,7 +4,7 @@ interface mult_bfm;
 // Local variables
 //------------------------------------------------------------------------------
 
-logic               	clk;
+logic               	clk;	// change to bit
 logic 					rst_n;
 logic signed 	[15:0] 	arg_a;
 logic               	arg_a_parity;

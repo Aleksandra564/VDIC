@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Nov 08, 2023 at 22:29:44 CET
+TOOL:	xrun	21.03-s009: Started on Nov 09, 2023 at 09:24:35 CET
 xrun
 	-F ../tb/tb.f
 		../../common/vdic_dut_2023.svp
@@ -81,4 +81,4 @@ coverage setup:
 coverage files:
   model(design data) :  ./cov_work/scope/icc_218d281e_5f2f98f1.ucm
   data               :  ./cov_work/scope/lab03/icc_218d281e_5f2f98f1.ucd
-TOOL:	xrun	21.03-s009: Exiting on Nov 08, 2023 at 22:29:46 CET  (total: 00:00:02)
+TOOL:	xrun	21.03-s009: Exiting on Nov 09, 2023 at 09:24:37 CET  (total: 00:00:02)

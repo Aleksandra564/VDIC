@@ -1,35 +1,35 @@
 xrun: 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun	21.03-s009: Started on Nov 08, 2023 at 22:29:42 CET
+TOOL:	xrun	21.03-s009: Started on Nov 14, 2023 at 19:48:18 CET
 xrun
 	+compile
 	+sv
-	-f /home/student/afudali/Desktop/VDIC/.dvt/lab03.build
-		-F lab03/tb/tb.f
+	-f /home/student/afudali/Desktop/VDIC/.dvt/lab04part2.build
+		-F lab04part2/tb/tb.f
 			../../common/vdic_dut_2023.svp
 			top.sv
 			tpgen.sv
 			mult_bfm.sv
 			coverage.sv
 			scoreboard.sv
-file: lab03/tb/../../common/vdic_dut_2023.svp
+file: lab04part2/tb/../../common/vdic_dut_2023.svp
 	module worklib.vdic_dut_2023:svp
 		errors: 0, warnings: 0
-file: lab03/tb/top.sv
+file: lab04part2/tb/top.sv
 	module worklib.top:sv
 		errors: 0, warnings: 0
-file: lab03/tb/tpgen.sv
+file: lab04part2/tb/tpgen.sv
 	module worklib.tpgen:sv
 		errors: 0, warnings: 0
-file: lab03/tb/mult_bfm.sv
+file: lab04part2/tb/mult_bfm.sv
 	interface worklib.mult_bfm:sv
 		errors: 0, warnings: 0
-file: lab03/tb/coverage.sv
+file: lab04part2/tb/coverage.sv
             #1step; 
                  |
-xmvlog: *W,SAWSTP (lab03/tb/coverage.sv,90|17): Time unit "step" seen in literal - using local precision.
+xmvlog: *W,SAWSTP (lab04part2/tb/coverage.sv,90|17): Time unit "step" seen in literal - using local precision.
 	module worklib.coverage:sv
 		errors: 0, warnings: 1
-file: lab03/tb/scoreboard.sv
+file: lab04part2/tb/scoreboard.sv
 	module worklib.scoreboard:sv
 		errors: 0, warnings: 0
-TOOL:	xrun	21.03-s009: Exiting on Nov 08, 2023 at 22:29:42 CET  (total: 00:00:00)
+TOOL:	xrun	21.03-s009: Exiting on Nov 14, 2023 at 19:48:19 CET  (total: 00:00:01)
