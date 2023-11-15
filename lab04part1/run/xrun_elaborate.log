@@ -1,0 +1,64 @@
+TOOL:	xrun	21.03-s009: Started on Nov 15, 2023 at 22:27:23 CET
+xrun
+	-elaborate
+	-l xrun_elaborate.log
+	-F ../tb/tb.f
+		shapes.sv
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x2fdf9821
+		top
+
+	Extracting FSMs for coverage:
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+	Generating native compiled code:
+		worklib.top:sv <0x610426c2>
+			streams:   1, words:  2911
+		worklib.\$unit_0x2fdf9821 :compilation_unit <0x22a128c3>
+			streams:  44, words: 20640
+		worklib.\$unit_0x2fdf9821 :compilation_unit <0x611994e4>
+			streams:   8, words:  8029
+		worklib.\$unit_0x2fdf9821 :compilation_unit <0x0a16ef71>
+			streams:   6, words:  3882
+		worklib.\$unit_0x2fdf9821 :compilation_unit <0x1bc44f75>
+			streams:   6, words:  4564
+		worklib.\$unit_0x2fdf9821 :compilation_unit <0x286460bc>
+			streams:   6, words:  2200
+		worklib.\$unit_0x2fdf9821 :compilation_unit <0x2ec9936a>
+			streams:   9, words:  4479
+		worklib.\$unit_0x2fdf9821 :compilation_unit <0x7a1f5983>
+			streams:   8, words:  2511
+		worklib.\$unit_0x2fdf9821 :compilation_unit <0x3d5921e1>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Performing constant object marking (COM) analysis.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                     Instances  Unique
+		Modules:                     1       1
+		Registers:                 100      80
+		Initial blocks:              1       1
+		Compilation units:           1       1
+		SV Class declarations:       8       8
+		SV Class specializations:   11      11
+	Writing initial simulation snapshot: worklib.top:sv
+TOOL:	xrun	21.03-s009: Exiting on Nov 15, 2023 at 22:27:25 CET  (total: 00:00:02)

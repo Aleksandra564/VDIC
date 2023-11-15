@@ -1,30 +1,12 @@
 xrun: 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun	21.03-s009: Started on Nov 14, 2023 at 21:13:23 CET
+TOOL:	xrun	21.03-s009: Started on Nov 15, 2023 at 22:27:12 CET
 xrun
 	+compile
 	+sv
-	-f /home/student/afudali/Desktop/VDIC/.dvt/lab04part2.build
-		-F lab04part2/tb/tb.f
-			mult_bfm.sv
-			../../common/vdic_dut_2023.svp
-			top.sv
-			+incdir+tb_classes
-			+incdir+.
-			+nowarn+DSEMEL
-file: lab04part2/tb/mult_bfm.sv
-	interface worklib.mult_bfm:sv
-		errors: 0, warnings: 0
-file: lab04part2/tb/../../common/vdic_dut_2023.svp
-	module worklib.vdic_dut_2023:svp
-		errors: 0, warnings: 0
-file: lab04part2/tb/top.sv
-	            #1step; 
-	                 |
-xmvlog: *W,SAWSTP (lab04part2/tb/./tb_classes/coverage.svh,95|18): Time unit "step" seen in literal - using local precision.
-(`include file: lab04part2/tb/./tb_classes/coverage.svh line 95, `include file: lab04part2/tb/./tb_classes/testbench.svh line 3, file: lab04part2/tb/top.sv line 2)
+	-f /home/student/afudali/Desktop/VDIC/.dvt/lab04part1.build
+		-F lab04part1/tb/tb.f
+			shapes.sv
+file: lab04part1/tb/shapes.sv
 	module worklib.top:sv
-		errors: 0, warnings: 1
-xmvlog: *W,SPDUSD: Include directory lab04part2/tb/tb_classes given but not used.
-	Total errors/warnings found outside modules and primitives:
-		errors: 0, warnings: 1
-TOOL:	xrun	21.03-s009: Exiting on Nov 14, 2023 at 21:13:24 CET  (total: 00:00:01)
+		errors: 0, warnings: 0
+TOOL:	xrun	21.03-s009: Exiting on Nov 15, 2023 at 22:27:13 CET  (total: 00:00:01)

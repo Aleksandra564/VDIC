@@ -6,15 +6,7 @@
 ./xcelium.d/run.lnx86.21.03.d
 -RUNMODE
 -sv
-lab04part2/tb/mult_bfm.sv
-lab04part2/tb/../../common/vdic_dut_2023.svp
-lab04part2/tb/top.sv
--INCDIR
-lab04part2/tb/tb_classes
--INCDIR
-lab04part2/tb/.
--NOWARN
-DSEMEL
+lab04part1/tb/shapes.sv
 -CDSLIB
 ./xcelium.d/run.lnx86.21.03.d/cdsrun.lib
 -HDLVAR
