@@ -1,10 +1,10 @@
 xrun: 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun	21.03-s009: Started on Nov 16, 2023 at 08:32:38 CET
+TOOL:	xrun	21.03-s009: Started on Nov 16, 2023 at 08:42:40 CET
 xrun
 	+compile
 	+sv
-	-f /home/student/afudali/Desktop/VDIC/.dvt/lab04part2.build
-		-F lab04part2/tb/tb.f
+	-f /home/student/afudali/Desktop/VDIC/.dvt/lab05.build
+		-F lab05/tb/tb.f
 			mult_pkg.sv
 			mult_bfm.sv
 			../../common/vdic_dut_2023.svp
@@ -12,23 +12,23 @@ xrun
 			+incdir+tb_classes
 			+incdir+.
 			+nowarn+DSEMEL
-file: lab04part2/tb/mult_pkg.sv
+file: lab05/tb/mult_pkg.sv
 	            #1step; 
 	                 |
-xmvlog: *W,SAWSTP (lab04part2/tb/tb_classes/coverage.svh,95|18): Time unit "step" seen in literal - using local precision.
-(`include file: lab04part2/tb/tb_classes/coverage.svh line 95, file: lab04part2/tb/mult_pkg.sv line 6)
+xmvlog: *W,SAWSTP (lab05/tb/tb_classes/coverage.svh,95|18): Time unit "step" seen in literal - using local precision.
+(`include file: lab05/tb/tb_classes/coverage.svh line 95, file: lab05/tb/mult_pkg.sv line 6)
 	package worklib.mult_pkg:sv
 		errors: 0, warnings: 1
-file: lab04part2/tb/mult_bfm.sv
+file: lab05/tb/mult_bfm.sv
 	interface worklib.mult_bfm:sv
 		errors: 0, warnings: 0
-file: lab04part2/tb/../../common/vdic_dut_2023.svp
+file: lab05/tb/../../common/vdic_dut_2023.svp
 	module worklib.vdic_dut_2023:svp
 		errors: 0, warnings: 0
-file: lab04part2/tb/top.sv
+file: lab05/tb/top.sv
 	module worklib.top:sv
 		errors: 0, warnings: 0
-xmvlog: *W,SPDUSD: Include directory lab04part2/tb/. given but not used.
+xmvlog: *W,SPDUSD: Include directory lab05/tb/. given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-TOOL:	xrun	21.03-s009: Exiting on Nov 16, 2023 at 08:32:39 CET  (total: 00:00:01)
+TOOL:	xrun	21.03-s009: Exiting on Nov 16, 2023 at 08:42:40 CET  (total: 00:00:00)

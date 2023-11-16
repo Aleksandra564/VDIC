@@ -4,6 +4,6 @@
 //
 -sv
 -INCDIR
-lab04part2/tb/tb_classes
+lab05/tb/tb_classes
 -INCDIR
-lab04part2/tb/.
+lab05/tb/.

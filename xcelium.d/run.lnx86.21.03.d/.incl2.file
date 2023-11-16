@@ -1,8 +1,8 @@
-lab04part2/tb/tb_classes/tpgen.svh
-/home/student/afudali/Desktop/VDIC/lab04part2/tb/tb_classes/tpgen.svh
-lab04part2/tb/tb_classes/coverage.svh
-/home/student/afudali/Desktop/VDIC/lab04part2/tb/tb_classes/coverage.svh
-lab04part2/tb/tb_classes/scoreboard.svh
-/home/student/afudali/Desktop/VDIC/lab04part2/tb/tb_classes/scoreboard.svh
-lab04part2/tb/tb_classes/testbench.svh
-/home/student/afudali/Desktop/VDIC/lab04part2/tb/tb_classes/testbench.svh
+lab05/tb/tb_classes/tpgen.svh
+/home/student/afudali/Desktop/VDIC/lab05/tb/tb_classes/tpgen.svh
+lab05/tb/tb_classes/coverage.svh
+/home/student/afudali/Desktop/VDIC/lab05/tb/tb_classes/coverage.svh
+lab05/tb/tb_classes/scoreboard.svh
+/home/student/afudali/Desktop/VDIC/lab05/tb/tb_classes/scoreboard.svh
+lab05/tb/tb_classes/testbench.svh
+/home/student/afudali/Desktop/VDIC/lab05/tb/tb_classes/testbench.svh
