@@ -1,8 +1,9 @@
-TOOL:	xrun	21.03-s009: Started on Nov 14, 2023 at 21:13:58 CET
+TOOL:	xrun	21.03-s009: Started on Nov 16, 2023 at 08:32:54 CET
 xrun
 	-elaborate
 	-l xrun_elaborate.log
 	-F ../tb/tb.f
+		mult_pkg.sv
 		mult_bfm.sv
 		../../common/vdic_dut_2023.svp
 		top.sv
@@ -27,42 +28,51 @@ xrun
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
+		mult_pkg
 		top
 
 	Extracting FSMs for coverage:
 		worklib.top
 	Total FSMs extracted = 0
-	Building instance overlay tables: .............
-class testbench;
-              |
-xmelab: *W,COVUCC (../tb/tb_classes/testbench.svh,1|14): Block and Expression coverage types are not supported inside SystemVerilog classes. Use CCF command to enable type-based block and expression control coverage. There may also be other such classes in the design.
-....... Done
+	Building instance overlay tables: .................... Done
 	Enabling instrumentation for coverage types: block expression FSM toggle functional
 	Generating native compiled code:
-		worklib.vdic_dut_2023:svp <0x1e06991a>
+		worklib.vdic_dut_2023:svp <0x74b97bc2>
 			streams:  25, words: 13928
-		worklib.top:sv <0x484871b7>
-			streams:  61, words: 61946
-		worklib.mult_bfm:sv <0x21762333>
+		worklib.top:sv <0x6bf6dbdc>
+			streams:  13, words:  3809
+		worklib.mult_pkg:sv <0x21708783>
+			streams:  10, words:  5506
+		worklib.mult_pkg:sv <0x5c0bb228>
+			streams:  10, words:  8438
+		worklib.mult_pkg:sv <0x5661a527>
+			streams:  10, words:  8146
+		worklib.mult_pkg:sv <0x55a7197c>
+			streams:  18, words: 36047
+		worklib.mult_pkg:sv <0x5835d757>
+			streams:   0, words:     0
+		worklib.mult_bfm:sv <0x445c7436>
 			streams:   4, words:  6708
 	Building instance specific data structures.
 	Performing constant object marking (COM) analysis.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		                    Instances  Unique
-		Modules:                    2       2
-		Interfaces:                 1       1
-		Registers:                 94     109
-		Scalar wires:              17       -
-		Vectored wires:            10       -
-		Always blocks:              1       1
-		Initial blocks:             2       2
-		Parallel blocks:            2       2
-		Cont. assignments:          8      10
-		Pseudo assignments:        12      12
-		Assertions:                 3       3
-		Covergroup Instances:       0       1
-		SV Class declarations:      4       4
-		SV Class specializations:   4       4
+		                     Instances  Unique
+		Modules:                     2       2
+		Interfaces:                  1       1
+		Verilog packages:            1       1
+		Registers:                  94     109
+		Scalar wires:               17       -
+		Vectored wires:             10       -
+		Always blocks:               1       1
+		Initial blocks:              2       2
+		Parallel blocks:             2       2
+		Cont. assignments:           8      10
+		Pseudo assignments:         12      12
+		Assertions:                  3       3
+		Covergroup Instances:        0       1
+		SV Class declarations:       4       4
+		SV Class specializations:    4       4
+		Simulation timescale:      1ps
 	Writing initial simulation snapshot: worklib.top:sv
-TOOL:	xrun	21.03-s009: Exiting on Nov 14, 2023 at 21:13:58 CET  (total: 00:00:00)
+TOOL:	xrun	21.03-s009: Exiting on Nov 16, 2023 at 08:32:54 CET  (total: 00:00:00)

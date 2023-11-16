@@ -116,3 +116,5 @@
 [INFO ] 2023-11-14 21:04:48,195 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39664
 [INFO ] 2023-11-14 21:14:06,462 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36547
 [INFO ] 2023-11-14 21:14:11,820 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43314
+[INFO ] 2023-11-16 08:33:02,603 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42559
+[INFO ] 2023-11-16 08:33:07,484 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45334

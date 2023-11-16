@@ -1,7 +1,4 @@
 class testbench;
-	`include "tb_classes/tpgen.svh"
-	`include "tb_classes/coverage.svh"
-	`include "tb_classes/scoreboard.svh"
 
     protected virtual mult_bfm bfm;
 

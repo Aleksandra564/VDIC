@@ -1,8 +1,4 @@
-./tb_classes/testbench.svh
-lab04part2/tb/tb_classes/tb_classes/testbench.svh
-./tb_classes/tpgen.svh
-lab04part2/tb/tb_classes/tb_classes/tpgen.svh
-./tb_classes/coverage.svh
-lab04part2/tb/tb_classes/tb_classes/coverage.svh
-./tb_classes/scoreboard.svh
-lab04part2/tb/tb_classes/tb_classes/scoreboard.svh
+./tpgen.svh
+./coverage.svh
+./scoreboard.svh
+./testbench.svh
