@@ -1,5 +1,5 @@
 module top;
-`include "tb_classes/testbench.svh"
+import mult_pkg::*;
 	
 //------------------------------------------------------------------------------
 // DUT instantiation
@@ -21,6 +21,7 @@ vdic_dut_2023 DUT (
 	);
 
 mult_bfm bfm();
+	
 testbench testbench_h;
 	
 initial begin

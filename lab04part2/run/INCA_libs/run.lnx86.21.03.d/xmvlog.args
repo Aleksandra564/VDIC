@@ -9,6 +9,7 @@
 ./INCA_libs/AMSD
 -define
 UVM_PLI
+../tb/mult_pkg.sv
 ../tb/mult_bfm.sv
 ../tb/../../common/vdic_dut_2023.svp
 ../tb/top.sv

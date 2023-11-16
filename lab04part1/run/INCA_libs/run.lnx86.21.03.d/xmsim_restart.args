@@ -44,7 +44,7 @@ SAWSTP
 +EMGRLOG
 xrun_test_lab04part1.log
 -XLSTIME
-1700083645
+1700118148
 -XLKEEP
 -XLMODE
 ./INCA_libs/run.lnx86.21.03.d
@@ -58,4 +58,4 @@ xrun
 -XLVERSION
 "TOOL:	xrun	21.03-s009"
 -XLNAME
-./INCA_libs/run.lnx86.21.03.d/cadence31_7460
+./INCA_libs/run.lnx86.21.03.d/cadence31_15177

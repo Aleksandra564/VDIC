@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Nov 15, 2023 at 22:27:19 CET
+TOOL:	xrun	21.03-s009: Started on Nov 16, 2023 at 08:02:27 CET
 xrun
 	-compile
 	-l xrun_compile.log
@@ -22,4 +22,4 @@ xrun
 file: ../tb/shapes.sv
 	module worklib.top:sv
 		errors: 0, warnings: 0
-TOOL:	xrun	21.03-s009: Exiting on Nov 15, 2023 at 22:27:23 CET  (total: 00:00:04)
+TOOL:	xrun	21.03-s009: Exiting on Nov 16, 2023 at 08:02:27 CET  (total: 00:00:00)

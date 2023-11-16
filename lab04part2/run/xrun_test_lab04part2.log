@@ -1,6 +1,7 @@
-TOOL:	xrun	21.03-s009: Started on Nov 14, 2023 at 21:13:58 CET
+TOOL:	xrun	21.03-s009: Started on Nov 16, 2023 at 08:19:17 CET
 xrun
 	-F ../tb/tb.f
+		mult_pkg.sv
 		mult_bfm.sv
 		../../common/vdic_dut_2023.svp
 		top.sv
@@ -27,42 +28,41 @@ xrun
 	-l xrun_test_lab04part2.log
 Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d
 file: ../tb/top.sv
-xmvlog: *W,SPDUSD: Include directory ../tb/tb_classes given but not used.
+xmvlog: *W,SPDUSD: Include directory ../tb/. given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
+		mult_pkg
 		top
 
 	Extracting FSMs for coverage:
 		worklib.top
 	Total FSMs extracted = 0
-	Building instance overlay tables: .............
-class testbench;
-              |
-xmelab: *W,COVUCC (../tb/tb_classes/testbench.svh,1|14): Block and Expression coverage types are not supported inside SystemVerilog classes. Use CCF command to enable type-based block and expression control coverage. There may also be other such classes in the design.
-....... Done
+	Building instance overlay tables: .................... Done
 	Enabling instrumentation for coverage types: block expression FSM toggle functional
 	Building instance specific data structures.
 	Performing constant object marking (COM) analysis.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		                    Instances  Unique
-		Modules:                    2       2
-		Interfaces:                 1       1
-		Registers:                 94     109
-		Scalar wires:              17       -
-		Vectored wires:            10       -
-		Always blocks:              1       1
-		Initial blocks:             2       2
-		Parallel blocks:            2       2
-		Cont. assignments:          8      10
-		Pseudo assignments:        12      12
-		Assertions:                 3       3
-		Covergroup Instances:       0       1
-		SV Class declarations:      4       4
-		SV Class specializations:   4       4
+		                     Instances  Unique
+		Modules:                     2       2
+		Interfaces:                  1       1
+		Verilog packages:            1       1
+		Registers:                  94     109
+		Scalar wires:               17       -
+		Vectored wires:             10       -
+		Always blocks:               1       1
+		Initial blocks:              2       2
+		Parallel blocks:             2       2
+		Cont. assignments:           8      10
+		Pseudo assignments:         12      12
+		Assertions:                  3       3
+		Covergroup Instances:        0       1
+		SV Class declarations:       4       4
+		SV Class specializations:    4       4
+		Simulation timescale:      1ps
 	Writing initial simulation snapshot: worklib.top:sv
 Loading snapshot worklib.top:sv .................... Done
 xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/xcelium/files/xmsimrc
@@ -73,7 +73,7 @@ xcelium> run
 -----------------------------------[0m
 
 Simulation complete via $finish(1) at time 75 US + 0
-../tb/top.sv:29     $finish;
+../tb/top.sv:30     $finish;
 xcelium> exit
 See ./cov_work/scope/lab04part2/icc.com file for message(s) on coverage constant object marking
 
@@ -84,6 +84,6 @@ coverage setup:
   testname :  lab04part2
 
 coverage files:
-  model(design data) :  ./cov_work/scope/icc_4290b963_56fc154b.ucm
-  data               :  ./cov_work/scope/lab04part2/icc_4290b963_56fc154b.ucd
-TOOL:	xrun	21.03-s009: Exiting on Nov 14, 2023 at 21:14:01 CET  (total: 00:00:03)
+  model(design data) :  ./cov_work/scope/icc_4290b963_7397074b.ucm
+  data               :  ./cov_work/scope/lab04part2/icc_4290b963_7397074b.ucd
+TOOL:	xrun	21.03-s009: Exiting on Nov 16, 2023 at 08:19:18 CET  (total: 00:00:01)

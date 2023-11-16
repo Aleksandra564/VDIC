@@ -2,14 +2,14 @@
 *I,MERGL1: Merging Simulation Coverage ...
 ----------------------------
 *I,MERGL1: Preparing target model ...
-*I,MERGL1: Reading model of primary run (cov_work/scope/lab04part2) as initial model: cov_work/scope/icc_4290b963_56fc154b.ucm
+*I,MERGL1: Reading model of primary run (cov_work/scope/lab04part2) as initial model: cov_work/scope/icc_4290b963_7397074b.ucm
 *I,MERGL1: Target model generated successfully.
 *I,MERGL1: Projecting Simulation ucd data into the target model ...
 *I,MERGL2:   cov_work/scope/lab04part2:
 *I,MERGL3:       Data is projected in to the target model.
 *I,MERGL1: Writing output database cov_work/scope/merged_results:
-*I,MERGL2:   Model: cov_work/scope/merged_results/icc_4290b963_56fc154b.ucm
-*I,MERGL2:   Data : cov_work/scope/merged_results/icc_4290b963_56fc154b.ucd
+*I,MERGL2:   Model: cov_work/scope/merged_results/icc_4290b963_7397074b.ucm
+*I,MERGL2:   Data : cov_work/scope/merged_results/icc_4290b963_7397074b.ucd
 *I,MERGL1: No Specman coverage databases found in the runs.
 Total conflicts during target model creation: 0
 Total items not merged                      : 0

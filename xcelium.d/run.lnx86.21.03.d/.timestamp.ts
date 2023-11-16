@@ -1,1 +1,4 @@
-1700083630 /home/student/afudali/Desktop/VDIC/lab04part1/tb/shapes.sv
+1700118917 /home/student/afudali/Desktop/VDIC/lab04part2/tb/mult_bfm.sv
+1700119144 /home/student/afudali/Desktop/VDIC/lab04part2/tb/mult_pkg.sv
+1697478212 /home/student/afudali/Desktop/VDIC/common/vdic_dut_2023.svp
+1700119052 /home/student/afudali/Desktop/VDIC/lab04part2/tb/top.sv

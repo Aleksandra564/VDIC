@@ -4,6 +4,11 @@
 //
 +compile
 +sv
++incdir+tb_classes
++incdir+.
++nowarn+DSEMEL
+-NOWARN
+DSEMEL
 -MESSAGES
 -XLMODE
 ./xcelium.d/run.lnx86.21.03.d
