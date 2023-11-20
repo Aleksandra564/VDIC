@@ -12,7 +12,7 @@ class coverage extends uvm_component;
 	protected bit               	arg_b_parity;
 
 //------------------------------------------------------------------------------
-// Covergroup
+// Coverblock
 //------------------------------------------------------------------------------
 	covergroup edge_cases;	// Covergroup checking for min and max arguments of the MULT
 	    option.name = "cg_edge_cases";
@@ -97,11 +97,7 @@ class coverage extends uvm_component;
 			arg_b = bfm.arg_b;        
 			arg_b_parity = bfm.arg_b_parity;
 		    
-	        if(bfm.result_rdy || !bfm.rst_n) begin
-	            edge_cases.sample();
-	            #1step; 
-	            if($get_coverage() == 100) break; //disable, if needed
-	        end
+	        edge_cases.sample();
         end : sampling_block
     endtask : run_phase
 
