@@ -22,6 +22,8 @@ all
 -covoverwrite
 -covfile
 xrun_covfile.txt
-+UVM_TESTNAME=add_test
+-covtest
+min_max_test
++UVM_TESTNAME=min_max_test
 -l
-xrun_test_add_test.log
+xrun_test_min_max_test.log

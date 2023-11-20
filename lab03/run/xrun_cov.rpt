@@ -2,14 +2,14 @@
 *I,MERGL1: Merging Simulation Coverage ...
 ----------------------------
 *I,MERGL1: Preparing target model ...
-*I,MERGL1: Reading model of primary run (cov_work/scope/lab03) as initial model: cov_work/scope/icc_218d281e_5f2f98f1.ucm
+*I,MERGL1: Reading model of primary run (cov_work/scope/lab03) as initial model: cov_work/scope/icc_159614f3_346bffc1.ucm
 *I,MERGL1: Target model generated successfully.
 *I,MERGL1: Projecting Simulation ucd data into the target model ...
 *I,MERGL2:   cov_work/scope/lab03:
 *I,MERGL3:       Data is projected in to the target model.
 *I,MERGL1: Writing output database cov_work/scope/merged_results:
-*I,MERGL2:   Model: cov_work/scope/merged_results/icc_218d281e_5f2f98f1.ucm
-*I,MERGL2:   Data : cov_work/scope/merged_results/icc_218d281e_5f2f98f1.ucd
+*I,MERGL2:   Model: cov_work/scope/merged_results/icc_159614f3_346bffc1.ucm
+*I,MERGL2:   Data : cov_work/scope/merged_results/icc_159614f3_346bffc1.ucd
 *I,MERGL1: No Specman coverage databases found in the runs.
 Total conflicts during target model creation: 0
 Total items not merged                      : 0
@@ -23,5 +23,5 @@ top                                      n/a                  n/a               
 |--bfm                                   100.00%              100.00% (83/83)      100.00%              100.00% (83/83)      n/a                  n/a                  n/a                  n/a                  
 |--tpgen_i                               100.00%              100.00% (35/35)      100.00%              100.00% (35/35)      n/a                  n/a                  n/a                  n/a                  
 |--coverage_i                            100.00%              100.00% (106/106)    100.00%              100.00% (47/47)      n/a                  n/a                  100.00%              100.00% (59/59)      
+|--scoreboard_i                          93.07%               86.60% (84/97)       86.14%               86.17% (81/94)       n/a                  n/a                  100.00%              100.00% (3/3)        
 |--DUT                                   100.00%              100.00% (73/73)      100.00%              100.00% (73/73)      n/a                  n/a                  n/a                  n/a                  
-scoreboard                               7.07%                14.43% (14/97)       14.13%               14.89% (14/94)       n/a                  n/a                  0.00%                0.00% (0/3)          

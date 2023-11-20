@@ -19,6 +19,9 @@ UVM_PLI
 ../tb/.
 -NOWARN
 DSEMEL
+-LINEDEBUG
+-UVMLINEDEBUG
+-LINEDEBUG
 -NOWARN
 DSEM2009
 -NOWARN
@@ -43,11 +46,11 @@ INCA_libs
 -HDLVAR
 ./INCA_libs/run.lnx86.21.03.d/hdlrun.var
 -I_INCDIR
-/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/sv/src
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src
 -DEFINE
 USE_PARAMETERIZED_WRAPPER
 -I_INCDIR
-/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/additions/sv
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/../additions/sv
 -MESSAGES
 -UPDATE
 -XLLIBSTORE

@@ -1,5 +1,10 @@
 module top;
+	
+import uvm_pkg::*;
+`include "uvm_macros.svh"
 import mult_pkg::*;
+	
+mult_bfm bfm();
 	
 //------------------------------------------------------------------------------
 // DUT instantiation
@@ -19,15 +24,10 @@ vdic_dut_2023 DUT (
 	.result_rdy(bfm.result_rdy), 
 	.arg_parity_error(bfm.arg_parity_error)
 	);
-
-mult_bfm bfm();
-	
-testbench testbench_h;
 	
 initial begin
-    testbench_h = new(bfm);
-    testbench_h.execute();
-    $finish;
+    uvm_config_db #(virtual mult_bfm)::set(null, "*", "bfm", bfm);
+    run_test();
 end
 
 endmodule : top

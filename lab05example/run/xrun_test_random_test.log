@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Nov 16, 2023 at 08:42:08 CET
+TOOL:	xrun	21.03-s009: Started on Nov 20, 2023 at 21:26:12 CET
 xrun
 	-F ../tb/tb.f
 		tinyalu_pkg.sv
@@ -34,6 +34,7 @@ xrun
 	-coverage all
 	-covoverwrite
 	-covfile xrun_covfile.txt
+	-covtest random_test
 	+UVM_TESTNAME=random_test
 	-l xrun_test_random_test.log
 
@@ -53,11 +54,11 @@ UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CD
 -------------------------------------------
 Name              Type          Size  Value
 -------------------------------------------
-uvm_test_top      random_test   -     @1926
-  env_h           env           -     @2003
-    coverage_h    coverage      -     @2066
-    scoreboard_h  scoreboard    -     @2099
-    tpgen_h       random_tpgen  -     @2035
+uvm_test_top      random_test   -     @1928
+  env_h           env           -     @2005
+    coverage_h    coverage      -     @2068
+    scoreboard_h  scoreboard    -     @2101
+    tpgen_h       random_tpgen  -     @2037
 -------------------------------------------
 
 UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 34800000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
@@ -93,16 +94,16 @@ UVM_FATAL :    0
 Simulation complete via $finish(1) at time 34800 NS + 59
 /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
 xcelium> exit
-See ./cov_work/scope/test/icc.com file for message(s) on coverage constant object marking
+See ./cov_work/scope/random_test/icc.com file for message(s) on coverage constant object marking
 
 coverage setup:
   workdir  :  ./cov_work
   dutinst  :  vdic_dut_2023(vdic_dut_2023)
   dutinst  :  top(top)
   scope    :  scope
-  testname :  test
+  testname :  random_test
 
 coverage files:
   model(design data) :  ./cov_work/scope/icc_31613844_69961eb2.ucm
-  data               :  ./cov_work/scope/test/icc_31613844_69961eb2.ucd
-TOOL:	xrun	21.03-s009: Exiting on Nov 16, 2023 at 08:42:10 CET  (total: 00:00:02)
+  data               :  ./cov_work/scope/random_test/icc_31613844_69961eb2.ucd
+TOOL:	xrun	21.03-s009: Exiting on Nov 20, 2023 at 21:26:13 CET  (total: 00:00:01)

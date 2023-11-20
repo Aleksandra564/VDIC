@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Nov 09, 2023 at 09:24:35 CET
+TOOL:	xrun	21.03-s009: Started on Nov 20, 2023 at 21:24:51 CET
 xrun
 	-elaborate
 	-l xrun_elaborate.log
@@ -28,47 +28,44 @@ xrun
 	Elaborating the design hierarchy:
 	Top level design units:
 		top
-		scoreboard
 
 	Extracting FSMs for coverage:
 		worklib.tpgen
 		worklib.coverage
-		worklib.top
 		worklib.scoreboard
+		worklib.top
 	Total FSMs extracted = 0
 	Building instance overlay tables: .................... Done
 	Enabling instrumentation for coverage types: block expression FSM toggle functional
 	Generating native compiled code:
-		worklib.scoreboard:sv <0x3dc7571b>
-			streams:   9, words: 24845
 		worklib.vdic_dut_2023:svp <0x1e06991a>
 			streams:  25, words: 13928
-		worklib.coverage:sv <0x6e1d6540>
+		worklib.scoreboard:sv <0x630bb89a>
+			streams:   9, words: 24845
+		worklib.coverage:sv <0x437caa27>
 			streams:   3, words:  6342
-		worklib.tpgen:sv <0x6b236daa>
+		worklib.tpgen:sv <0x44811e64>
 			streams:   3, words: 11470
-		worklib.top:sv <0x64d50b2f>
+		worklib.top:sv <0x28b1994b>
 			streams:  12, words:  3008
-		worklib.mult_bfm:sv <0x6b81a45a>
+		worklib.mult_bfm:sv <0x693c3002>
 			streams:   4, words:  6387
-		worklib.mult_bfm:sv <0x09c292f3>
-			streams:   4, words:  4358
 	Building instance specific data structures.
 	Performing constant object marking (COM) analysis.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                Instances  Unique
 		Modules:                5       5
-		Interfaces:             2       1
-		Registers:             97      81
+		Interfaces:             1       1
+		Registers:             81      81
 		Scalar wires:          17       -
 		Vectored wires:        10       -
 		Always blocks:          3       3
-		Initial blocks:         5       4
+		Initial blocks:         4       4
 		Final blocks:           1       1
 		Cont. assignments:      8      10
 		Pseudo assignments:    12      12
 		Assertions:             3       3
 		Covergroup Instances:   0       1
 	Writing initial simulation snapshot: worklib.top:sv
-TOOL:	xrun	21.03-s009: Exiting on Nov 09, 2023 at 09:24:35 CET  (total: 00:00:00)
+TOOL:	xrun	21.03-s009: Exiting on Nov 20, 2023 at 21:24:52 CET  (total: 00:00:01)

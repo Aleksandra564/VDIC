@@ -1,0 +1,33 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-RUNMODE
+-sv
+-INCDIR
+lab05/tb/tb_classes
+-INCDIR
+lab05/tb/.
+-NOWARN
+DSEMEL
+-LINEDEBUG
+-UVMLINEDEBUG
+-LINEDEBUG
+-I_INCDIR
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/../additions/sv
+-UPDATE
+-CDSLIB
+./xcelium.d/run.lnx86.21.03.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx86.21.03.d/hdlrun.var
+-work
+worklib
+-LINEDEBUG
+-define
+UVM_PLI
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/uvm_pkg.sv
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/../additions/sv/cdns_uvm_pkg.sv

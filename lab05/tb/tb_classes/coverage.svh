@@ -1,5 +1,9 @@
-class coverage;
+class coverage extends uvm_component;
+    `uvm_component_utils(coverage)
 	
+//------------------------------------------------------------------------------
+// local variables
+//------------------------------------------------------------------------------
 	protected virtual mult_bfm bfm;
 
 	protected logic signed 	[15:0] 	arg_a;
@@ -8,11 +12,9 @@ class coverage;
 	protected bit               	arg_b_parity;
 
 //------------------------------------------------------------------------------
-// Coverage block
+// Covergroup
 //------------------------------------------------------------------------------
-	
-	// Covergroup checking for min and max arguments of the MULT
-	covergroup edge_cases;
+	covergroup edge_cases;	// Covergroup checking for min and max arguments of the MULT
 	    option.name = "cg_edge_cases";
 	
 	    a_leg: coverpoint arg_a {
@@ -41,7 +43,6 @@ class coverage;
 	        bins zero_any = binsof (a_leg.zeros) && binsof (b_leg.min);
 	    }
 	    
-	    
 	    a_par: coverpoint arg_a_parity {
 		    bins zero = {0};
 		    bins one = {1};
@@ -68,21 +69,27 @@ class coverage;
 	    }
 	
 	endgroup
-	
-	
+
 //------------------------------------------------------------------------------
 // Constructor
 //------------------------------------------------------------------------------
-	function new (virtual mult_bfm b);
-	    edge_cases   = new();
-	    bfm          = b;
+	function new (string name, uvm_component parent);
+        super.new(name, parent);
+        edge_cases = new();
 	endfunction : new
 	
-	
 //------------------------------------------------------------------------------
-// Execute task
+// build phase
 //------------------------------------------------------------------------------
-	task execute();
+    function void build_phase(uvm_phase phase);
+        if(!uvm_config_db #(virtual mult_bfm)::get(null, "*","bfm", bfm))
+            $fatal(1,"Failed to get BFM");
+    endfunction : build_phase
+
+//------------------------------------------------------------------------------
+// run phase
+//------------------------------------------------------------------------------
+    task run_phase(uvm_phase phase);
 	    forever begin : sampling_block
 	        @(posedge bfm.clk);
 		    arg_a = bfm.arg_a;
@@ -95,8 +102,7 @@ class coverage;
 	            #1step; 
 	            if($get_coverage() == 100) break; //disable, if needed
 	        end
-	    end : sampling_block
-	endtask : execute
-
+        end : sampling_block
+    endtask : run_phase
 
 endclass : coverage

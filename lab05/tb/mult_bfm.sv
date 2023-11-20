@@ -1,5 +1,5 @@
 interface mult_bfm;
-//import mult_pkg::*;
+import mult_pkg::*;
 
 //------------------------------------------------------------------------------
 // Local variables

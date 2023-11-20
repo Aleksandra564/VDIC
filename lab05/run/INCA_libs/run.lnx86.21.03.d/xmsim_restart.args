@@ -3,7 +3,9 @@
 // Do not modify this file
 //
 -INPUT
-"@source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl"
+"@source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/files/tcl/uvm_sim.tcl"
++UVM_NO_RELNOTES
++UVM_VERBOSITY=MEDIUM
 +incdir+tb_classes
 +incdir+.
 +nowarn+DSEMEL
@@ -18,9 +20,9 @@
 -amsdlibdir
 ./INCA_libs/AMSD
 -uvmhome
-/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
 -sv_lib
-/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/libuvmpli.so
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/lib/libuvmpli.so
 -NOWARN
 DSEMEL
 -NOWARN
@@ -41,15 +43,17 @@ RNDXCELON
 SAWSTP
 -NOCOPYRIGHT
 -COVOVERWRITE
-+UVM_TESTNAME=add_test
+-COVTEST
+min_max_test
++UVM_TESTNAME=min_max_test
 -MESSAGES
 -RUN
 -SV_LIB
-/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/libuvmdpi.so
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/lib/libuvmdpi.so
 +EMGRLOG
-xrun_test_add_test.log
+xrun_test_min_max_test.log
 -XLSTIME
-1700120571
+1700512056
 -XLKEEP
 -XLMODE
 ./INCA_libs/run.lnx86.21.03.d
@@ -63,4 +67,4 @@ xrun
 -XLVERSION
 "TOOL:	xrun	21.03-s009"
 -XLNAME
-./INCA_libs/run.lnx86.21.03.d/cadence31_6955
+./INCA_libs/run.lnx86.21.03.d/cadence28_7809

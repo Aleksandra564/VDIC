@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Nov 16, 2023 at 08:42:48 CET
+TOOL:	xrun	21.03-s009: Started on Nov 20, 2023 at 21:27:28 CET
 xrun
 	-compile
 	-l xrun_compile.log
@@ -10,6 +10,13 @@ xrun
 		+incdir+tb_classes
 		+incdir+.
 		+nowarn+DSEMEL
+		-uvm
+		-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
+		+UVM_NO_RELNOTES
+		+UVM_VERBOSITY=MEDIUM
+		-linedebug
+		-fsmdebug
+		-uvmlinedebug
 	-v93
 	+nowarnDSEM2009
 	+nowarnDSEMEL
@@ -25,6 +32,12 @@ xrun
 	-coverage all
 	-covoverwrite
 	-covfile xrun_covfile.txt
+
+   User defined plus("+") options:
+	+UVM_NO_RELNOTES
+	+UVM_VERBOSITY=MEDIUM
+
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
 file: ../tb/mult_pkg.sv
 	package worklib.mult_pkg:sv
 		errors: 0, warnings: 0
@@ -40,4 +53,4 @@ file: ../tb/top.sv
 xmvlog: *W,SPDUSD: Include directory ../tb/. given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-TOOL:	xrun	21.03-s009: Exiting on Nov 16, 2023 at 08:42:49 CET  (total: 00:00:01)
+TOOL:	xrun	21.03-s009: Exiting on Nov 20, 2023 at 21:27:30 CET  (total: 00:00:02)

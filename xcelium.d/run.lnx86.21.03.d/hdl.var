@@ -3,4 +3,5 @@ define AMSRC	( /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/xcelium/file
 include ./hdlrun.var
 define SNAPSHOT worklib.top:sv
 DEFINE RUNMODEDEFAULT 1
-DEFINE LIB_MAP ( + => worklib )
+DEFINE LIB_MAP (  => worklib )
+DEFINE LIB_MAP ($LIB_MAP, + => worklib )
