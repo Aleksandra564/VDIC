@@ -1,5 +1,5 @@
 xrun: 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun	21.03-s009: Started on Nov 20, 2023 at 22:03:40 CET
+TOOL:	xrun	21.03-s009: Started on Nov 22, 2023 at 23:37:46 CET
 xrun
 	+compile
 	+sv
@@ -41,4 +41,4 @@ file: lab05/tb/top.sv
 xmvlog: *W,SPDUSD: Include directory lab05/tb/. given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-TOOL:	xrun	21.03-s009: Exiting on Nov 20, 2023 at 22:03:41 CET  (total: 00:00:01)
+TOOL:	xrun	21.03-s009: Exiting on Nov 22, 2023 at 23:37:49 CET  (total: 00:00:03)

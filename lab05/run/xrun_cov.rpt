@@ -2,7 +2,7 @@
 *I,MERGL1: Merging Simulation Coverage ...
 ----------------------------
 *I,MERGL1: Preparing target model ...
-*I,MERGL1: Reading model of primary run (cov_work/scope/random_test) as initial model: cov_work/scope/icc_07a2c958_71f98db7.ucm
+*I,MERGL1: Reading model of primary run (cov_work/scope/random_test) as initial model: cov_work/scope/icc_07a2c958_77ede3b5.ucm
 *I,MERGL1: Target model generated successfully.
 *I,MERGL1: Projecting Simulation ucd data into the target model ...
 *I,MERGL2:   cov_work/scope/random_test:
@@ -10,8 +10,8 @@
 *I,MERGL2:   cov_work/scope/min_max_test:
 *I,MERGL3:       Data is projected in to the target model.
 *I,MERGL1: Writing output database cov_work/scope/merged_results:
-*I,MERGL2:   Model: cov_work/scope/merged_results/icc_07a2c958_71f98db7.ucm
-*I,MERGL2:   Data : cov_work/scope/merged_results/icc_07a2c958_71f98db7.ucd
+*I,MERGL2:   Model: cov_work/scope/merged_results/icc_07a2c958_77ede3b5.ucm
+*I,MERGL2:   Data : cov_work/scope/merged_results/icc_07a2c958_77ede3b5.ucd
 *I,MERGL1: No Specman coverage databases found in the runs.
 Total conflicts during target model creation: 0
 Total items not merged                      : 0
@@ -24,7 +24,7 @@ name                                     Overall Average      Overall Covered   
 uvm_pkg                                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
 |--uvm_test_top                          n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
 | |--env_h                               n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
-| | |--coverage_h                        93.14%               79.66% (47/59)       n/a                  n/a                  n/a                  n/a                  93.14%               79.66% (47/59)       
+| | |--coverage_h                        100.00%              100.00% (47/47)      n/a                  n/a                  n/a                  n/a                  100.00%              100.00% (47/47)      
 top                                      100.00%              100.00% (2/2)        100.00%              100.00% (2/2)        n/a                  n/a                  n/a                  n/a                  
 |--bfm                                   100.00%              100.00% (83/83)      100.00%              100.00% (83/83)      n/a                  n/a                  n/a                  n/a                  
 |--DUT                                   100.00%              100.00% (73/73)      100.00%              100.00% (73/73)      n/a                  n/a                  n/a                  n/a                  

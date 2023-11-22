@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Nov 20, 2023 at 22:03:53 CET
+TOOL:	xrun	21.03-s009: Started on Nov 22, 2023 at 23:37:58 CET
 xrun
 	-F ../tb/tb.f
 		mult_pkg.sv
@@ -99,6 +99,6 @@ coverage setup:
   testname :  min_max_test
 
 coverage files:
-  model(design data) :  ./cov_work/scope/icc_07a2c958_71f98db7.ucm (reused)
-  data               :  ./cov_work/scope/min_max_test/icc_07a2c958_71f98db7.ucd
-TOOL:	xrun	21.03-s009: Exiting on Nov 20, 2023 at 22:03:54 CET  (total: 00:00:01)
+  model(design data) :  ./cov_work/scope/icc_07a2c958_77ede3b5.ucm (reused)
+  data               :  ./cov_work/scope/min_max_test/icc_07a2c958_77ede3b5.ucd
+TOOL:	xrun	21.03-s009: Exiting on Nov 22, 2023 at 23:37:59 CET  (total: 00:00:01)
