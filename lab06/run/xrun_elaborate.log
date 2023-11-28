@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Nov 26, 2023 at 16:48:41 CET
+TOOL:	xrun	21.03-s009: Started on Nov 26, 2023 at 22:26:22 CET
 xrun
 	-elaborate
 	-l xrun_elaborate.log
@@ -10,6 +10,7 @@ xrun
 		+incdir+tb_classes
 		+incdir+.
 		+nowarn+DSEMEL
+		+nowarnBADPRF
 		-uvm
 		-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
 		+UVM_NO_RELNOTES
@@ -55,105 +56,105 @@ xrun
 	Generating native compiled code:
 		worklib.vdic_dut_2023:svp <0x6643b317>
 			streams:  58, words: 25281
-		worklib.uvm_pkg:sv <0x5a3373a6>
+		worklib.uvm_pkg:sv <0x2ba575bf>
 			streams:   8, words:  7892
-		worklib.uvm_pkg:sv <0x418b3fef>
+		worklib.uvm_pkg:sv <0x445ad0ab>
 			streams:   8, words:  7580
-		worklib.uvm_pkg:sv <0x07d95345>
+		worklib.uvm_pkg:sv <0x76f01bd7>
 			streams:   7, words:  7057
-		worklib.uvm_pkg:sv <0x77de9bf8>
+		worklib.uvm_pkg:sv <0x6669b499>
 			streams:  29, words: 28118
-		worklib.uvm_pkg:sv <0x7e0551ce>
+		worklib.uvm_pkg:sv <0x3ec0cd09>
 			streams:   7, words:  2315
-		worklib.uvm_pkg:sv <0x4aeb1825>
+		worklib.uvm_pkg:sv <0x1fa7d23a>
 			streams:  26, words: 62449
-		worklib.uvm_pkg:sv <0x2d1c986c>
+		worklib.uvm_pkg:sv <0x3a7540e4>
 			streams:   7, words:  2309
-		worklib.uvm_pkg:sv <0x70b9e3c6>
+		worklib.uvm_pkg:sv <0x6126a623>
 			streams:   7, words:  2972
-		worklib.uvm_pkg:sv <0x2e5cac4b>
+		worklib.uvm_pkg:sv <0x01730824>
 			streams:   7, words:  2972
-		worklib.uvm_pkg:sv <0x244c43fa>
+		worklib.uvm_pkg:sv <0x35b2bfe8>
 			streams:  18, words: 18890
-		worklib.uvm_pkg:sv <0x02ff8db6>
+		worklib.uvm_pkg:sv <0x219ea276>
 			streams:  28, words: 31934
-		worklib.uvm_pkg:sv <0x2ce83357>
+		worklib.uvm_pkg:sv <0x27f2dbcd>
 			streams:  27, words: 30028
-		worklib.uvm_pkg:sv <0x49beb37f>
+		worklib.uvm_pkg:sv <0x328b2214>
 			streams:  23, words: 28508
-		worklib.uvm_pkg:sv <0x6519ab19>
+		worklib.uvm_pkg:sv <0x53ae4430>
 			streams:  17, words: 17760
-		worklib.uvm_pkg:sv <0x4cfd5584>
+		worklib.uvm_pkg:sv <0x33089842>
 			streams:  26, words: 49807
-		worklib.uvm_pkg:sv <0x5ffba8d0>
+		worklib.uvm_pkg:sv <0x0a30d023>
 			streams:   7, words:  2570
-		worklib.uvm_pkg:sv <0x2989697e>
+		worklib.uvm_pkg:sv <0x65ddaa4e>
 			streams:  16, words: 22579
-		worklib.uvm_pkg:sv <0x3ac8e83b>
+		worklib.uvm_pkg:sv <0x7c890cfb>
 			streams:  26, words: 36999
-		worklib.uvm_pkg:sv <0x5b35642d>
+		worklib.uvm_pkg:sv <0x7139e628>
 			streams:  25, words: 62985
-		worklib.uvm_pkg:sv <0x23e612e2>
+		worklib.uvm_pkg:sv <0x49168eb8>
 			streams:  27, words: 40179
-		worklib.uvm_pkg:sv <0x5758fe87>
+		worklib.uvm_pkg:sv <0x01da2b57>
 			streams:  26, words: 56028
-		worklib.uvm_pkg:sv <0x5205e82c>
+		worklib.uvm_pkg:sv <0x3db2d93c>
 			streams:  27, words: 43424
-		worklib.uvm_pkg:sv <0x2adee624>
+		worklib.uvm_pkg:sv <0x79cd6d87>
 			streams:  25, words: 61988
-		worklib.uvm_pkg:sv <0x41575ea1>
+		worklib.uvm_pkg:sv <0x324d6c5f>
 			streams:  27, words: 45553
-		worklib.uvm_pkg:sv <0x5ba7f8dd>
+		worklib.uvm_pkg:sv <0x38cb5b89>
 			streams:  25, words: 66963
-		worklib.uvm_pkg:sv <0x646dbb1a>
+		worklib.uvm_pkg:sv <0x58b4f0ad>
 			streams:  27, words: 51671
-		worklib.uvm_pkg:sv <0x168018eb>
+		worklib.uvm_pkg:sv <0x01b2f321>
 			streams:  25, words: 61311
-		worklib.uvm_pkg:sv <0x5aef5f55>
+		worklib.uvm_pkg:sv <0x16ae7e87>
 			streams:  25, words: 62868
-		worklib.uvm_pkg:sv <0x475212a8>
+		worklib.uvm_pkg:sv <0x3ff8ec61>
 			streams:  27, words: 42325
-		worklib.uvm_pkg:sv <0x704094fe>
+		worklib.uvm_pkg:sv <0x3a2ee1be>
 			streams:  25, words: 58906
-		worklib.uvm_pkg:sv <0x41be3c27>
+		worklib.uvm_pkg:sv <0x2c1af552>
 			streams:  29, words: 108740
-		worklib.uvm_pkg:sv <0x38a1ac7f>
+		worklib.uvm_pkg:sv <0x28cfc00d>
 			streams:  72, words: 143728
-		worklib.cdns_uvm_pkg:sv <0x6c4900c6>
+		worklib.cdns_uvm_pkg:sv <0x0c4d8ad5>
 			streams:   9, words:  5026
-		worklib.cdns_uvm_pkg:sv <0x58078155>
+		worklib.cdns_uvm_pkg:sv <0x7f5c992c>
 			streams:  10, words:  8472
-		worklib.uvm_pkg:sv <0x1a622642>
+		worklib.uvm_pkg:sv <0x092aebe9>
 			streams:  23, words: 21994
-		worklib.mult_pkg:sv <0x1be21329>
-			streams:  24, words: 22686
-		worklib.uvm_pkg:sv <0x53d557f8>
+		worklib.mult_pkg:sv <0x05f3b3ae>
+			streams:  24, words: 22726
+		worklib.uvm_pkg:sv <0x0324de4a>
 			streams:   7, words:  2972
-		worklib.uvm_pkg:sv <0x2328c5b4>
-			streams:  24, words: 24532
-		worklib.uvm_pkg:sv <0x20f51162>
-			streams:  26, words: 32125
-		worklib.uvm_pkg:sv <0x240cb1f0>
-			streams:  33, words: 51783
-		worklib.uvm_pkg:sv <0x1f074d32>
+		worklib.uvm_pkg:sv <0x17e29793>
+			streams:  25, words: 31002
+		worklib.uvm_pkg:sv <0x6defd1ac>
+			streams:  33, words: 37087
+		worklib.uvm_pkg:sv <0x57dffcc2>
+			streams:  38, words: 34315
+		worklib.uvm_pkg:sv <0x21e76265>
+			streams: 122, words: 116460
+		worklib.uvm_pkg:sv <0x47881a62>
 			streams:  23, words: 20985
-		worklib.mult_pkg:sv <0x404255f9>
+		worklib.mult_pkg:sv <0x1c749305>
 			streams:  24, words: 21862
-		worklib.mult_pkg:sv <0x2c4e475d>
-			streams:   9, words: 13893
-		worklib.top:sv <0x3d7d688d>
-			streams:  81, words: 120860
-		worklib.mult_bfm:sv <0x63c0bf04>
-			streams:   4, words:  8403
-		worklib.mult_pkg:sv <0x41d35ad7>
+		worklib.mult_pkg:sv <0x1ccb5b48>
+			streams:  18, words: 17344
+		worklib.mult_bfm:sv <0x4481f989>
+			streams: 290, words: 432155
+		worklib.mult_pkg:sv <0x521f461f>
 			streams:   1, words:  3427
-		worklib.cdns_uvm_pkg:sv <0x0af36e36>
+		worklib.cdns_uvm_pkg:sv <0x13db5fd4>
 			streams: 232, words: 440359
-		worklib.cdns_uvmapi:svp <0x0b19fa5f>
+		worklib.cdns_uvmapi:svp <0x2bd45435>
 			streams:  27, words: 36495
-		worklib.cdns_assert2uvm_pkg:sv <0x1a4f71cd>
+		worklib.cdns_assert2uvm_pkg:sv <0x7b006f76>
 			streams:   3, words:  2676
-		worklib.uvm_pkg:sv <0x2216f814>
+		worklib.uvm_pkg:sv <0x28ea8ad3>
 			streams: 5575, words: 10814908
 	Building instance specific data structures.
 	Performing constant object marking (COM) analysis.
@@ -163,19 +164,19 @@ xrun
 		Modules:                       2       2
 		Interfaces:                    1       1
 		Verilog packages:              5       5
-		Registers:                 15810   11670
+		Registers:                 16410   11716
 		Scalar wires:                 17       -
 		Vectored wires:               10       -
 		Named events:                  4      12
-		Always blocks:                 1       1
-		Initial blocks:              317     163
-		Parallel blocks:              28      29
+		Always blocks:                 3       3
+		Initial blocks:              329     167
+		Parallel blocks:              27      28
 		Cont. assignments:            10      10
 		Pseudo assignments:           12      12
 		Assertions:                    6       6
 		Covergroup Instances:          0       1
-		SV Class declarations:       231     347
-		SV Class specializations:    416     416
+		SV Class declarations:       238     350
+		SV Class specializations:    442     442
 		Simulation timescale:        1ps
 	Writing initial simulation snapshot: worklib.top:sv
-TOOL:	xrun	21.03-s009: Exiting on Nov 26, 2023 at 16:48:47 CET  (total: 00:00:06)
+TOOL:	xrun	21.03-s009: Exiting on Nov 26, 2023 at 22:26:28 CET  (total: 00:00:06)

@@ -102,7 +102,7 @@ class scoreboard extends uvm_subscriber #(result_s);
 //------------------------------------------------------------------------------
 // subscriber write function
 //------------------------------------------------------------------------------
-    function void write(result_s res);
+    function void write(result_s t);
 	    
         logic signed [31:0] predicted_mult_result;
 		logic predicted_parity_result;
@@ -118,7 +118,7 @@ class scoreboard extends uvm_subscriber #(result_s);
         do
             if (!cmd_f.try_get(cmd))
                 $fatal(1, "Missing command in self checker");
-        while (cmd.rst_n == 1);	// get commands until rst_n == 1
+        while (cmd.rst_n == 0);	// get commands until rst_n == 0
 
         predicted_mult_result = get_expected(cmd.arg_a, cmd.arg_b);
 	    predicted_parity_result = get_result_parity(predicted_mult_result);
@@ -126,39 +126,39 @@ class scoreboard extends uvm_subscriber #(result_s);
 
 		// PARITY ERROR FLAG TEST
 		CHK_PARITY_FLAG_RESULT: 
-		assert(res.arg_parity_error == predicted_parity_flag) begin
+		assert(t.arg_parity_error == predicted_parity_flag) begin
 		    `ifdef DEBUG
 		    $display("PARITY ERROR FLAG TEST: %0t Test passed for A=%0d B=%0d", $time, cmd.arg_a, cmd.arg_b);
 		    `endif
 		end
 		else begin
 		    test_result = TEST_FAILED;
-		    $error("PARITY ERROR FLAG TEST: %0t Test FAILED for A=%0d B=%0d\nExpected: %d  received: %d", $time, cmd.arg_a, cmd.arg_b, predicted_parity_flag, res.arg_parity_error);
+		    $error("PARITY ERROR FLAG TEST: %0t Test FAILED for A=%0d B=%0d\nExpected: %d  received: %d", $time, cmd.arg_a, cmd.arg_b, predicted_parity_flag, t.arg_parity_error);
 		end
 
 		// PARITY TEST
 		if(predicted_parity_flag == 0) begin
 			CHK_PARITY_RESULT: 
-			assert(res.result_parity == predicted_parity_result) begin
+			assert(t.result_parity == predicted_parity_result) begin
 			    `ifdef DEBUG
 			    $display("PARITY TEST: %0t Test passed for A=%0d B=%0d", $time, cmd.arg_a, cmd.arg_b);
 			    `endif
 			end
 			else begin
 			    test_result = TEST_FAILED;
-			    $error("PARITY TEST: %0t Test FAILED for A=%0d B=%0d Ap=%0d Bp=%0d\nExpected: %d  received: %d", $time, cmd.arg_a, cmd.arg_b, cmd.arg_a_parity, cmd.arg_b_parity, predicted_parity_result, res.result_parity);
+			    $error("PARITY TEST: %0t Test FAILED for A=%0d B=%0d Ap=%0d Bp=%0d\nExpected: %d  received: %d", $time, cmd.arg_a, cmd.arg_b, cmd.arg_a_parity, cmd.arg_b_parity, predicted_parity_result, t.result_parity);
 			end
 			
 			// MULT TEST
 			CHK_MULT_RESULT: 
-			assert(res.result == predicted_mult_result) begin	//checks if result from dut == expected result
+			assert(t.result == predicted_mult_result) begin	//checks if result from dut == expected result
 				`ifdef DEBUG
 				$display("MULTIPLICATION TEST: %0t Test passed for A=%0d B=%0d", $time, cmd.arg_a, cmd.arg_b);
 				`endif
 			end
 			else begin
 				test_result = TEST_FAILED;
-				$error("MULTIPLICATION TEST: %0t Test FAILED for A=%0d B=%0d\nExpected: %d  received: %d", $time, cmd.arg_a, cmd.arg_b, predicted_mult_result, res.result);
+				$error("MULTIPLICATION TEST: %0t Test FAILED for A=%0d B=%0d\nExpected: %d  received: %d", $time, cmd.arg_a, cmd.arg_b, predicted_mult_result, t.result);
 			end
 		end
 	endfunction : write

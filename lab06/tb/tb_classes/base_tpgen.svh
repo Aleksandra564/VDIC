@@ -42,15 +42,15 @@ virtual class base_tpgen extends uvm_component;
 		    command.arg_a_parity = get_input_parity(command.arg_a);
 		    command.arg_b_parity = get_input_parity(command.arg_b);
 		    
+		    command.wait_result = 1;
 		    command_port.put(command);
-		    wait(command.result_rdy);	// zmienic bo nie moge dostac na commandzie wyjscia DUTa
 	    end : random_loop
 	    
 	    // reset until DUT finish processing data
+	    command.wait_result = 0;
 	    command_port.put(command);
 	    command.rst_n = 1;
 	    command_port.put(command);
-		command.rst_n = 0;
 	    
 	    phase.drop_objection(this);
 	endtask : run_phase

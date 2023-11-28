@@ -43,6 +43,9 @@
 ./base_tpgen.svh
 ./random_tpgen.svh
 ./min_max_tpgen.svh
+./command_monitor.svh
+./result_monitor.svh
+./driver.svh
 ./coverage.svh
 ./scoreboard.svh
 ./env.svh

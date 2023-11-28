@@ -32,6 +32,12 @@
 /home/student/afudali/Desktop/VDIC/lab06/tb/tb_classes/random_tpgen.svh
 ../tb/tb_classes/min_max_tpgen.svh
 /home/student/afudali/Desktop/VDIC/lab06/tb/tb_classes/min_max_tpgen.svh
+../tb/tb_classes/command_monitor.svh
+/home/student/afudali/Desktop/VDIC/lab06/tb/tb_classes/command_monitor.svh
+../tb/tb_classes/result_monitor.svh
+/home/student/afudali/Desktop/VDIC/lab06/tb/tb_classes/result_monitor.svh
+../tb/tb_classes/driver.svh
+/home/student/afudali/Desktop/VDIC/lab06/tb/tb_classes/driver.svh
 ../tb/tb_classes/coverage.svh
 /home/student/afudali/Desktop/VDIC/lab06/tb/tb_classes/coverage.svh
 ../tb/tb_classes/scoreboard.svh

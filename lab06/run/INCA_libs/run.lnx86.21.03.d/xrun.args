@@ -23,7 +23,7 @@ all
 -covfile
 xrun_covfile.txt
 -covtest
-min_max_test
-+UVM_TESTNAME=min_max_test
+random_test
++UVM_TESTNAME=random_test
 -l
-xrun_test_min_max_test.log
+xrun_test_random_test.log

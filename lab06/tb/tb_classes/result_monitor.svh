@@ -19,7 +19,7 @@ class result_monitor extends uvm_component;
 //------------------------------------------------------------------------------
     function void write_to_monitor(result_s res);
         `ifdef DEBUG
-        $display ("RESULT MONITOR: result: 0x%0h", res);
+        $display ("RESULT MONITOR: arg_parity_error=%0d, result=%0d, result_parity=%0d", res.arg_parity_error, res.result, res.result_parity);
         `endif
         ap.write(res);
     endfunction : write_to_monitor

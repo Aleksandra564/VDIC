@@ -1,5 +1,5 @@
 xrun: 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun	21.03-s009: Started on Nov 26, 2023 at 20:27:10 CET
+TOOL:	xrun	21.03-s009: Started on Nov 26, 2023 at 22:26:54 CET
 xrun
 	+compile
 	+sv
@@ -12,6 +12,7 @@ xrun
 			+incdir+tb_classes
 			+incdir+.
 			+nowarn+DSEMEL
+			+nowarnBADPRF
 			-uvm
 			-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
 			+UVM_NO_RELNOTES
@@ -24,49 +25,20 @@ xrun
 	+UVM_NO_RELNOTES
 	+UVM_VERBOSITY=MEDIUM
 
-xrun: *W,BADPRF: The -linedebug option may have an adverse performance impact.
 Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
 file: lab06/tb/mult_pkg.sv
-    function void write(result_s res);
-                                   |
-xmvlog: *E,CVMNMM (lab06/tb/tb_classes/scoreboard.svh,105|35): Virtual method 'scoreboard::write' formal argument name does not match base class 'uvm_subscriber'.
 	package worklib.mult_pkg:sv
-		errors: 1, warnings: 0
+		errors: 0, warnings: 0
 file: lab06/tb/mult_bfm.sv
-import mult_pkg::*;
-              |
-xmvlog: *E,NOPBIND (lab06/tb/mult_bfm.sv,2|14): Package mult_pkg could not be bound.
-    command_s command;
-            |
-xmvlog: *E,SVNOTY (lab06/tb/mult_bfm.sv,78|12): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-end : monitor
-            |
-xmvlog: *W,LBLMAT (lab06/tb/mult_bfm.sv,92|12): Label/name mismatch: command_s - monitor.
-    command_s command;
-            |
-xmvlog: *E,SVNOTY (lab06/tb/mult_bfm.sv,95|12): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-end : rst_monitor
-                |
-xmvlog: *W,LBLMAT (lab06/tb/mult_bfm.sv,99|16): Label/name mismatch: command_s - rst_monitor.
-	result_s res;
-	       |
-xmvlog: *E,SVNOTY (lab06/tb/mult_bfm.sv,106|8): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-end : result_monitor_thread
-                          |
-xmvlog: *W,LBLMAT (lab06/tb/mult_bfm.sv,112|26): Label/name mismatch: result_s - result_monitor_thread.
 	interface worklib.mult_bfm:sv
-		errors: 4, warnings: 3
+		errors: 0, warnings: 0
 file: lab06/tb/../../common/vdic_dut_2023.svp
 	module worklib.vdic_dut_2023:svp
 		errors: 0, warnings: 0
 file: lab06/tb/top.sv
-import mult_pkg::*;
-              |
-xmvlog: *E,NOPBIND (lab06/tb/top.sv,5|14): Package mult_pkg could not be bound.
 	module worklib.top:sv
-		errors: 1, warnings: 0
+		errors: 0, warnings: 0
 xmvlog: *W,SPDUSD: Include directory lab06/tb/. given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-TOOL:	xrun	21.03-s009: Exiting on Nov 26, 2023 at 20:27:12 CET  (total: 00:00:02)
+TOOL:	xrun	21.03-s009: Exiting on Nov 26, 2023 at 22:26:57 CET  (total: 00:00:03)

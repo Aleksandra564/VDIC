@@ -18,9 +18,9 @@ class command_monitor extends uvm_component;
 // monitoring function called from BFM
 //------------------------------------------------------------------------------
     function void write_to_monitor(command_s cmd);
-//        `ifdef DEBUG
-//        $display("COMMAND MONITOR: A:0x%2h B:0x%2h op: %s", cmd.A, cmd.B, cmd.op.name());
-//        `endif
+        `ifdef DEBUG
+        $display("COMMAND MONITOR: arg_a=%0d, arg_b=%0d, arg_a_parity=%0d, arg_b_parity=%0d", cmd.arg_a, cmd.arg_b, cmd.arg_a_parity, cmd.arg_b_parity);
+        `endif
         ap.write(cmd);
     endfunction : write_to_monitor
 
