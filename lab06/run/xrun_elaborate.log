@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Nov 26, 2023 at 22:26:22 CET
+TOOL:	xrun	21.03-s009: Started on Nov 29, 2023 at 23:05:57 CET
 xrun
 	-elaborate
 	-l xrun_elaborate.log
@@ -124,29 +124,29 @@ xrun
 			streams:   9, words:  5026
 		worklib.cdns_uvm_pkg:sv <0x7f5c992c>
 			streams:  10, words:  8472
-		worklib.uvm_pkg:sv <0x092aebe9>
+		worklib.uvm_pkg:sv <0x3833bbc8>
 			streams:  23, words: 21994
-		worklib.mult_pkg:sv <0x05f3b3ae>
+		worklib.mult_pkg:sv <0x2c6ff7ea>
 			streams:  24, words: 22726
 		worklib.uvm_pkg:sv <0x0324de4a>
 			streams:   7, words:  2972
-		worklib.uvm_pkg:sv <0x17e29793>
+		worklib.uvm_pkg:sv <0x58e3bcec>
 			streams:  25, words: 31002
-		worklib.uvm_pkg:sv <0x6defd1ac>
-			streams:  33, words: 37087
-		worklib.uvm_pkg:sv <0x57dffcc2>
-			streams:  38, words: 34315
-		worklib.uvm_pkg:sv <0x21e76265>
-			streams: 122, words: 116460
-		worklib.uvm_pkg:sv <0x47881a62>
+		worklib.uvm_pkg:sv <0x7c381b0c>
+			streams:  33, words: 34357
+		worklib.uvm_pkg:sv <0x3af8e017>
+			streams:  38, words: 34309
+		worklib.uvm_pkg:sv <0x46af5ed3>
+			streams: 122, words: 116440
+		worklib.uvm_pkg:sv <0x7b4dcfe0>
 			streams:  23, words: 20985
-		worklib.mult_pkg:sv <0x1c749305>
+		worklib.mult_pkg:sv <0x0e6f0ab4>
 			streams:  24, words: 21862
-		worklib.mult_pkg:sv <0x1ccb5b48>
-			streams:  18, words: 17344
-		worklib.mult_bfm:sv <0x4481f989>
-			streams: 290, words: 432155
-		worklib.mult_pkg:sv <0x521f461f>
+		worklib.mult_pkg:sv <0x56757cd6>
+			streams:  18, words: 16924
+		worklib.mult_bfm:sv <0x78dc4cd9>
+			streams: 289, words: 432015
+		worklib.mult_pkg:sv <0x2e232d7f>
 			streams:   1, words:  3427
 		worklib.cdns_uvm_pkg:sv <0x13db5fd4>
 			streams: 232, words: 440359
@@ -179,4 +179,4 @@ xrun
 		SV Class specializations:    442     442
 		Simulation timescale:        1ps
 	Writing initial simulation snapshot: worklib.top:sv
-TOOL:	xrun	21.03-s009: Exiting on Nov 26, 2023 at 22:26:28 CET  (total: 00:00:06)
+TOOL:	xrun	21.03-s009: Exiting on Nov 29, 2023 at 23:06:00 CET  (total: 00:00:03)

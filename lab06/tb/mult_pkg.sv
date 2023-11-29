@@ -23,7 +23,6 @@ package mult_pkg;
 		bit               		arg_a_parity;
 		logic signed 	[15:0] 	arg_b;        
 		bit               		arg_b_parity;
-	    bit						wait_result;	//to handle wait_ready() in base_tpgen
     } command_s;
 	
 	// RESULT data packet
