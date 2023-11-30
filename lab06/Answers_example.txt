@@ -1,0 +1,38 @@
+a) Which objects in the diagram instantiate which?
+random_test instantiates env
+env instantiates random_tester, uvm_tlm_fifo fifo, driver, coverage, scoreboard, command_monitor and result monitor
+
+
+b) The following objects in the diagram are created by the new() function:
+uvm_tlm_fifo
+
+
+c) The following objects in the diagram are created by reference to the UVM factory:
+random_tester_h, driver_h, coverage_h, scoreboard_h, command_monitor_h, result_monitor_h
+
+
+d) Objects of the following classes retrieve BFM information from UVM by calling uvm_config_db:
+command_monitor_h, driver_h, result_monitor_h
+
+
+e) Objects of the following classes instantiate uvm_analysis_port:
+command_monitor_h, result_monitor_h
+
+
+f) Objects of the following classes instantiate uvm_get_port:
+driver_h
+
+
+g) Objects of the following classes instantiate uvm_put_port:
+tpgen_h (random_tester_h)
+
+
+h) The following uvm_*_port classes are parametrized:
+uvm_analysis_port #(command_s) ap
+uvm_analysis_port #(shortint) ap
+uvm_get_port #(command_s) command_port
+uvm_put_port #(command_s) command_port
+
+
+i) The following classes include the implementation of the void write() method:
+scoreboard_h, coverage_h
