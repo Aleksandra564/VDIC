@@ -5,9 +5,9 @@
 -RUNMODE
 -sv
 -INCDIR
-lab06/tb/tb_classes
+lab07example/tb/tb_classes
 -INCDIR
-lab06/tb/.
+lab07example/tb/.
 -NOWARN
 DSEMEL
 -NOWARN
