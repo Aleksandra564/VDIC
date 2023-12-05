@@ -1,0 +1,206 @@
+TOOL:	xrun	21.03-s009: Started on Dec 05, 2023 at 21:03:18 CET
+xrun
+	-elaborate
+	-l xrun_elaborate.log
+	-F ../tb/tb.f
+		mult_pkg.sv
+		mult_bfm.sv
+		../../common/vdic_dut_2023.svp
+		top.sv
+		+incdir+tb_classes
+		+incdir+.
+		+nowarn+DSEMEL
+		+nowarnBADPRF
+		-uvm
+		-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
+		+UVM_NO_RELNOTES
+		+UVM_VERBOSITY=MEDIUM
+		-linedebug
+		-fsmdebug
+		-uvmlinedebug
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+
+   User defined plus("+") options:
+	+UVM_NO_RELNOTES
+	+UVM_VERBOSITY=MEDIUM
+
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		mult_pkg
+		$unit_0x0475d7d8
+		top
+
+	Extracting FSMs for coverage:
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .............
+	    arg_a dist {[16'sh8000:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFF]:/1};
+	                  |
+xmelab: *W,VALFIT (../tb/tb_classes/command_transaction.svh,17|19): Value will not fit in the random variable.
+	    arg_a dist {[16'sh8000:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFF]:/1};
+	                            |
+xmelab: *W,VALFIT (../tb/tb_classes/command_transaction.svh,17|29): Value will not fit in the random variable.
+	    arg_b dist {[16'sh8000:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFF]:/1};
+	                  |
+xmelab: *W,VALFIT (../tb/tb_classes/command_transaction.svh,18|19): Value will not fit in the random variable.
+	    arg_b dist {[16'sh8000:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFF]:/1};
+	                            |
+xmelab: *W,VALFIT (../tb/tb_classes/command_transaction.svh,18|29): Value will not fit in the random variable.
+....
+	    arg_a dist {16'sh8000:=1, 16'sh7FFF:=1};
+	                 |
+xmelab: *W,VALFIT (../tb/tb_classes/min_max_transaction.svh,8|18): Value will not fit in the random variable.
+        arg_b dist {16'sh8000:=1, 16'sh7FFF:=1};
+                     |
+xmelab: *W,VALFIT (../tb/tb_classes/min_max_transaction.svh,9|21): Value will not fit in the random variable.
+... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+	Generating native compiled code:
+		worklib.vdic_dut_2023:svp <0x57167b90>
+			streams:  58, words: 25281
+		worklib.uvm_pkg:sv <0x4125abfd>
+			streams:   8, words:  7892
+		worklib.uvm_pkg:sv <0x7560ecb8>
+			streams:   8, words:  7580
+		worklib.uvm_pkg:sv <0x2b47738d>
+			streams:   7, words:  7057
+		worklib.uvm_pkg:sv <0x0a8b04b1>
+			streams:  29, words: 28118
+		worklib.uvm_pkg:sv <0x71c3d76d>
+			streams:   7, words:  2315
+		worklib.uvm_pkg:sv <0x0996e4dc>
+			streams:  26, words: 62449
+		worklib.uvm_pkg:sv <0x24a68853>
+			streams:   7, words:  2309
+		worklib.uvm_pkg:sv <0x56ff0a29>
+			streams:   7, words:  2972
+		worklib.uvm_pkg:sv <0x1c00a2eb>
+			streams:   7, words:  2972
+		worklib.uvm_pkg:sv <0x56a44a4d>
+			streams:  18, words: 18890
+		worklib.uvm_pkg:sv <0x599c1b2b>
+			streams:  28, words: 31934
+		worklib.uvm_pkg:sv <0x01368b87>
+			streams:  27, words: 30028
+		worklib.uvm_pkg:sv <0x2dc7f21d>
+			streams:  23, words: 28508
+		worklib.uvm_pkg:sv <0x7d1e32f8>
+			streams:  17, words: 17760
+		worklib.uvm_pkg:sv <0x7c1d1e01>
+			streams:  26, words: 49807
+		worklib.uvm_pkg:sv <0x26e8a86a>
+			streams:   7, words:  2570
+		worklib.uvm_pkg:sv <0x59204180>
+			streams:  16, words: 22579
+		worklib.uvm_pkg:sv <0x03e84a2d>
+			streams:  26, words: 36999
+		worklib.uvm_pkg:sv <0x028d6609>
+			streams:  25, words: 62985
+		worklib.uvm_pkg:sv <0x0ff24f0a>
+			streams:  27, words: 40179
+		worklib.uvm_pkg:sv <0x7346c81b>
+			streams:  26, words: 56028
+		worklib.uvm_pkg:sv <0x46249357>
+			streams:  27, words: 43424
+		worklib.uvm_pkg:sv <0x56fb93ee>
+			streams:  25, words: 61988
+		worklib.uvm_pkg:sv <0x2bf43845>
+			streams:  27, words: 45553
+		worklib.uvm_pkg:sv <0x2e3e0666>
+			streams:  25, words: 66963
+		worklib.uvm_pkg:sv <0x54dc7e5e>
+			streams:  27, words: 51671
+		worklib.uvm_pkg:sv <0x0d75d29a>
+			streams:  25, words: 61311
+		worklib.uvm_pkg:sv <0x1fc3b508>
+			streams:  25, words: 62868
+		worklib.uvm_pkg:sv <0x47b00e5a>
+			streams:  27, words: 42325
+		worklib.uvm_pkg:sv <0x51205f69>
+			streams:  25, words: 58906
+		worklib.uvm_pkg:sv <0x4a181102>
+			streams:  29, words: 108740
+		worklib.uvm_pkg:sv <0x3066e142>
+			streams:  72, words: 143728
+		worklib.cdns_uvm_pkg:sv <0x484bc987>
+			streams:   9, words:  5026
+		worklib.cdns_uvm_pkg:sv <0x4c137e6f>
+			streams:  10, words:  8472
+		worklib.uvm_pkg:sv <0x3ce9223a>
+			streams:  23, words: 21994
+		worklib.mult_pkg:sv <0x0e15fb02>
+			streams:  24, words: 24988
+		worklib.uvm_pkg:sv <0x357df593>
+			streams:   7, words:  2972
+		worklib.uvm_pkg:sv <0x4f27716b>
+			streams:  24, words: 28843
+		worklib.uvm_pkg:sv <0x66aa5873>
+			streams:  33, words: 35615
+		worklib.uvm_pkg:sv <0x08bd83e3>
+			streams:  33, words: 35655
+		worklib.uvm_pkg:sv <0x2809f585>
+			streams:  38, words: 34459
+		worklib.uvm_pkg:sv <0x27cd4841>
+			streams: 120, words: 112693
+		worklib.uvm_pkg:sv <0x13bafc20>
+			streams:  24, words: 25007
+		worklib.mult_bfm:sv <0x0509393f>
+			streams: 289, words: 441311
+		worklib.mult_pkg:sv <0x6f3c4cac>
+			streams:  28, words: 34943
+		worklib.mult_pkg:sv <0x4b11434b>
+			streams:   8, words: 12529
+		worklib.mult_pkg:sv <0x2a7eb6c8>
+			streams:   1, words:  3427
+		worklib.cdns_uvm_pkg:sv <0x62fe4bd2>
+			streams: 232, words: 440359
+		worklib.cdns_uvmapi:svp <0x7c766488>
+			streams:  27, words: 36495
+		worklib.cdns_assert2uvm_pkg:sv <0x08e8564c>
+			streams:   3, words:  2676
+		worklib.uvm_pkg:sv <0x4a7342ab>
+			streams: 5575, words: 10814908
+	Building instance specific data structures.
+	Performing constant object marking (COM) analysis.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       2       2
+		Interfaces:                    1       1
+		Verilog packages:              5       5
+		Registers:                 16469   11753
+		Scalar wires:                 17       -
+		Vectored wires:               10       -
+		Named events:                  4      12
+		Always blocks:                 3       3
+		Initial blocks:              332     168
+		Parallel blocks:              27      28
+		Cont. assignments:            10      10
+		Pseudo assignments:           12      12
+		Assertions:                    7       7
+		Covergroup Instances:          0       1
+		Compilation units:             1       1
+		SV Class declarations:       239     351
+		SV Class specializations:    444     444
+		Simulation timescale:        1ps
+	Writing initial simulation snapshot: worklib.top:sv
+TOOL:	xrun	21.03-s009: Exiting on Dec 05, 2023 at 21:03:22 CET  (total: 00:00:04)

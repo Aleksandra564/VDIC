@@ -1,0 +1,279 @@
+*** Message Type: info ***
+When: Tue Dec 05 20:00:13 CET 2023
+SimVision started.
+Version: TOOL:  simvision       21.03-s009
+User: afudali
+Host: cadence31
+Platform: Linux/x86_64/3.10.0-1160.99.1.el7.x86_64
+Started: Tue Dec 05 20:00:13 CET 2023
+Command: /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools.lnx86/simvision/bin/simvision.exe -connect dc:cadence31:60610 -nocopyright
+Work Directory: /home/student/afudali/Desktop/VDIC/lab07/run
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:00:14 CET 2023
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:00:16 CET 2023
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:00:18 CET 2023
+Connect to Simulator
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:   xmsim   21.03-s009
+        User: afudali
+        Host: cadence31
+Time Started: Tue Dec 05 20:00:12 CET 2023
+  Process ID: 12411
+   Directory: /home/student/afudali/Desktop/VDIC/lab07/run
+     Command: xrun -F ../tb/tb.f -v93 +nowarnDSEM2009 +nowarnDSEMEL +nowarnCGDEFN +nowarnCOVUTA +nowarnBADPRF +nowarnXCLGNOPTM +nowarnRNDXCELON +nowarnSAWSTP -xmlibdirname INCA_libs_gui +access+r +gui +overwrite -nocopyright -coverage all -covoverwrite -covfile xrun_covfile.txt +UVM_TESTNAME=random_test -l xrun_gui.log
+
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:00:18 CET 2023
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:00:34 CET 2023
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:01:11 CET 2023
+Exit XM-Sim: user
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:   xmsim   21.03-s009
+        User: afudali
+        Host: cadence31
+Time Started: Tue Dec 05 20:00:12 CET 2023
+  Process ID: 12411
+   Directory: /home/student/afudali/Desktop/VDIC/lab07/run
+     Command: xrun -F ../tb/tb.f -v93 +nowarnDSEM2009 +nowarnDSEMEL +nowarnCGDEFN +nowarnCOVUTA +nowarnBADPRF +nowarnXCLGNOPTM +nowarnRNDXCELON +nowarnSAWSTP -xmlibdirname INCA_libs_gui +access+r +gui +overwrite -nocopyright -coverage all -covoverwrite -covfile xrun_covfile.txt +UVM_TESTNAME=random_test -l xrun_gui.log
+
+ 
+*** Message Type: error ***
+When: Tue Dec 05 20:01:11 CET 2023
+XM-Sim Crashed:
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:   xmsim   21.03-s009
+        User: afudali
+        Host: cadence31
+Time Started: Tue Dec 05 20:00:12 CET 2023
+  Process ID: 12411
+   Directory: /home/student/afudali/Desktop/VDIC/lab07/run
+     Command: xrun -F ../tb/tb.f -v93 +nowarnDSEM2009 +nowarnDSEMEL +nowarnCGDEFN +nowarnCOVUTA +nowarnBADPRF +nowarnXCLGNOPTM +nowarnRNDXCELON +nowarnSAWSTP -xmlibdirname INCA_libs_gui +access+r +gui +overwrite -nocopyright -coverage all -covoverwrite -covfile xrun_covfile.txt +UVM_TESTNAME=random_test -l xrun_gui.log
+      Design: worklib.top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:       xmsim   21.03-s009
+        User: afudali
+        Host: cadence31
+Time Started: Tue Dec 05 20:00:12 CET 2023
+  Process ID: 12411
+   Directory: /home/student/afudali/Desktop/VDIC/lab07/run
+     Command: xrun -F ../tb/tb.f -v93 +nowarnDSEM2009 +nowarnDSEMEL +nowarnCGDEFN +nowarnCOVUTA +nowarnBADPRF +nowarnXCLGNOPTM +nowarnRNDXCELON +nowarnSAWSTP -xmlibdirname INCA_libs_gui +access+r +gui +overwrite -nocopyright -coverage all -covoverwrite -covfile xrun_covfile.txt +UVM_TESTNAME=random_test -l xrun_gui.log
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:01:16 CET 2023
+Recall Simulator
+ 
+*** Message Type: error ***
+When: Tue Dec 05 20:02:10 CET 2023
+can't find node "23" in ::tree1
+    (object "::replicator::parts35" method "::replicator::Parts::run" )
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $_dragsel  -progresscommand [_getProgressCommand configure "Capturing signals..."]"
+    (object "::.waveWindow0.work.user.waveset" method "::WaveSet::_drag" body line 32)
+    invoked from within
+"::.waveWindow0.work.user.waveset _drag SV_WAVEFORM"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow0.work.user.waveset _drag SV_WAVEFORM}"
+    invoked from within
+"list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow0.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::WaveSet {::.wa..."
+    invoked from within
+"list {copy} [list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow0.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::W..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 $cmd"
+    (procedure "tkdnd::_init_drag" line 10)
+    invoked from within
+"tkdnd::_init_drag 0 $window  "press" 0 0"
+    ("drag" arm line 11)
+    invoked from within
+"switch $method {
+    bindtarget {
+      switch [llength $args] {
+        0 {return [tkdnd::compat::bindtarget0 $window]}
+        1 {return [tkdnd::com..."
+    (procedure "::dnd" line 4)
+    invoked from within
+"::dnd drag .waveWindow0.work.user.waveset.signallist -actions copy -id {12435 ::.waveWindow0.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "cwidgets::dnd" line 1)
+    invoked from within
+"cwidgets::dnd drag .waveWindow0.work.user.waveset.signallist -actions copy -id {12435 ::.waveWindow0.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "::svdnd" line 1)
+    invoked from within
+"::svdnd drag $win -actions {copy} -id [list [pid] $this]"
+    (object "::.waveWindow0.work.user.waveset" method "::WaveSet::_delayedStartDND" body line 35)
+    invoked from within
+"::.waveWindow0.work.user.waveset _delayedStartDND .waveWindow0.work.user.waveset.signallist 23 11 145 1"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow0.work.user.waveset _delayedStartDND .waveWindow0.work.user.waveset.signallist 23 11 145 1}"
+    ("after" script)
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:06:02 CET 2023
+Create expression window: "Expression Calculator 1"
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:06:05 CET 2023
+Delete expression window: "Expression Calculator 1"
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:06:06 CET 2023
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:06:16 CET 2023
+Create waveform window: "Waveform 2"
+ 
+*** Message Type: error ***
+When: Tue Dec 05 20:06:42 CET 2023
+"1" is not a stylepen object
+    (while examining -pen option at node 24 in tree "::tree2" attached to signalbox ".waveWindow1.work.user.waveset.signallist")
+ 
+*** Message Type: error ***
+When: Tue Dec 05 20:06:42 CET 2023
+"1" is not a stylepen object
+    (while examining -pen option at node 24 in tree "::tree2" attached to signalbox ".waveWindow1.work.user.waveset.signaldata")
+ 
+*** Message Type: error ***
+When: Tue Dec 05 20:06:42 CET 2023
+"1" is not a stylepen object
+    (while examining -pen option at node 24 in tree "::tree2" attached to signalbox ".waveWindow1.work.user.waveset.signalbox")
+ 
+*** Message Type: error ***
+When: Tue Dec 05 20:06:42 CET 2023
+invalid command name "::.waveWindow0"
+    while executing
+"runBusy {
+        #
+        # Execute the "do" script
+        #
+        set _buffer ""
+        uplevel $parts(redo)
+        set parts(redo) $_buffer
+
+..."
+    (object "::manager5" method "::undo::Manager::action" body line 65)
+    invoked from within
+"$itk_option(-undocommand) action "Drag&Drop" {
+            do {
+               #
+              # Capture the dragged ids, then delete them
+            #
+              # First time, derive OLDIDS from $_dr..."
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_drop" body line 65)
+    invoked from within
+"::.waveWindow1.work.user.waveset _drop {
+
+pattern #auto SV_SIGNAL v1.0 {
+  overall {
+    data name {waves::top.bfm.arg_a[15:0]}
+    data expression {}..."
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drop {
+
+pattern #auto SV_SIGNAL v1.0 {
+  overall {
+    data name {waves::top.bfm.arg_a[..."
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Tue Dec 05 20:06:48 CET 2023
+can't find replicator module for "1"
+Object couldn't be classified.  Make sure that
+"1" is a valid object name or a tag
+for a replicator module.  If "1"
+is an object other than a Tk widget or an [incr Tcl] object, make sure
+that classification code has been defined via replicator::classification.
+can't find replicator module for "1"
+Object couldn't be classified.  Make sure that
+"1" is a valid object name or a tag
+for a replicator module.  If "1"
+is an object other than a Tk widget or an [incr Tcl] object, make sure
+that classification code has been defined via replicator::classification.
+    while executing
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "::replicator::capture" line 1)
+    invoked from within
+"::replicator::capture 1"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $undoids  -progresscommand [_getProgressCommand configure "Saving signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::delete" body line 31)
+    invoked from within
+"$itk_component(waveset) delete "" $action $undo"
+    (object "::.waveWindow1" method "::WaveWindow::_doDelete" body line 26)
+    invoked from within
+"::.waveWindow1 _doDelete"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow1 _doDelete}"
+    invoked from within
+"$menu invoke $index"
+    (object "::.waveWindow1" method "::cwidgets::ToolWindow::_menu_invoke" body line 21)
+    invoked from within
+"chain $tagOrId"
+    (object "::.waveWindow1" method "::SVToolWindow::_menu_invoke" body line 15)
+    invoked from within
+"::.waveWindow1 _menu_invoke Edit>Delete"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow1 _menu_invoke Edit>Delete}"
+    (command bound to event)
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:06:51 CET 2023
+Delete waveform window: "Waveform 2"
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:06:52 CET 2023
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Dec 05 20:06:59 CET 2023
+SimVision Exit.
+ 
