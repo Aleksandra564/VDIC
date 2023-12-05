@@ -15,23 +15,7 @@ package mult_pkg;
 	    COLOR_BLUE_ON_WHITE,
 	    COLOR_DEFAULT
 	} print_color_t;
-
-    // MULT data packet
-    typedef struct packed {
-		bit 					rst_n;
-		logic signed 	[15:0] 	arg_a;
-		bit               		arg_a_parity;
-		logic signed 	[15:0] 	arg_b;        
-		bit               		arg_b_parity;
-    } command_s;
 	
-	// RESULT data packet
-	typedef struct packed {
-		logic signed 	[31:0] 	result;
-		logic 					result_parity;
-		logic 					arg_parity_error;
-	} result_s;
-
 //------------------------------------------------------------------------------
 // package functions
 //------------------------------------------------------------------------------
@@ -55,16 +39,17 @@ package mult_pkg;
 //------------------------------------------------------------------------------
 // testbench classes
 //------------------------------------------------------------------------------
-	`include "base_tpgen.svh"
-	`include "random_tpgen.svh"
-	`include "min_max_tpgen.svh"
-
+	`include "command_transaction.svh"
+	`include "min_max_transaction.svh"
+	`include "result_transaction.svh"
+	
+	`include "coverage.svh"
+	`include "tpgen.svh"
+	`include "scoreboard.svh"
+	
+	`include "driver.svh"
 	`include "command_monitor.svh"
 	`include "result_monitor.svh"
-	`include "driver.svh"
-
-	`include "coverage.svh"
-	`include "scoreboard.svh"
 	`include "env.svh"
 	
 //------------------------------------------------------------------------------

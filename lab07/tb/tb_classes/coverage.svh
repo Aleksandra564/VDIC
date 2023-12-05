@@ -1,4 +1,4 @@
-class coverage extends uvm_subscriber #(command_s);
+class coverage extends uvm_subscriber #(command_transaction);
     `uvm_component_utils(coverage)
 	
 //------------------------------------------------------------------------------
@@ -91,7 +91,7 @@ class coverage extends uvm_subscriber #(command_s);
 //------------------------------------------------------------------------------
 // subscriber write function
 //------------------------------------------------------------------------------
-    function void write(command_s t);
+    function void write(command_transaction t);
         arg_a = t.arg_a;
 		arg_a_parity = t.arg_a_parity;
 		arg_b = t.arg_b;        

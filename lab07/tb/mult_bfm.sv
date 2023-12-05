@@ -1,5 +1,5 @@
-interface mult_bfm;
 import mult_pkg::*;
+interface mult_bfm;
 
 //------------------------------------------------------------------------------
 // DUT connections
@@ -61,7 +61,7 @@ task send_data(
 	    arg_b = iB;
 		arg_a_parity = iA_parity;
 		arg_b_parity = iB_parity;
-
+        
 	    req = 1'b1;
 		wait(ack);	// wait until ack == 1
 		req = 1'b0;
@@ -73,36 +73,24 @@ endtask : send_data
 // write command monitor
 //------------------------------------------------------------------------------
 always @(posedge clk) begin
-    command_s command;
     if (req) begin
-	    command.rst_n = rst_n;
-        command.arg_a = arg_a;
-	    command.arg_a_parity = arg_a_parity;
-        command.arg_b = arg_b;
-	    command.arg_b_parity = arg_b_parity;
-        command_monitor_h.write_to_monitor(command);
+        command_monitor_h.write_to_monitor(rst_n, arg_a, arg_a_parity, arg_b, arg_b_parity);
     end
 end
 
 always @(negedge rst_n) begin : rst_monitor
-    command_s command;
-    command.rst_n = 0;
     if (command_monitor_h != null) //guard against VCS time 0 negedge
-        command_monitor_h.write_to_monitor(command);
+        command_monitor_h.write_to_monitor(0, arg_a, arg_a_parity, arg_b, arg_b_parity);
 end : rst_monitor
 
 //------------------------------------------------------------------------------
 // write result monitor
 //------------------------------------------------------------------------------
 initial begin : result_monitor_thread
-	result_s res;
     forever begin
         @(posedge clk) ;
         if (result_rdy) begin
-	        res.arg_parity_error = arg_parity_error;
-	        res.result_parity = result_parity;
-	        res.result = result;
-            result_monitor_h.write_to_monitor(res);
+            result_monitor_h.write_to_monitor(result, result_parity, arg_parity_error);
 	    end
     end
 end : result_monitor_thread

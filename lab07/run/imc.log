@@ -1,4 +1,4 @@
-imc: *I,RUNLD: Successfully loaded run /home/student/afudali/Desktop/VDIC/lab06/run/cov_work/scope/merged_results.
+imc: *I,RUNLD: Successfully loaded run /home/student/afudali/Desktop/VDIC/lab07/run/cov_work/scope/merged_results.
 imc: *W,REPDEP: This is a legacy report and no future enhancement is planned for this report. It is recommended that you use the 'report_metrics' command and generate a dynamic report.
 name                                     Overall Average      Overall Covered      Code Average         Code Covered         Fsm Average          Fsm Covered          Functional Average   Functional Covered   
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,96 @@
+TOOL:	xrun	21.03-s009: Started on Dec 05, 2023 at 20:00:11 CET
+xrun
+	-F ../tb/tb.f
+		mult_pkg.sv
+		mult_bfm.sv
+		../../common/vdic_dut_2023.svp
+		top.sv
+		+incdir+tb_classes
+		+incdir+.
+		+nowarn+DSEMEL
+		+nowarnBADPRF
+		-uvm
+		-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
+		+UVM_NO_RELNOTES
+		+UVM_VERBOSITY=MEDIUM
+		-linedebug
+		-fsmdebug
+		-uvmlinedebug
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs_gui
+	+access+r
+	+gui
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+	+UVM_TESTNAME=random_test
+	-l xrun_gui.log
+
+   User defined plus("+") options:
+	+UVM_NO_RELNOTES
+	+UVM_VERBOSITY=MEDIUM
+
+SVSEED default: 1
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/files/tcl/uvm_sim.tcl
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm top.bfm.arg_a top.bfm.ack top.bfm.arg_a_parity top.bfm.arg_b top.bfm.arg_b_parity top.bfm.arg_parity_error top.bfm.clk top.bfm.command_monitor_h top.bfm.req top.bfm.result top.bfm.result_monitor_h top.bfm.result_parity top.bfm.result_rdy top.bfm.rst_n -depth 2 -all
+Created probe 1
+xcelium> run
+UVM_INFO @ 0: reporter [RNTST] Running test random_test...
+[0;34m[107m----------------------------------------------------------------
+Name                     Type                        Size  Value
+----------------------------------------------------------------
+uvm_test_top             random_test                 -     @1941
+  env_h                  env                         -     @2018
+    command_f            uvm_tlm_fifo #(T)           -     @2048
+      get_ap             uvm_analysis_port           -     @2252
+      get_peek_export    uvm_get_peek_imp            -     @2152
+      put_ap             uvm_analysis_port           -     @2202
+      put_export         uvm_put_imp                 -     @2100
+    command_monitor_h    command_monitor             -     @2512
+      ap                 uvm_analysis_port           -     @2602
+    coverage_h           coverage                    -     @2347
+      analysis_imp       uvm_analysis_imp            -     @2397
+    driver_h             driver                      -     @2316
+      command_port       uvm_get_port                -     @2658
+    result_monitor_h     result_monitor              -     @2543
+      ap                 uvm_analysis_port           -     @2712
+    scoreboard_h         scoreboard                  -     @2377
+      analysis_imp       uvm_analysis_imp            -     @2479
+      cmd_f              uvm_tlm_analysis_fifo #(T)  -     @2743
+        analysis_export  uvm_analysis_imp            -     @2992
+        get_ap           uvm_analysis_port           -     @2941
+        get_peek_export  uvm_get_peek_imp            -     @2843
+        put_ap           uvm_analysis_port           -     @2892
+        put_export       uvm_put_imp                 -     @2794
+    tpgen_h              tpgen                       -     @2285
+      command_port       uvm_put_port                -     @3050
+----------------------------------------------------------------
+[0m
+[1;30m[103mUVM_INFO ../tb/tb_classes/random_test.svh(36) @ 0: uvm_test_top [COMMAND TRANSACTION] command_transaction
+[0m
+stop -create -name Randomize -randomize
+Created stop Randomize
+
+STEP -15048 -14263 0 1
+DRIVER SEDING 0      x      x 0 0
+REQUESTING      x      x 0 0
+STEP -28286 -23773 1 0
+xmsim: *F,SVMLEX: System virtual memory limit exceeded - consider using 64bit mode.
+TOOL:	xrun	21.03-s009: Exiting on Dec 05, 2023 at 20:01:10 CET  (total: 00:00:59)
