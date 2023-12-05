@@ -39,24 +39,27 @@ package mult_pkg;
 //------------------------------------------------------------------------------
 // testbench classes
 //------------------------------------------------------------------------------
-	`include "command_transaction.svh"
-	`include "min_max_transaction.svh"
-	`include "result_transaction.svh"
-	
-	`include "coverage.svh"
-	`include "tpgen.svh"
-	`include "scoreboard.svh"
-	
-	`include "driver.svh"
-	`include "command_monitor.svh"
-	`include "result_monitor.svh"
-	`include "env.svh"
-	
-//------------------------------------------------------------------------------
-// test classes
-//------------------------------------------------------------------------------
-	`include "random_test.svh"
-	`include "min_max_test.svh"
+// configs
+`include "env_config.svh"
+`include "mult_agent_config.svh"
+
+// transactions
+`include "command_transaction.svh"
+`include "min_max_transaction.svh"
+`include "result_transaction.svh"
+
+// testbench components
+`include "coverage.svh"
+`include "tpgen.svh"
+`include "scoreboard.svh"
+`include "driver.svh"
+`include "command_monitor.svh"
+`include "result_monitor.svh"
+`include "mult_agent.svh"
+`include "env.svh"
+
+// tests
+`include "dual_test.svh"
 	
 endpackage : mult_pkg
 	

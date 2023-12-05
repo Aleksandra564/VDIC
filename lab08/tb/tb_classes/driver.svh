@@ -17,11 +17,13 @@ class driver extends uvm_component;
 //------------------------------------------------------------------------------
 // build phase
 //------------------------------------------------------------------------------
-    function void build_phase(uvm_phase phase);
-        if(!uvm_config_db #(virtual mult_bfm)::get(null, "*", "bfm", bfm))
-            `uvm_fatal("DRIVER", "Failed to get BFM");
-        command_port = new("command_port", this);
-    endfunction : build_phase
+   function void build_phase(uvm_phase phase);
+      mult_agent_config mult_agent_config_h;
+      if(!uvm_config_db #(mult_agent_config)::get(this, "","config", mult_agent_config_h))
+        `uvm_fatal("DRIVER", "Failed to get config");
+      bfm = mult_agent_config_h.bfm;
+      command_port = new("command_port",this);
+   endfunction : build_phase
     
 //------------------------------------------------------------------------------
 // run phase

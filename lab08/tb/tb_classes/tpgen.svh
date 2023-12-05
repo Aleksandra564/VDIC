@@ -4,13 +4,11 @@ class tpgen extends uvm_component;
 //------------------------------------------------------------------------------
 // local variables
 //------------------------------------------------------------------------------
-
     uvm_put_port #(command_transaction) command_port;
 
 //------------------------------------------------------------------------------
 // constructor
 //------------------------------------------------------------------------------
-
     function new (string name, uvm_component parent);
         super.new(name, parent);
     endfunction : new

@@ -1,9 +1,10 @@
-TOOL:	xrun	21.03-s009: Started on Dec 05, 2023 at 21:03:17 CET
+TOOL:	xrun	21.03-s009: Started on Dec 06, 2023 at 00:30:39 CET
 xrun
 	-compile
 	-l xrun_compile.log
 	-F ../tb/tb.f
 		mult_pkg.sv
+		mult_tpgen_module.sv
 		mult_bfm.sv
 		../../common/vdic_dut_2023.svp
 		top.sv
@@ -42,6 +43,9 @@ Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/
 file: ../tb/mult_pkg.sv
 	package worklib.mult_pkg:sv
 		errors: 0, warnings: 0
+file: ../tb/mult_tpgen_module.sv
+	module worklib.mult_tpgen_module:sv
+		errors: 0, warnings: 0
 file: ../tb/mult_bfm.sv
 	interface worklib.mult_bfm:sv
 		errors: 0, warnings: 0
@@ -54,4 +58,4 @@ file: ../tb/top.sv
 xmvlog: *W,SPDUSD: Include directory ../tb/. given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-TOOL:	xrun	21.03-s009: Exiting on Dec 05, 2023 at 21:03:18 CET  (total: 00:00:01)
+TOOL:	xrun	21.03-s009: Exiting on Dec 06, 2023 at 00:30:40 CET  (total: 00:00:01)

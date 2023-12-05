@@ -40,6 +40,8 @@
 ./macros/uvm_deprecated_defines.svh
 ../tb/tb_classes/macros/uvm_deprecated_defines.svh
 ../tb/./macros/uvm_deprecated_defines.svh
+./env_config.svh
+./mult_agent_config.svh
 ./command_transaction.svh
 ./min_max_transaction.svh
 ./result_transaction.svh
@@ -49,6 +51,6 @@
 ./driver.svh
 ./command_monitor.svh
 ./result_monitor.svh
+./mult_agent.svh
 ./env.svh
-./random_test.svh
-./min_max_test.svh
+./dual_test.svh

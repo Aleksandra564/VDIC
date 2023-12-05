@@ -46,27 +46,25 @@ endtask: reset_mult
 // send_data
 //------------------------------------------------------------------------------
 task send_data(
-	input bit					irst,
+	input bit 					irst,
 	input logic signed 	[15:0] 	iA,
 	input logic               	iA_parity,
 	input logic signed 	[15:0] 	iB,
 	input logic               	iB_parity
 	);
-	
-	if(irst) begin
-		reset_mult();
-	end
-	else begin
-	    arg_a = iA;
-	    arg_b = iB;
-		arg_a_parity = iA_parity;
-		arg_b_parity = iB_parity;
-        
-	    req = 1'b1;
-		wait(ack);	// wait until ack == 1
-		req = 1'b0;
-		wait(result_rdy);
-	end
+
+	rst_n = irst;
+    arg_a = iA;
+    arg_b = iB;
+	arg_a_parity = iA_parity;
+	arg_b_parity = iB_parity;
+
+    req = 1'b1;
+	    
+	wait(ack);			// wait until ack == 1
+	req = 1'b0;
+	wait(result_rdy);	// wait until result is ready
+
 endtask : send_data
 
 //------------------------------------------------------------------------------
@@ -94,6 +92,5 @@ initial begin : result_monitor_thread
 	    end
     end
 end : result_monitor_thread
-
 
 endinterface : mult_bfm

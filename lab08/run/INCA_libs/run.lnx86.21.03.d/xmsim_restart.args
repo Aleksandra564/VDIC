@@ -47,16 +47,16 @@ SAWSTP
 -NOCOPYRIGHT
 -COVOVERWRITE
 -COVTEST
-min_max_test
-+UVM_TESTNAME=min_max_test
+dual_test
++UVM_TESTNAME=dual_test
 -MESSAGES
 -RUN
 -SV_LIB
 /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/lib/libuvmdpi.so
 +EMGRLOG
-xrun_test_min_max_test.log
+xrun_test_dual_test.log
 -XLSTIME
-1701806602
+1701819044
 -XLKEEP
 -XLMODE
 ./INCA_libs/run.lnx86.21.03.d
@@ -70,4 +70,4 @@ xrun
 -XLVERSION
 "TOOL:	xrun	21.03-s009"
 -XLNAME
-./INCA_libs/run.lnx86.21.03.d/cadence31_28800
+./INCA_libs/run.lnx86.21.03.d/cadence31_30289

@@ -112,3 +112,7 @@
 [INFO ] 2023-12-05 20:57:21,217 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40561
 [INFO ] 2023-12-05 21:03:28,671 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39171
 [INFO ] 2023-12-05 21:03:33,380 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38591
+[INFO ] 2023-12-06 00:31:24,264 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44720
+[ERROR] 2023-12-06 00:31:24,355 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/dual_test' not found. Verify the existence of the specified directory, and rerun the command
+[INFO ] 2023-12-06 00:31:36,661 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39294
+[ERROR] 2023-12-06 00:31:36,724 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/merged_results' not found. Verify the existence of the specified directory, and rerun the command

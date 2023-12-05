@@ -1,11 +1,3 @@
-imc: *I,RUNLD: Successfully loaded run /home/student/afudali/Desktop/VDIC/lab07/run/cov_work/scope/merged_results.
-imc: *W,REPDEP: This is a legacy report and no future enhancement is planned for this report. It is recommended that you use the 'report_metrics' command and generate a dynamic report.
-name                                     Overall Average      Overall Covered      Code Average         Code Covered         Fsm Average          Fsm Covered          Functional Average   Functional Covered   
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-uvm_pkg                                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
-|--uvm_test_top                          n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
-| |--env_h                               n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
-| | |--coverage_h                        100.00%              100.00% (47/47)      n/a                  n/a                  n/a                  n/a                  100.00%              100.00% (47/47)      
-top                                      100.00%              100.00% (2/2)        100.00%              100.00% (2/2)        n/a                  n/a                  n/a                  n/a                  
-|--bfm                                   97.73%               98.95% (94/95)       97.73%               98.95% (94/95)       n/a                  n/a                  n/a                  n/a                  
-|--DUT                                   100.00%              100.00% (73/73)      100.00%              100.00% (73/73)      n/a                  n/a                  n/a                  n/a                  
+imc: *E,DRNTFND: Directory 'cov_work/scope/merged_results' not found. Verify the existence of the specified directory, and rerun the command
+Starting batch mode
+imc> exit

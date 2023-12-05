@@ -2,7 +2,8 @@
 // File created by:  xrun
 // Do not modify this file
 //
-/home/student/afudali/Desktop/VDIC/lab07/tb/mult_pkg.sv
-/home/student/afudali/Desktop/VDIC/lab07/tb/mult_bfm.sv
+/home/student/afudali/Desktop/VDIC/lab08/tb/mult_pkg.sv
+/home/student/afudali/Desktop/VDIC/lab08/tb/mult_tpgen_module.sv
+/home/student/afudali/Desktop/VDIC/lab08/tb/mult_bfm.sv
 /home/student/afudali/Desktop/VDIC/common/vdic_dut_2023.svp
-/home/student/afudali/Desktop/VDIC/lab07/tb/top.sv
+/home/student/afudali/Desktop/VDIC/lab08/tb/top.sv
