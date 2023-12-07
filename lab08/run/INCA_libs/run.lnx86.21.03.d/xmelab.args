@@ -6,7 +6,7 @@
 +UVM_VERBOSITY=MEDIUM
 +incdir+tb_classes
 +incdir+.
-+nowarn+DSEMEL
++nowarnDSEMEL
 +nowarnBADPRF
 +nowarnDSEM2009
 +nowarnDSEMEL

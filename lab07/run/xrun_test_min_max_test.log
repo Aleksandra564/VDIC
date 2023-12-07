@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Dec 05, 2023 at 21:03:22 CET
+TOOL:	xrun	21.03-s009: Started on Dec 07, 2023 at 08:45:33 CET
 xrun
 	-F ../tb/tb.f
 		mult_pkg.sv
@@ -121,4 +121,4 @@ coverage setup:
 coverage files:
   model(design data) :  ./cov_work/scope/icc_4ed4b8ca_250249d6.ucm (reused)
   data               :  ./cov_work/scope/min_max_test/icc_4ed4b8ca_250249d6.ucd
-TOOL:	xrun	21.03-s009: Exiting on Dec 05, 2023 at 21:03:23 CET  (total: 00:00:01)
+TOOL:	xrun	21.03-s009: Exiting on Dec 07, 2023 at 08:45:34 CET  (total: 00:00:01)

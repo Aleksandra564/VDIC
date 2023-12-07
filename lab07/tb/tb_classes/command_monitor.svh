@@ -21,7 +21,7 @@ class command_monitor extends uvm_component;
         if(!uvm_config_db #(virtual mult_bfm)::get(null, "*","bfm", bfm))
             `uvm_fatal("COMMAND MONITOR", "Failed to get BFM")
         bfm.command_monitor_h = this;
-        ap                    = new("ap",this);
+        ap = new("ap",this);
     endfunction : build_phase
     
 //------------------------------------------------------------------------------

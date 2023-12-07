@@ -21,7 +21,7 @@ class command_monitor extends uvm_component;
         mult_agent_config agent_config_h;
 
         // get the BFM
-        if(!uvm_config_db #(mult_agent_config)::get(this, "","config", agent_config_h))
+        if(!uvm_config_db #(mult_agent_config)::get(this, "", "config", agent_config_h))
             `uvm_fatal("COMMAND MONITOR", "Failed to get CONFIG");
 
         // pass the command_monitor handler to the BFM

@@ -30,10 +30,10 @@ endclass : result_transaction
 function void result_transaction::do_copy(uvm_object rhs);
     result_transaction copied_transaction_h;
     assert(rhs != null) else
-        `uvm_fatal("RESULT TRANSACTION","Tried to copy null transaction");
+        $fatal(1,"Tried to copy null transaction");
     super.do_copy(rhs);
     assert($cast(copied_transaction_h, rhs)) else
-        `uvm_fatal("RESULT TRANSACTION","Failed cast in do_copy");
+        $fatal(1,"Failed cast in do_copy");
     result = copied_transaction_h.result;
     result_parity = copied_transaction_h.result_parity;
     arg_parity_error = copied_transaction_h.arg_parity_error;

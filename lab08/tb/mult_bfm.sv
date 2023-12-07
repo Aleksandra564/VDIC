@@ -46,35 +46,37 @@ endtask: reset_mult
 // send_data
 //------------------------------------------------------------------------------
 task send_data(
-	input bit 					irst,
+	input bit					irst,
 	input logic signed 	[15:0] 	iA,
 	input logic               	iA_parity,
 	input logic signed 	[15:0] 	iB,
 	input logic               	iB_parity
 	);
-
-	rst_n = irst;
-    arg_a = iA;
-    arg_b = iB;
-	arg_a_parity = iA_parity;
-	arg_b_parity = iB_parity;
-
-    req = 1'b1;
-	    
-	wait(ack);			// wait until ack == 1
-	req = 1'b0;
-	wait(result_rdy);	// wait until result is ready
-
+	
+	if(irst) begin
+		reset_mult();
+	end
+	else begin
+	    arg_a = iA;
+	    arg_b = iB;
+		arg_a_parity = iA_parity;
+		arg_b_parity = iB_parity;
+        
+	    req = 1'b1;
+		wait(ack);	// wait until ack == 1
+		req = 1'b0;
+		wait(result_rdy);
+	end
 endtask : send_data
 
 //------------------------------------------------------------------------------
 // write command monitor
 //------------------------------------------------------------------------------
-always @(posedge clk) begin
+always @(posedge clk) begin : op_monitor
     if (req) begin
         command_monitor_h.write_to_monitor(rst_n, arg_a, arg_a_parity, arg_b, arg_b_parity);
     end
-end
+end : op_monitor
 
 always @(negedge rst_n) begin : rst_monitor
     if (command_monitor_h != null) //guard against VCS time 0 negedge

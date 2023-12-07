@@ -1,0 +1,21 @@
+a) The following testbench objects will communicate with each other using transactions:
+
+command monitor to coverage and scoreboard
+result monitor to scoreboard
+
+b) The minimum number of transaction classes needed to run a single test (e.g. random_test) is: 2
+
+
+c) The objects that create the instances of these transactions are:
+
+tpgen creates command_transaction instances
+result_monitor creates result_transaction instances
+
+d) How many new transaction classes do we need to add if we create a new test (e.g., add_test) so that the add_test inherits from random_test? 1
+
+
+d) If we have two tests, e.g. random_test and minmax_test, and one tester, how are different transaction
+types generated for different tests (i.e. random_command for random_test, and minmax_command for
+minmax_test)? 
+
+different transactions are generated using the same same base transaction which type is overridden by other transaction classes

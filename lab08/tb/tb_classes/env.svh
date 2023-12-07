@@ -25,7 +25,7 @@ class env extends uvm_env;
         mult_agent_config module_agent_config_h;
 
         // get the env_config with two BFM's included
-        if(!uvm_config_db #(env_config)::get(this, "","config", env_config_h))
+        if(!uvm_config_db #(env_config)::get(this, "", "config", env_config_h))
             `uvm_fatal("ENV", "Failed to get config object");
 
         // create configs for the agents
@@ -43,8 +43,8 @@ class env extends uvm_env;
             "config", module_agent_config_h);
 
         // create the agents
-        class_mult_agent_h  = mult_agent::type_id::create("class_mult_agent_h",this);
-        module_mult_agent_h = mult_agent::type_id::create("module_mult_agent_h",this);
+        class_mult_agent_h  = mult_agent::type_id::create("class_mult_agent_h", this);
+        module_mult_agent_h = mult_agent::type_id::create("module_mult_agent_h", this);
 
     endfunction : build_phase
 

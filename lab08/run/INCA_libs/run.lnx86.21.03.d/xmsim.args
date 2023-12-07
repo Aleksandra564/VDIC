@@ -8,7 +8,7 @@
 +UVM_VERBOSITY=MEDIUM
 +incdir+tb_classes
 +incdir+.
-+nowarn+DSEMEL
++nowarnDSEMEL
 +nowarnBADPRF
 +nowarnDSEM2009
 +nowarnDSEMEL
@@ -56,7 +56,7 @@ dual_test
 +EMGRLOG
 xrun_test_dual_test.log
 -XLSTIME
-1701819044
+1701981609
 -XLKEEP
 -XLMODE
 ./INCA_libs/run.lnx86.21.03.d

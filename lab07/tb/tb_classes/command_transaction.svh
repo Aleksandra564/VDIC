@@ -19,6 +19,13 @@ class command_transaction extends uvm_transaction;
     }
     
 //------------------------------------------------------------------------------
+// constructor
+//------------------------------------------------------------------------------
+    function new (string name = "");
+        super.new(name);
+    endfunction : new    
+    
+//------------------------------------------------------------------------------
 // transaction functions: do_copy, clone_me, do_compare, convert2string
 //------------------------------------------------------------------------------
     function void do_copy(uvm_object rhs);
@@ -29,7 +36,7 @@ class command_transaction extends uvm_transaction;
 
         super.do_copy(rhs); // copy all parent class data
 
-        if(!$cast(copied_transaction_h,rhs))
+        if(!$cast(copied_transaction_h, rhs))
             `uvm_fatal("COMMAND TRANSACTION", "Tried to copy wrong type.")
 
         rst_n  = copied_transaction_h.rst_n;
@@ -42,7 +49,6 @@ class command_transaction extends uvm_transaction;
 
 
     function command_transaction clone_me();
-        
         command_transaction clone;
         uvm_object tmp;
 
@@ -54,7 +60,6 @@ class command_transaction extends uvm_transaction;
 
 
     function bit do_compare(uvm_object rhs, uvm_comparer comparer);
-        
         command_transaction compared_transaction_h;
         bit same;
 
@@ -81,12 +86,5 @@ class command_transaction extends uvm_transaction;
         s = $sformatf("rst_n: %1h arg_a: %4h arg_b: %4h arg_a_parity: %1h arg_b_parity: %1h", rst_n, arg_a, arg_b, arg_a_parity, arg_a_parity);
         return s;
     endfunction : convert2string
-
-//------------------------------------------------------------------------------
-// constructor
-//------------------------------------------------------------------------------
-    function new (string name = "");
-        super.new(name);
-    endfunction : new
 
 endclass : command_transaction

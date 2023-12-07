@@ -1,3 +1,17 @@
-imc: *E,DRNTFND: Directory 'cov_work/scope/merged_results' not found. Verify the existence of the specified directory, and rerun the command
-Starting batch mode
-imc> exit
+imc: *I,RUNLD: Successfully loaded run /home/student/afudali/Desktop/VDIC/lab08/run/cov_work/scope/merged_results.
+imc: *W,REPDEP: This is a legacy report and no future enhancement is planned for this report. It is recommended that you use the 'report_metrics' command and generate a dynamic report.
+name                                     Overall Average      Overall Covered      Code Average         Code Covered         Fsm Average          Fsm Covered          Functional Average   Functional Covered   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+uvm_pkg                                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
+|--uvm_test_top                          n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
+| |--env_h                               n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
+| | |--class_mult_agent_h                n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
+| | | |--coverage_h                      31.02%               27.66% (13/47)       n/a                  n/a                  n/a                  n/a                  31.02%               27.66% (13/47)       
+| | |--module_mult_agent_h               n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
+| | | |--coverage_h                      17.59%               14.89% (7/47)        n/a                  n/a                  n/a                  n/a                  17.59%               14.89% (7/47)        
+top                                      100.00%              100.00% (3/3)        100.00%              100.00% (3/3)        n/a                  n/a                  n/a                  n/a                  
+|--class_bfm                             45.92%               24.21% (23/95)       45.92%               24.21% (23/95)       n/a                  n/a                  n/a                  n/a                  
+|--class_dut                             5.48%                5.48% (4/73)         5.48%                5.48% (4/73)         n/a                  n/a                  n/a                  n/a                  
+|--module_bfm                            40.69%               21.05% (20/95)       40.69%               21.05% (20/95)       n/a                  n/a                  n/a                  n/a                  
+|--module_dut                            4.11%                4.11% (3/73)         4.11%                4.11% (3/73)         n/a                  n/a                  n/a                  n/a                  
+|--stim_module                           77.38%               75.76% (25/33)       77.38%               75.76% (25/33)       n/a                  n/a                  n/a                  n/a                  

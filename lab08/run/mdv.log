@@ -116,3 +116,24 @@
 [ERROR] 2023-12-06 00:31:24,355 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/dual_test' not found. Verify the existence of the specified directory, and rerun the command
 [INFO ] 2023-12-06 00:31:36,661 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39294
 [ERROR] 2023-12-06 00:31:36,724 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/merged_results' not found. Verify the existence of the specified directory, and rerun the command
+[INFO ] 2023-12-06 22:54:01,947 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35976
+[ERROR] 2023-12-06 22:54:02,057 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/dual_test' not found. Verify the existence of the specified directory, and rerun the command
+[INFO ] 2023-12-06 22:59:36,219 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38648
+[ERROR] 2023-12-06 22:59:36,307 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/merged_results' not found. Verify the existence of the specified directory, and rerun the command
+[INFO ] 2023-12-06 23:16:22,978 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38121
+[ERROR] 2023-12-06 23:16:23,053 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/dual_test' not found. Verify the existence of the specified directory, and rerun the command
+[INFO ] 2023-12-06 23:16:31,224 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38141
+[ERROR] 2023-12-06 23:16:31,311 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/merged_results' not found. Verify the existence of the specified directory, and rerun the command
+[INFO ] 2023-12-06 23:23:15,925 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40406
+[INFO ] 2023-12-06 23:23:20,758 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41863
+[INFO ] 2023-12-06 23:38:21,881 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45725
+[INFO ] 2023-12-06 23:38:28,090 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45202
+[INFO ] 2023-12-06 23:44:06,637 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36139
+[INFO ] 2023-12-07 21:25:17,845 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40226
+[INFO ] 2023-12-07 21:25:22,992 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42834
+[INFO ] 2023-12-07 21:29:01,925 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39896
+[INFO ] 2023-12-07 21:29:06,878 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44274
+[INFO ] 2023-12-07 21:29:51,336 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40632
+[INFO ] 2023-12-07 21:29:56,693 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41187
+[INFO ] 2023-12-07 21:40:16,278 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39144
+[INFO ] 2023-12-07 21:40:21,853 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41874

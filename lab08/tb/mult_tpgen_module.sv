@@ -5,7 +5,6 @@ import mult_pkg::*;
 // Random data generation functions
 //---------------------------------
 function logic signed [15:0] get_data();
-
     bit [2:0] zero_ones;
     zero_ones = 3'($random);
 

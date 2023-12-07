@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Dec 06, 2023 at 00:30:39 CET
+TOOL:	xrun	21.03-s009: Started on Dec 07, 2023 at 21:40:05 CET
 xrun
 	-compile
 	-l xrun_compile.log
@@ -10,7 +10,7 @@ xrun
 		top.sv
 		+incdir+tb_classes
 		+incdir+.
-		+nowarn+DSEMEL
+		+nowarnDSEMEL
 		+nowarnBADPRF
 		-uvm
 		-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
@@ -58,4 +58,4 @@ file: ../tb/top.sv
 xmvlog: *W,SPDUSD: Include directory ../tb/. given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-TOOL:	xrun	21.03-s009: Exiting on Dec 06, 2023 at 00:30:40 CET  (total: 00:00:01)
+TOOL:	xrun	21.03-s009: Exiting on Dec 07, 2023 at 21:40:06 CET  (total: 00:00:01)
