@@ -2,14 +2,14 @@
 *I,MERGL1: Merging Simulation Coverage ...
 ----------------------------
 *I,MERGL1: Preparing target model ...
-*I,MERGL1: Reading model of primary run (cov_work/scope/dual_test) as initial model: cov_work/scope/icc_44683bf5_3d8ad326.ucm
+*I,MERGL1: Reading model of primary run (cov_work/scope/dual_test) as initial model: cov_work/scope/icc_04b53d32_3d8ad326.ucm
 *I,MERGL1: Target model generated successfully.
 *I,MERGL1: Projecting Simulation ucd data into the target model ...
 *I,MERGL2:   cov_work/scope/dual_test:
 *I,MERGL3:       Data is projected in to the target model.
 *I,MERGL1: Writing output database cov_work/scope/merged_results:
-*I,MERGL2:   Model: cov_work/scope/merged_results/icc_44683bf5_3d8ad326.ucm
-*I,MERGL2:   Data : cov_work/scope/merged_results/icc_44683bf5_3d8ad326.ucd
+*I,MERGL2:   Model: cov_work/scope/merged_results/icc_04b53d32_3d8ad326.ucm
+*I,MERGL2:   Data : cov_work/scope/merged_results/icc_04b53d32_3d8ad326.ucd
 *I,MERGL1: No Specman coverage databases found in the runs.
 Total conflicts during target model creation: 0
 Total items not merged                      : 0
@@ -23,12 +23,12 @@ uvm_pkg                                  n/a                  n/a               
 |--uvm_test_top                          n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
 | |--env_h                               n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
 | | |--class_mult_agent_h                n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
-| | | |--coverage_h                      31.02%               27.66% (13/47)       n/a                  n/a                  n/a                  n/a                  31.02%               27.66% (13/47)       
+| | | |--coverage_h                      58.33%               65.96% (31/47)       n/a                  n/a                  n/a                  n/a                  58.33%               65.96% (31/47)       
 | | |--module_mult_agent_h               n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
-| | | |--coverage_h                      17.59%               14.89% (7/47)        n/a                  n/a                  n/a                  n/a                  17.59%               14.89% (7/47)        
+| | | |--coverage_h                      100.00%              100.00% (47/47)      n/a                  n/a                  n/a                  n/a                  100.00%              100.00% (47/47)      
 top                                      100.00%              100.00% (3/3)        100.00%              100.00% (3/3)        n/a                  n/a                  n/a                  n/a                  
-|--class_bfm                             45.92%               24.21% (23/95)       45.92%               24.21% (23/95)       n/a                  n/a                  n/a                  n/a                  
-|--class_dut                             5.48%                5.48% (4/73)         5.48%                5.48% (4/73)         n/a                  n/a                  n/a                  n/a                  
-|--module_bfm                            40.69%               21.05% (20/95)       40.69%               21.05% (20/95)       n/a                  n/a                  n/a                  n/a                  
-|--module_dut                            4.11%                4.11% (3/73)         4.11%                4.11% (3/73)         n/a                  n/a                  n/a                  n/a                  
-|--stim_module                           77.38%               75.76% (25/33)       77.38%               75.76% (25/33)       n/a                  n/a                  n/a                  n/a                  
+|--class_bfm                             97.83%               98.96% (95/96)       97.83%               98.96% (95/96)       n/a                  n/a                  n/a                  n/a                  
+|--class_dut                             100.00%              100.00% (73/73)      100.00%              100.00% (73/73)      n/a                  n/a                  n/a                  n/a                  
+|--module_bfm                            95.65%               97.92% (94/96)       95.65%               97.92% (94/96)       n/a                  n/a                  n/a                  n/a                  
+|--module_dut                            100.00%              100.00% (73/73)      100.00%              100.00% (73/73)      n/a                  n/a                  n/a                  n/a                  
+|--stim_module                           100.00%              100.00% (34/34)      100.00%              100.00% (34/34)      n/a                  n/a                  n/a                  n/a                  

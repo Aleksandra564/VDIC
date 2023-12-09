@@ -55,9 +55,9 @@ function bit result_transaction::do_compare(uvm_object rhs, uvm_comparer compare
         same = 0;
     else
         same = super.do_compare(rhs, comparer) &&
-        (compared_transaction_h.result == result &&
-	    compared_transaction_h.result_parity &&
-	    compared_transaction_h.arg_parity_error);
+        (compared_transaction_h.result == result && 
+	    compared_transaction_h.result_parity == result_parity && 
+	    compared_transaction_h.arg_parity_error == arg_parity_error);
     return same;
 endfunction : do_compare
 

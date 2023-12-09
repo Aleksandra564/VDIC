@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Dec 07, 2023 at 21:40:09 CET
+TOOL:	xrun	21.03-s009: Started on Dec 09, 2023 at 15:20:52 CET
 xrun
 	-F ../tb/tb.f
 		mult_pkg.sv
@@ -98,19 +98,45 @@ uvm_test_top               dual_test                   -     @1964
 [0m
 [1;30m[103mUVM_INFO ../tb/tb_classes/tpgen.svh(34) @ 0: uvm_test_top.env_h.class_mult_agent_h.tpgen_h [TPGEN] *** Created transaction type: command_transaction
 [0m
-predicted: arg_par_err = xmsim: *E,TRNULLID: NULL pointer dereference.
-          File: ../tb/tb_classes/scoreboard.svh, line = 90, pos = 86
-         Scope: worklib.mult_pkg::scoreboard@2565_6.write
-          Time: 70 NS + 0
-Verilog Stack Trace:
-0: function worklib.mult_pkg::scoreboard@2565_6.write at ../tb/tb_classes/scoreboard.svh:90
-1: function worklib.uvm_pkg::uvm_analysis_imp#(mult_pkg::result_transaction,uvm_pkg::uvm_subscriber#(mult_pkg::result_transaction))@2615_5.write at /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/tlm1/uvm_analysis_port.svh:119
-2: function worklib.uvm_pkg::uvm_analysis_port#(mult_pkg::result_transaction)@2917_2.write at /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/tlm1/uvm_analysis_port.svh:81
-3: function worklib.mult_pkg::result_monitor@2504_4.write_to_monitor at ../tb/tb_classes/result_monitor.svh:48
-4: initial block in top.class_bfm at ../tb/mult_bfm.sv:93
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 260350000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../tb/tb_classes/scoreboard.svh(115) @ 260350000: uvm_test_top.env_h.class_mult_agent_h.scoreboard_h [SELF CHECKER] Reporting test result below
+[1;30m[102m-----------------------------------
+----------- Test PASSED -----------
+-----------------------------------[0m
+
+UVM_INFO ../tb/tb_classes/scoreboard.svh(115) @ 260350000: uvm_test_top.env_h.module_mult_agent_h.scoreboard_h [SELF CHECKER] Reporting test result below
+[1;30m[102m-----------------------------------
+----------- Test PASSED -----------
+-----------------------------------[0m
+
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_catcher.svh(705) @ 260350000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
 
 
-../tb/tb_classes/scoreboard.svh:90         $display("predicted: arg_par_err = %d, result = %d, result_par = %d", predicted.arg_parity_error, predicted.result, predicted.result_parity);
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(847) @ 260350000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    6
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SELF CHECKER]     2
+[TEST_DONE]     1
+[TPGEN]     1
+[UVM/REPORT/CATCHER]     1
+
+Simulation complete via $finish(1) at time 260350 NS + 63
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
 xcelium> exit
 See ./cov_work/scope/dual_test/icc.com file for message(s) on coverage constant object marking
 
@@ -121,6 +147,6 @@ coverage setup:
   testname :  dual_test
 
 coverage files:
-  model(design data) :  ./cov_work/scope/icc_44683bf5_3d8ad326.ucm
-  data               :  ./cov_work/scope/dual_test/icc_44683bf5_3d8ad326.ucd
-TOOL:	xrun	21.03-s009: Exiting on Dec 07, 2023 at 21:40:11 CET  (total: 00:00:02)
+  model(design data) :  ./cov_work/scope/icc_04b53d32_3d8ad326.ucm
+  data               :  ./cov_work/scope/dual_test/icc_04b53d32_3d8ad326.ucd
+TOOL:	xrun	21.03-s009: Exiting on Dec 09, 2023 at 15:20:53 CET  (total: 00:00:01)

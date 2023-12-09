@@ -44,6 +44,7 @@ class command_monitor extends uvm_component;
         command_transaction cmd;
         `uvm_info("COMMAND MONITOR",$sformatf("COMMAND MONITOR: arg_a=%0d, arg_b=%0d, arg_a_parity=%0d, arg_b_parity=%0d", cmd.arg_a, cmd.arg_b, cmd.arg_a_parity, cmd.arg_b_parity), UVM_HIGH);
         cmd = new("cmd");
+        cmd.rst_n = rst_n;
         cmd.arg_a = arg_a;
         cmd.arg_b = arg_b;
         cmd.arg_a_parity = arg_a_parity;

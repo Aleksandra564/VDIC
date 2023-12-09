@@ -16,8 +16,6 @@ class command_transaction extends uvm_transaction;
     constraint data {
 	    arg_a dist {[16'sh8000:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFF]:/1};
 	    arg_b dist {[16'sh8000:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFF]:/1};
-//		arg_a dist {16'sh8000:/1, [16'sh8001:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFE]:/1, 16'sh7FFF:/1};
-//	    arg_b dist {16'sh8000:/1, [16'sh8001:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFE]:/1, 16'sh7FFF:/1};
     }
     
 //------------------------------------------------------------------------------

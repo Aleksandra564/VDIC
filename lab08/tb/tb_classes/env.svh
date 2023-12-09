@@ -29,10 +29,10 @@ class env extends uvm_env;
             `uvm_fatal("ENV", "Failed to get config object");
 
         // create configs for the agents
-        class_agent_config_h   = new(.bfm(env_config_h.class_bfm), .is_active(UVM_ACTIVE));
+        class_agent_config_h = new(.bfm(env_config_h.class_bfm), .is_active(UVM_ACTIVE));
         
         // for the second DUT we provide external stimulus, the agent does not generate it
-        module_agent_config_h  = new(.bfm(env_config_h.module_bfm), .is_active(UVM_PASSIVE));
+        module_agent_config_h = new(.bfm(env_config_h.module_bfm), .is_active(UVM_PASSIVE));
 
         // store the agent configs in the UMV database
         // important: restricted access by the hierarchical name, the second argument must

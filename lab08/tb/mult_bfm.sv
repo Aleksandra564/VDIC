@@ -43,6 +43,13 @@ task reset_mult();
 endtask: reset_mult
 
 //------------------------------------------------------------------------------
+// wait_ready
+//------------------------------------------------------------------------------
+task wait_ready();
+	wait(result_rdy);
+endtask : wait_ready
+
+//------------------------------------------------------------------------------
 // send_data
 //------------------------------------------------------------------------------
 task send_data(
@@ -65,7 +72,7 @@ task send_data(
 	    req = 1'b1;
 		wait(ack);	// wait until ack == 1
 		req = 1'b0;
-		wait(result_rdy);
+		wait_ready();
 	end
 endtask : send_data
 

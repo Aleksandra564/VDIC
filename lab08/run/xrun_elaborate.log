@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Dec 07, 2023 at 21:40:06 CET
+TOOL:	xrun	21.03-s009: Started on Dec 09, 2023 at 15:20:48 CET
 xrun
 	-elaborate
 	-l xrun_elaborate.log
@@ -77,8 +77,8 @@ xmelab: *W,VALFIT (../tb/tb_classes/min_max_transaction.svh,9|21): Value will no
 ..... Done
 	Enabling instrumentation for coverage types: block expression FSM toggle functional
 	Generating native compiled code:
-		worklib.mult_tpgen_module:sv <0x6b33c38e>
-			streams:   3, words:  8965
+		worklib.mult_tpgen_module:sv <0x690cf687>
+			streams:   3, words:  9166
 		worklib.vdic_dut_2023:svp <0x5ca053c5>
 			streams:  58, words: 25285
 		worklib.uvm_pkg:sv <0x545db74e>
@@ -147,36 +147,36 @@ xmelab: *W,VALFIT (../tb/tb_classes/min_max_transaction.svh,9|21): Value will no
 			streams:   9, words:  5026
 		worklib.cdns_uvm_pkg:sv <0x0be05144>
 			streams:  10, words:  8472
-		worklib.uvm_pkg:sv <0x69c5610d>
+		worklib.uvm_pkg:sv <0x2299aff6>
 			streams:  24, words: 25007
-		worklib.uvm_pkg:sv <0x6db0ec2f>
+		worklib.uvm_pkg:sv <0x0994fb83>
 			streams:  24, words: 28433
 		worklib.uvm_pkg:sv <0x57ef4d4f>
 			streams:   7, words:  2972
-		worklib.uvm_pkg:sv <0x7998eee7>
+		worklib.uvm_pkg:sv <0x3598c96a>
 			streams:  91, words: 141693
-		worklib.mult_pkg:sv <0x4a707a1a>
+		worklib.mult_pkg:sv <0x11d86b98>
 			streams:   7, words:  3393
-		worklib.uvm_pkg:sv <0x29bb578f>
+		worklib.uvm_pkg:sv <0x2b876707>
 			streams:  24, words: 33810
 		worklib.uvm_pkg:sv <0x5aa94e51>
 			streams:  18, words: 18890
-		worklib.uvm_pkg:sv <0x421dae8d>
+		worklib.uvm_pkg:sv <0x091cf5a4>
 			streams:  33, words: 38152
-		worklib.uvm_pkg:sv <0x0ce7588d>
+		worklib.uvm_pkg:sv <0x09e28e2e>
 			streams:  33, words: 35621
-		worklib.uvm_pkg:sv <0x4c4c2d36>
+		worklib.uvm_pkg:sv <0x614fb7e0>
 			streams:  38, words: 34459
-		worklib.uvm_pkg:sv <0x53b16037>
-			streams: 120, words: 115209
-		worklib.top:sv <0x73cba814>
+		worklib.uvm_pkg:sv <0x5634521c>
+			streams: 120, words: 114223
+		worklib.top:sv <0x2e5d2d91>
 			streams:  93, words: 125455
-		worklib.mult_bfm:sv <0x7f76c853>
-			streams: 284, words: 437880
+		worklib.mult_bfm:sv <0x5f3784d1>
+			streams: 285, words: 438596
 		worklib.mult_pkg:sv <0x0a42bb67>
 			streams:  28, words: 34608
 		worklib.mult_pkg:sv <0x795153b6>
-			streams:   8, words: 11564
+			streams:   8, words: 11678
 		worklib.mult_pkg:sv <0x534a60f9>
 			streams:   1, words:  3427
 		worklib.cdns_uvm_pkg:sv <0x450e77c5>
@@ -211,4 +211,4 @@ xmelab: *W,VALFIT (../tb/tb_classes/min_max_transaction.svh,9|21): Value will no
 		SV Class specializations:    454     454
 		Simulation timescale:        1ps
 	Writing initial simulation snapshot: worklib.top:sv
-TOOL:	xrun	21.03-s009: Exiting on Dec 07, 2023 at 21:40:09 CET  (total: 00:00:03)
+TOOL:	xrun	21.03-s009: Exiting on Dec 09, 2023 at 15:20:52 CET  (total: 00:00:04)
