@@ -1,0 +1,215 @@
+TOOL:	xrun	21.03-s009: Started on Dec 11, 2023 at 17:24:56 CET
+xrun
+	-elaborate
+	-l xrun_elaborate.log
+	-F ../tb/tb.f
+		tinyalu_pkg.sv
+		tinyalu_bfm.sv
+		-F ../tb/../../common/tinyalu/tinyalu.f
+			single_cycle.sv
+			three_cycle.sv
+			tinyalu.sv
+			../vdic_dut_2023.svp
+		top.sv
+		+incdir+tb_classes
+		+incdir+.
+		+nowarnDSEMEL
+		+nowarnBADPRF
+		-uvm
+		-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
+		+UVM_NO_RELNOTES
+		+UVM_VERBOSITY=MEDIUM
+		-linedebug
+		-fsmdebug
+		-uvmlinedebug
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+
+   User defined plus("+") options:
+	+UVM_NO_RELNOTES
+	+UVM_VERBOSITY=MEDIUM
+
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		tinyalu_pkg
+		$unit_0x1ffb201c
+		vdic_dut_2023
+		top
+
+	Extracting FSMs for coverage:
+		worklib.single_cycle
+		worklib.three_cycle
+		worklib.tinyalu
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+	Generating native compiled code:
+		worklib.three_cycle:sv <0x3d9334a7>
+			streams:  13, words:  6290
+		worklib.single_cycle:sv <0x22609010>
+			streams:  10, words:  6145
+		worklib.tinyalu:sv <0x5db61c67>
+			streams:   4, words:  3524
+		worklib.vdic_dut_2023:svp <0x288af172>
+			streams:  58, words: 23387
+		worklib.uvm_pkg:sv <0x249504d9>
+			streams:   8, words:  7892
+		worklib.uvm_pkg:sv <0x2649e330>
+			streams:   8, words:  7580
+		worklib.uvm_pkg:sv <0x5b4f9c49>
+			streams:   7, words:  7057
+		worklib.uvm_pkg:sv <0x36b8697a>
+			streams:  29, words: 28118
+		worklib.uvm_pkg:sv <0x09db7674>
+			streams:   7, words:  2315
+		worklib.uvm_pkg:sv <0x25046838>
+			streams:  26, words: 62449
+		worklib.uvm_pkg:sv <0x6c6de901>
+			streams:   7, words:  2309
+		worklib.uvm_pkg:sv <0x338840d1>
+			streams:   7, words:  2972
+		worklib.uvm_pkg:sv <0x63c1f66d>
+			streams:   7, words:  2972
+		worklib.uvm_pkg:sv <0x60389045>
+			streams:  18, words: 18890
+		worklib.uvm_pkg:sv <0x0efd559b>
+			streams:  28, words: 31934
+		worklib.uvm_pkg:sv <0x3373f424>
+			streams:  27, words: 30028
+		worklib.uvm_pkg:sv <0x0866e218>
+			streams:  23, words: 28508
+		worklib.uvm_pkg:sv <0x67165398>
+			streams:  17, words: 17760
+		worklib.uvm_pkg:sv <0x0481cee4>
+			streams:  26, words: 49807
+		worklib.uvm_pkg:sv <0x0967d953>
+			streams:   7, words:  2570
+		worklib.uvm_pkg:sv <0x432346dc>
+			streams:  16, words: 22579
+		worklib.uvm_pkg:sv <0x1031b7e2>
+			streams:  26, words: 36999
+		worklib.uvm_pkg:sv <0x718a85cc>
+			streams:  25, words: 62985
+		worklib.uvm_pkg:sv <0x73d22ba0>
+			streams:  27, words: 40179
+		worklib.uvm_pkg:sv <0x0b7370d7>
+			streams:  26, words: 56028
+		worklib.uvm_pkg:sv <0x6ba854d1>
+			streams:  27, words: 43424
+		worklib.uvm_pkg:sv <0x7604895d>
+			streams:  25, words: 61988
+		worklib.uvm_pkg:sv <0x61a6b351>
+			streams:  27, words: 45553
+		worklib.uvm_pkg:sv <0x7d04823b>
+			streams:  25, words: 66963
+		worklib.uvm_pkg:sv <0x5ac29340>
+			streams:  27, words: 51671
+		worklib.uvm_pkg:sv <0x5a19ce2a>
+			streams:  25, words: 61311
+		worklib.uvm_pkg:sv <0x6baf22a6>
+			streams:  25, words: 62868
+		worklib.uvm_pkg:sv <0x0c5ac873>
+			streams:  27, words: 42325
+		worklib.uvm_pkg:sv <0x601180f1>
+			streams:  25, words: 58906
+		worklib.uvm_pkg:sv <0x73d657c1>
+			streams:  29, words: 108740
+		worklib.uvm_pkg:sv <0x11e73b70>
+			streams:  72, words: 143728
+		worklib.cdns_uvm_pkg:sv <0x5de25cd5>
+			streams:   9, words:  5026
+		worklib.cdns_uvm_pkg:sv <0x664c7246>
+			streams:  10, words:  8472
+		worklib.uvm_pkg:sv <0x1d197c5c>
+			streams:  23, words: 23319
+		worklib.uvm_pkg:sv <0x7d4262a9>
+			streams:  25, words: 35757
+		worklib.uvm_pkg:sv <0x1a9c1f12>
+			streams:  25, words: 57485
+		worklib.uvm_pkg:sv <0x61b6555b>
+			streams: 219, words: 292004
+		worklib.uvm_pkg:sv <0x42890fbc>
+			streams:  24, words: 25195
+		worklib.uvm_pkg:sv <0x721031c5>
+			streams:  23, words: 23302
+		worklib.uvm_pkg:sv <0x33ec4195>
+			streams:  23, words: 23372
+		worklib.tinyalu_pkg:sv <0x3fc1bd8e>
+			streams:   8, words:  4707
+		worklib.uvm_pkg:sv <0x50c5e39c>
+			streams:   7, words:  2972
+		worklib.uvm_pkg:sv <0x1b13454f>
+			streams:  24, words: 27551
+		worklib.uvm_pkg:sv <0x59f30a87>
+			streams:  48, words: 45034
+		worklib.uvm_pkg:sv <0x19d9e37b>
+			streams:  40, words: 33991
+		worklib.uvm_pkg:sv <0x2ebb78c9>
+			streams:  55, words: 51600
+		worklib.uvm_pkg:sv <0x77818335>
+			streams:  27, words: 35252
+		worklib.uvm_pkg:sv <0x5254123c>
+			streams:  25, words: 32891
+		worklib.uvm_pkg:sv <0x524b9b69>
+			streams:  25, words: 33692
+		worklib.uvm_pkg:sv <0x2d1fcade>
+			streams:  25, words: 43038
+		worklib.uvm_pkg:sv <0x1758e57e>
+			streams:  35, words: 47407
+		worklib.tinyalu_bfm:sv <0x5420c048>
+			streams: 210, words: 318514
+		worklib.tinyalu_pkg:sv <0x7c496f01>
+			streams:   8, words: 10627
+		worklib.tinyalu_pkg:sv <0x274f6e88>
+			streams: 327, words: 499047
+		worklib.cdns_uvm_pkg:sv <0x6c24bf42>
+			streams: 232, words: 440359
+		worklib.cdns_uvmapi:svp <0x54dd376a>
+			streams:  27, words: 36495
+		worklib.cdns_assert2uvm_pkg:sv <0x405b2e53>
+			streams:   3, words:  2676
+		worklib.uvm_pkg:sv <0x327e6308>
+			streams: 5575, words: 10814908
+	Building instance specific data structures.
+	Performing constant object marking (COM) analysis.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       5       5
+		Interfaces:                    1       1
+		Verilog packages:              5       5
+		Registers:                 17443   11927
+		Scalar wires:                 18       -
+		Vectored wires:               15       -
+		Named events:                  4      12
+		Always blocks:                 6       6
+		Initial blocks:              361     177
+		Parallel blocks:              28      29
+		Cont. assignments:            15      15
+		Pseudo assignments:            5       5
+		Assertions:                    5       5
+		Covergroup Instances:          0       2
+		Compilation units:             1       1
+		SV Class declarations:       246     360
+		SV Class specializations:    486     486
+	Writing initial simulation snapshot: worklib.vdic_dut_2023:svp
+TOOL:	xrun	21.03-s009: Exiting on Dec 11, 2023 at 17:24:59 CET  (total: 00:00:03)

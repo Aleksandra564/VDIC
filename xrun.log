@@ -1,14 +1,17 @@
 xrun: 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun	21.03-s009: Started on Dec 09, 2023 at 15:20:30 CET
+TOOL:	xrun	21.03-s009: Started on Dec 11, 2023 at 17:24:40 CET
 xrun
 	+compile
 	+sv
-	-f /home/student/afudali/Desktop/VDIC/.dvt/lab08.build
-		-F lab08/tb/tb.f
-			mult_pkg.sv
-			mult_tpgen_module.sv
-			mult_bfm.sv
-			../../common/vdic_dut_2023.svp
+	-f /home/student/afudali/Desktop/VDIC/.dvt/lab09example.build
+		-F lab09example/tb/tb.f
+			tinyalu_pkg.sv
+			tinyalu_bfm.sv
+			-F lab09example/tb/../../common/tinyalu/tinyalu.f
+				single_cycle.sv
+				three_cycle.sv
+				tinyalu.sv
+				../vdic_dut_2023.svp
 			top.sv
 			+incdir+tb_classes
 			+incdir+.
@@ -27,22 +30,25 @@ xrun
 	+UVM_VERBOSITY=MEDIUM
 
 Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
-file: lab08/tb/mult_pkg.sv
-	package worklib.mult_pkg:sv
+file: lab09example/tb/tinyalu_pkg.sv
+	package worklib.tinyalu_pkg:sv
 		errors: 0, warnings: 0
-file: lab08/tb/mult_tpgen_module.sv
-	module worklib.mult_tpgen_module:sv
+file: lab09example/tb/tinyalu_bfm.sv
+	interface worklib.tinyalu_bfm:sv
 		errors: 0, warnings: 0
-file: lab08/tb/mult_bfm.sv
-	interface worklib.mult_bfm:sv
+file: lab09example/tb/../../common/tinyalu/single_cycle.sv
+	module worklib.single_cycle:sv
 		errors: 0, warnings: 0
-file: lab08/tb/../../common/vdic_dut_2023.svp
+file: lab09example/tb/../../common/tinyalu/three_cycle.sv
+	module worklib.three_cycle:sv
+		errors: 0, warnings: 0
+file: lab09example/tb/../../common/tinyalu/tinyalu.sv
+	module worklib.tinyalu:sv
+		errors: 0, warnings: 0
+file: lab09example/tb/../../common/tinyalu/../vdic_dut_2023.svp
 	module worklib.vdic_dut_2023:svp
 		errors: 0, warnings: 0
-file: lab08/tb/top.sv
+file: lab09example/tb/top.sv
 	module worklib.top:sv
 		errors: 0, warnings: 0
-xmvlog: *W,SPDUSD: Include directory lab08/tb/. given but not used.
-	Total errors/warnings found outside modules and primitives:
-		errors: 0, warnings: 1
-TOOL:	xrun	21.03-s009: Exiting on Dec 09, 2023 at 15:20:32 CET  (total: 00:00:02)
+TOOL:	xrun	21.03-s009: Exiting on Dec 11, 2023 at 17:24:41 CET  (total: 00:00:01)

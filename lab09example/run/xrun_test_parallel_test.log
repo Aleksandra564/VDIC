@@ -1,0 +1,165 @@
+TOOL:	xrun	21.03-s009: Started on Dec 11, 2023 at 17:25:02 CET
+xrun
+	-F ../tb/tb.f
+		tinyalu_pkg.sv
+		tinyalu_bfm.sv
+		-F ../tb/../../common/tinyalu/tinyalu.f
+			single_cycle.sv
+			three_cycle.sv
+			tinyalu.sv
+			../vdic_dut_2023.svp
+		top.sv
+		+incdir+tb_classes
+		+incdir+.
+		+nowarnDSEMEL
+		+nowarnBADPRF
+		-uvm
+		-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
+		+UVM_NO_RELNOTES
+		+UVM_VERBOSITY=MEDIUM
+		-linedebug
+		-fsmdebug
+		-uvmlinedebug
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+	-covtest parallel_test
+	+UVM_TESTNAME=parallel_test
+	-l xrun_test_parallel_test.log
+
+   User defined plus("+") options:
+	+UVM_NO_RELNOTES
+	+UVM_VERBOSITY=MEDIUM
+
+Loading snapshot worklib.vdic_dut_2023:svp .................... Done
+SVSEED default: 1
+xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO @ 0: reporter [RNTST] Running test parallel_test...
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(605) @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------
+Name                     Type                        Size  Value
+----------------------------------------------------------------
+uvm_test_top             parallel_test               -     @1983
+  env_h                  env                         -     @2143
+    command_monitor_h    command_monitor             -     @2963
+      ap                 uvm_analysis_port           -     @3214
+    coverage_h           coverage                    -     @3025
+      analysis_imp       uvm_analysis_imp            -     @3075
+    driver_h             driver                      -     @2832
+      rsp_port           uvm_analysis_port           -     @2932
+      seq_item_port      uvm_seq_item_pull_port      -     @2882
+    result_monitor       result_monitor              -     @2994
+      ap                 uvm_analysis_port           -     @3275
+    scoreboard           scoreboard                  -     @3108
+      analysis_imp       uvm_analysis_imp            -     @3158
+      cmd_f              uvm_tlm_analysis_fifo #(T)  -     @3306
+        analysis_export  uvm_analysis_imp            -     @3555
+        get_ap           uvm_analysis_port           -     @3504
+        get_peek_export  uvm_get_peek_imp            -     @3406
+        put_ap           uvm_analysis_port           -     @3455
+        put_export       uvm_put_imp                 -     @3357
+    sequencer_h          uvm_sequencer               -     @2175
+      rsp_export         uvm_analysis_export         -     @2237
+      seq_item_export    uvm_seq_item_pull_imp       -     @2799
+      arbitration_queue  array                       0     -    
+      lock_queue         array                       0     -    
+      num_last_reqs      integral                    32    'd1  
+      num_last_rsps      integral                    32    'd1  
+----------------------------------------------------------------
+
+UVM_INFO ../tb/tb_classes/parallel_sequence.svh(46) @ 0: uvm_test_top.env_h.sequencer_h@@parallel_h [SEQ_PARALLEL] 
+UVM_INFO ../tb/tb_classes/reset_sequence.svh(39) @ 0: uvm_test_top.env_h.sequencer_h@@parallel_h.reset [SEQ_RESET] 
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(36) @ 40: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI]  Fib(01) = 00
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(37) @ 40: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI]  Fib(02) = 01
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 80: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: de  B: f1   op: and_op = 00d0
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 120: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(03) = 01
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 160: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: e6  B: f6   op: add_op = 01dc
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 200: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(04) = 02
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 240: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: a8  B: da   op: add_op = 0182
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 280: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(05) = 03
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 320: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: 14  B: aa   op: xor_op = 00be
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 360: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(06) = 05
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 400: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: 12  B: b4   op: and_op = 0010
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 440: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(07) = 08
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 520: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: a4  B: 18   op: mul_op = 0f60
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 560: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(08) = 13
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 600: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: f0  B: 68   op: xor_op = 0098
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 640: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(09) = 21
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 680: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: e5  B: a5   op: and_op = 00a5
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 720: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(10) = 34
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 760: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: 80  B: 3c   op: xor_op = 00bc
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 800: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(11) = 55
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 840: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: b3  B: b0   op: add_op = 0163
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 880: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(12) = 89
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 920: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: 8a  B: 6e   op: add_op = 00f8
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 960: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(13) = 144
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 1000: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: 1c  B: 39   op: add_op = 0055
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 1040: uvm_test_top.env_h.sequencer_h@@parallel_h.fibonacci [SEQ_FIBONACCI] Fib(14) = 233
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 1080: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: 31  B: 2d   op: add_op = 005e
+UVM_INFO ../tb/tb_classes/short_random_sequence.svh(46) @ 1120: uvm_test_top.env_h.sequencer_h@@parallel_h.short_random [SEQ_SHORT_RANDOM] random req: A: 25  B: b2   op: xor_op = 0097
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 1120: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../tb/tb_classes/scoreboard.svh(79) @ 1120: uvm_test_top.env_h.scoreboard [SELF CHECKTER] Reporting test result below
+[1;30m[102m-----------------------------------
+----------- Test PASSED -----------
+-----------------------------------[0m
+
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_catcher.svh(705) @ 1120: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(847) @ 1120: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   35
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SELF CHECKTER]     1
+[SEQ_FIBONACCI]    14
+[SEQ_PARALLEL]     1
+[SEQ_RESET]     1
+[SEQ_SHORT_RANDOM]    14
+[TEST_DONE]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+
+Simulation complete via $finish(1) at time 1120 NS + 68
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
+xcelium> exit
+See ./cov_work/scope/parallel_test/icc.com file for message(s) on coverage constant object marking
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  vdic_dut_2023(vdic_dut_2023)
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  parallel_test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_6819b086_7f5d46da.ucm (reused)
+  data               :  ./cov_work/scope/parallel_test/icc_6819b086_7f5d46da.ucd
+TOOL:	xrun	21.03-s009: Exiting on Dec 11, 2023 at 17:25:02 CET  (total: 00:00:00)

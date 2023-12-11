@@ -1,0 +1,146 @@
+TOOL:	xrun	21.03-s009: Started on Dec 11, 2023 at 17:25:02 CET
+xrun
+	-F ../tb/tb.f
+		tinyalu_pkg.sv
+		tinyalu_bfm.sv
+		-F ../tb/../../common/tinyalu/tinyalu.f
+			single_cycle.sv
+			three_cycle.sv
+			tinyalu.sv
+			../vdic_dut_2023.svp
+		top.sv
+		+incdir+tb_classes
+		+incdir+.
+		+nowarnDSEMEL
+		+nowarnBADPRF
+		-uvm
+		-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
+		+UVM_NO_RELNOTES
+		+UVM_VERBOSITY=MEDIUM
+		-linedebug
+		-fsmdebug
+		-uvmlinedebug
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+	-covtest fibonacci_test
+	+UVM_TESTNAME=fibonacci_test
+	-l xrun_test_fibonacci_test.log
+
+   User defined plus("+") options:
+	+UVM_NO_RELNOTES
+	+UVM_VERBOSITY=MEDIUM
+
+Loading snapshot worklib.vdic_dut_2023:svp .................... Done
+SVSEED default: 1
+xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO @ 0: reporter [RNTST] Running test fibonacci_test...
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(605) @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------
+Name                     Type                        Size  Value
+----------------------------------------------------------------
+uvm_test_top             fibonacci_test              -     @1983
+  env_h                  env                         -     @2060
+    command_monitor_h    command_monitor             -     @2880
+      ap                 uvm_analysis_port           -     @3131
+    coverage_h           coverage                    -     @2942
+      analysis_imp       uvm_analysis_imp            -     @2992
+    driver_h             driver                      -     @2749
+      rsp_port           uvm_analysis_port           -     @2849
+      seq_item_port      uvm_seq_item_pull_port      -     @2799
+    result_monitor       result_monitor              -     @2911
+      ap                 uvm_analysis_port           -     @3192
+    scoreboard           scoreboard                  -     @3025
+      analysis_imp       uvm_analysis_imp            -     @3075
+      cmd_f              uvm_tlm_analysis_fifo #(T)  -     @3223
+        analysis_export  uvm_analysis_imp            -     @3472
+        get_ap           uvm_analysis_port           -     @3421
+        get_peek_export  uvm_get_peek_imp            -     @3323
+        put_ap           uvm_analysis_port           -     @3372
+        put_export       uvm_put_imp                 -     @3274
+    sequencer_h          uvm_sequencer               -     @2092
+      rsp_export         uvm_analysis_export         -     @2154
+      seq_item_export    uvm_seq_item_pull_imp       -     @2716
+      arbitration_queue  array                       0     -    
+      lock_queue         array                       0     -    
+      num_last_reqs      integral                    32    'd1  
+      num_last_rsps      integral                    32    'd1  
+----------------------------------------------------------------
+
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(36) @ 20: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI]  Fib(01) = 00
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(37) @ 20: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI]  Fib(02) = 01
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 60: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(03) = 01
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 100: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(04) = 02
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 140: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(05) = 03
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 180: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(06) = 05
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 220: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(07) = 08
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 260: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(08) = 13
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 300: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(09) = 21
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 340: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(10) = 34
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 380: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(11) = 55
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 420: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(12) = 89
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 460: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(13) = 144
+UVM_INFO ../tb/tb_classes/fibonacci_sequence.svh(43) @ 500: uvm_test_top.env_h.sequencer_h@@fibonacci [SEQ_FIBONACCI] Fib(14) = 233
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 500: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../tb/tb_classes/scoreboard.svh(79) @ 500: uvm_test_top.env_h.scoreboard [SELF CHECKTER] Reporting test result below
+[1;30m[102m-----------------------------------
+----------- Test PASSED -----------
+-----------------------------------[0m
+
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_catcher.svh(705) @ 500: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(847) @ 500: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   19
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SELF CHECKTER]     1
+[SEQ_FIBONACCI]    14
+[TEST_DONE]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+
+Simulation complete via $finish(1) at time 500 NS + 63
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
+xcelium> exit
+See ./cov_work/scope/fibonacci_test/icc.com file for message(s) on coverage constant object marking
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  vdic_dut_2023(vdic_dut_2023)
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  fibonacci_test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_6819b086_7f5d46da.ucm (reused)
+  data               :  ./cov_work/scope/fibonacci_test/icc_6819b086_7f5d46da.ucd
+TOOL:	xrun	21.03-s009: Exiting on Dec 11, 2023 at 17:25:03 CET  (total: 00:00:01)
