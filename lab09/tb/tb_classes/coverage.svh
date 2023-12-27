@@ -1,4 +1,4 @@
-class coverage extends uvm_subscriber #(command_transaction);
+class coverage extends uvm_subscriber #(sequence_item);
     `uvm_component_utils(coverage)
 	
 //------------------------------------------------------------------------------
@@ -91,7 +91,7 @@ class coverage extends uvm_subscriber #(command_transaction);
 //------------------------------------------------------------------------------
 // subscriber write function
 //------------------------------------------------------------------------------
-    function void write(command_transaction t);
+    function void write(sequence_item t);
         arg_a = t.arg_a;
 		arg_a_parity = t.arg_a_parity;
 		arg_b = t.arg_b;        

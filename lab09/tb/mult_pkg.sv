@@ -53,17 +53,13 @@ package mult_pkg;
 // sequences
 //------------------------------------------------------------------------------
 	`include "random_sequence.svh"
-	`include "maxmult_sequence.svh"
 	`include "reset_sequence.svh"
 	`include "min_max_sequence.svh"
-	`include "fibonacci_sequence.svh"
-	`include "short_random_sequence.svh"
 
 //------------------------------------------------------------------------------
 // virtual sequences
 //------------------------------------------------------------------------------
 	`include "runall_sequence.svh"
-	`include "parallel_sequence.svh"
 
 //------------------------------------------------------------------------------
 // testbench components (no agent here)
@@ -80,8 +76,6 @@ package mult_pkg;
 //------------------------------------------------------------------------------
 	`include "mult_base_test.svh"
 	`include "runall_test.svh"
-	`include "fibonacci_test.svh"
-	`include "parallel_test.svh"
 	
 endpackage : mult_pkg
 	

@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Dec 11, 2023 at 17:25:02 CET
+TOOL:	xrun	21.03-s009: Started on Dec 27, 2023 at 14:26:09 CET
 xrun
 	-F ../tb/tb.f
 		tinyalu_pkg.sv
@@ -143,4 +143,4 @@ coverage setup:
 coverage files:
   model(design data) :  ./cov_work/scope/icc_6819b086_7f5d46da.ucm (reused)
   data               :  ./cov_work/scope/fibonacci_test/icc_6819b086_7f5d46da.ucd
-TOOL:	xrun	21.03-s009: Exiting on Dec 11, 2023 at 17:25:03 CET  (total: 00:00:01)
+TOOL:	xrun	21.03-s009: Exiting on Dec 27, 2023 at 14:26:10 CET  (total: 00:00:01)

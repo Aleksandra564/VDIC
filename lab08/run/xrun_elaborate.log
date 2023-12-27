@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Dec 09, 2023 at 15:20:48 CET
+TOOL:	xrun	21.03-s009: Started on Dec 14, 2023 at 09:11:23 CET
 xrun
 	-elaborate
 	-l xrun_elaborate.log
@@ -211,4 +211,4 @@ xmelab: *W,VALFIT (../tb/tb_classes/min_max_transaction.svh,9|21): Value will no
 		SV Class specializations:    454     454
 		Simulation timescale:        1ps
 	Writing initial simulation snapshot: worklib.top:sv
-TOOL:	xrun	21.03-s009: Exiting on Dec 09, 2023 at 15:20:52 CET  (total: 00:00:04)
+TOOL:	xrun	21.03-s009: Exiting on Dec 14, 2023 at 09:11:34 CET  (total: 00:00:11)

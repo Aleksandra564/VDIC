@@ -33,7 +33,7 @@ class mult_agent extends uvm_agent;
     function void build_phase(uvm_phase phase);
 
         // get the agent configuration
-        if(!uvm_config_db #(mult_agent_config)::get(this, "","config", agent_config_h))
+        if(!uvm_config_db #(mult_agent_config)::get(this, "", "config", agent_config_h))
             `uvm_fatal("AGENT", "Failed to get config object");
 
         if (agent_config_h.get_is_active() == UVM_ACTIVE) begin : make_stimulus

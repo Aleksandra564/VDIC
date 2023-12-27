@@ -33,7 +33,7 @@ class driver extends uvm_driver #(sequence_item);
             seq_item_port.get_next_item(cmd);
             bfm.send_data(cmd.rst_n, cmd.arg_a, cmd.arg_a_parity, cmd.arg_b, cmd.arg_b_parity);
         	seq_item_port.item_done();
-        end : command_loop
+        end : cmd_loop
         
         end_tr(cmd);
         

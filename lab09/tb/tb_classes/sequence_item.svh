@@ -46,7 +46,7 @@ class sequence_item extends uvm_sequence_item;
 //------------------------------------------------------------------------------
     function string convert2string();
         return {super.convert2string(),
-            $sformatf("rst_n: %1h arg_a: %4h arg_b: %4h arg_a_parity: %1h arg_b_parity: %1h", rst_n, arg_a, arg_b, arg_a_parity, arg_a_parity);
+            $sformatf("rst_n: %1h arg_a: %4h arg_b: %4h arg_a_parity: %1h arg_b_parity: %1h", rst_n, arg_a, arg_b, arg_a_parity, arg_a_parity)
         };
     endfunction : convert2string
 
