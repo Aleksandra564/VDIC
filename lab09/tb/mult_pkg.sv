@@ -53,7 +53,6 @@ package mult_pkg;
 // sequences
 //------------------------------------------------------------------------------
 	`include "random_sequence.svh"
-	`include "reset_sequence.svh"
 	`include "min_max_sequence.svh"
 
 //------------------------------------------------------------------------------

@@ -120,3 +120,7 @@
 [INFO ] 2023-12-07 08:44:53,238 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40743
 [INFO ] 2023-12-07 08:45:39,445 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41913
 [INFO ] 2023-12-07 08:45:44,634 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45754
+[INFO ] 2023-12-27 19:10:23,632 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46691
+[ERROR] 2023-12-27 19:10:23,707 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/runall_test' not found. Verify the existence of the specified directory, and rerun the command
+[INFO ] 2023-12-27 19:10:53,832 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40736
+[ERROR] 2023-12-27 19:10:53,929 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/merged_results' not found. Verify the existence of the specified directory, and rerun the command

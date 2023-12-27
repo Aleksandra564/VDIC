@@ -11,6 +11,10 @@ class sequence_item extends uvm_sequence_item;
 	rand bit               		arg_a_parity;
 	rand logic signed 	[15:0] 	arg_b;        
 	rand bit               		arg_b_parity;
+	
+	logic signed 		[31:0] 	result;
+	logic 						result_parity;
+	logic 						arg_parity_error;
 
 //------------------------------------------------------------------------------
 // Macros providing copy, compare, pack, record, print functions.
@@ -19,12 +23,18 @@ class sequence_item extends uvm_sequence_item;
 // Note: this is an expanded version of the `uvm_object_utils with additional
 //       fields added. DVT has a dedicated editor for this (ctrl-space).
 //------------------------------------------------------------------------------
-    `uvm_object_utils_begin(sequence_item)
-//        `uvm_field_int(A, UVM_ALL_ON | UVM_DEC)
-//        `uvm_field_int(B, UVM_ALL_ON | UVM_DEC)
-//        `uvm_field_enum(operation_t, op, UVM_ALL_ON)
-//        `uvm_field_int(result, UVM_ALL_ON | UVM_DEC)
-    `uvm_object_utils_end
+`uvm_object_utils_begin(sequence_item)
+	`uvm_field_int(rst_n, UVM_DEFAULT | UVM_UNSIGNED)
+	`uvm_field_int(arg_a, UVM_DEFAULT)
+	`uvm_field_int(arg_a_parity, UVM_DEFAULT | UVM_UNSIGNED)
+	`uvm_field_int(arg_b, UVM_DEFAULT)
+	`uvm_field_int(arg_b_parity, UVM_DEFAULT | UVM_UNSIGNED)
+	
+	`uvm_field_int(result, UVM_DEFAULT)
+	`uvm_field_int(result_parity, UVM_DEFAULT | UVM_UNSIGNED)
+	`uvm_field_int(arg_parity_error, UVM_DEFAULT | UVM_UNSIGNED)
+`uvm_object_utils_end
+
 
 //------------------------------------------------------------------------------
 // constraints

@@ -1,0 +1,83 @@
+TOOL:	xrun	21.03-s009: Started on Dec 27, 2023 at 19:14:22 CET
+xrun
+	-F ../tb/tb.f
+		mult_pkg.sv
+		mult_bfm.sv
+		../../common/vdic_dut_2023.svp
+		top.sv
+		+incdir+tb_classes
+		+incdir+.
+		+nowarn+DSEMEL
+		+nowarnBADPRF
+		-uvm
+		-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
+		+UVM_NO_RELNOTES
+		+UVM_VERBOSITY=MEDIUM
+		-linedebug
+		-fsmdebug
+		-uvmlinedebug
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+	-covtest runall_test
+	+UVM_TESTNAME=runall_test
+	-l xrun_test_runall_test.log
+
+   User defined plus("+") options:
+	+UVM_NO_RELNOTES
+	+UVM_VERBOSITY=MEDIUM
+
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO @ 0: reporter [RNTST] Running test runall_test...
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(605) @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------
+Name                     Type                        Size  Value
+----------------------------------------------------------------
+uvm_test_top             runall_test                 -     @1953
+  env_h                  env                         -     @2030
+    command_monitor_h    command_monitor             -     @2850
+      ap                 uvm_analysis_port           -     @3100
+    coverage_h           coverage                    -     @2912
+      analysis_imp       uvm_analysis_imp            -     @2962
+    driver_h             driver                      -     @2719
+      rsp_port           uvm_analysis_port           -     @2819
+      seq_item_port      uvm_seq_item_pull_port      -     @2769
+    result_monitor       result_monitor              -     @2881
+      ap                 uvm_analysis_port           -     @3161
+    scoreboard           scoreboard                  -     @2942
+      analysis_imp       uvm_analysis_imp            -     @3044
+      cmd_f              uvm_tlm_analysis_fifo #(T)  -     @3192
+        analysis_export  uvm_analysis_imp            -     @3441
+        get_ap           uvm_analysis_port           -     @3390
+        get_peek_export  uvm_get_peek_imp            -     @3292
+        put_ap           uvm_analysis_port           -     @3341
+        put_export       uvm_put_imp                 -     @3243
+    sequencer_h          uvm_sequencer               -     @2062
+      rsp_export         uvm_analysis_export         -     @2124
+      seq_item_export    uvm_seq_item_pull_imp       -     @2686
+      arbitration_queue  array                       0     -    
+      lock_queue         array                       0     -    
+      num_last_reqs      integral                    32    'd1  
+      num_last_rsps      integral                    32    'd1  
+----------------------------------------------------------------
+
+UVM_INFO ../tb/tb_classes/runall_sequence.svh(41) @ 0: reporter@@runall_seq [SEQ_RUNALL] 
+UVM_INFO ../tb/tb_classes/random_sequence.svh(21) @ 0: uvm_test_top.env_h.sequencer_h@@random [SEQ_RANDOM] 
+xmsim: *F,SVMLEX: System virtual memory limit exceeded - consider using 64bit mode.
+TOOL:	xrun	21.03-s009: Exiting on Dec 27, 2023 at 19:14:51 CET  (total: 00:00:29)

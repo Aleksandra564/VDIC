@@ -34,8 +34,6 @@
 /home/student/afudali/Desktop/VDIC/lab09/tb/tb_classes/result_transaction.svh
 ../tb/tb_classes/random_sequence.svh
 /home/student/afudali/Desktop/VDIC/lab09/tb/tb_classes/random_sequence.svh
-../tb/tb_classes/reset_sequence.svh
-/home/student/afudali/Desktop/VDIC/lab09/tb/tb_classes/reset_sequence.svh
 ../tb/tb_classes/min_max_sequence.svh
 /home/student/afudali/Desktop/VDIC/lab09/tb/tb_classes/min_max_sequence.svh
 ../tb/tb_classes/runall_sequence.svh

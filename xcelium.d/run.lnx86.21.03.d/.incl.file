@@ -44,7 +44,6 @@ lab09/tb/./macros/uvm_deprecated_defines.svh
 ./min_max_sequence_item.svh
 ./result_transaction.svh
 ./random_sequence.svh
-./reset_sequence.svh
 ./min_max_sequence.svh
 ./runall_sequence.svh
 ./coverage.svh

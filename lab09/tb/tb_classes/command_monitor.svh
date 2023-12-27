@@ -4,7 +4,7 @@ class command_monitor extends uvm_component;
 //------------------------------------------------------------------------------
 // local variables
 //------------------------------------------------------------------------------
-    protected virtual mult_bfm bfm;
+    local virtual mult_bfm bfm;
     uvm_analysis_port #(sequence_item) ap;
 
 //------------------------------------------------------------------------------

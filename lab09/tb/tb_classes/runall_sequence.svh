@@ -9,8 +9,7 @@ class runall_sequence extends uvm_sequence #(uvm_sequence_item);
 
 //------------------------------------------------------------------------------
 // sequences to run
-//------------------------------------------------------------------------------
-    local reset_sequence reset;
+//------------------------------------------------------------------------------t;
     local random_sequence random;
     local min_max_sequence min_max;
 
@@ -31,7 +30,6 @@ class runall_sequence extends uvm_sequence #(uvm_sequence_item);
         if (!$cast(sequencer_h, uvm_component_h))
             `uvm_fatal("RUNALL_SEQUENCE", "Failed to cast from uvm_component_h.")
 
-        reset = reset_sequence::type_id::create("reset");
         random = random_sequence::type_id::create("random");
         min_max = min_max_sequence::type_id::create("min_max");
     endfunction : new
@@ -41,7 +39,6 @@ class runall_sequence extends uvm_sequence #(uvm_sequence_item);
 //------------------------------------------------------------------------------
     task body();
         `uvm_info("SEQ_RUNALL", "", UVM_MEDIUM)
-        reset.start(sequencer_h);
         random.start(sequencer_h);
         min_max.start(sequencer_h);
     endtask : body

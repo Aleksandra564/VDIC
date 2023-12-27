@@ -43,6 +43,7 @@ class env extends uvm_env;
     function void connect_phase(uvm_phase phase);
 
         driver_h.seq_item_port.connect(sequencer_h.seq_item_export);
+	    
         command_monitor_h.ap.connect(coverage_h.analysis_export);
         command_monitor_h.ap.connect(scoreboard_h.cmd_f.analysis_export);
         result_monitor_h.ap.connect(scoreboard_h.analysis_export);
