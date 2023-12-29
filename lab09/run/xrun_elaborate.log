@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Dec 29, 2023 at 16:01:49 CET
+TOOL:	xrun	21.03-s009: Started on Dec 29, 2023 at 16:34:04 CET
 xrun
 	-elaborate
 	-l xrun_elaborate.log
@@ -66,6 +66,12 @@ xmelab: *W,VALFIT (../tb/tb_classes/sequence_item.svh,35|19): Value will not fit
 	                            |
 xmelab: *W,VALFIT (../tb/tb_classes/sequence_item.svh,35|29): Value will not fit in the random variable.
 ......
+			});
+			 |
+xmelab: *W,VALFIT (../tb/tb_classes/min_max_sequence.svh,32|4): Value will not fit in the random variable.
+			});
+			 |
+xmelab: *W,VALFIT (../tb/tb_classes/min_max_sequence.svh,32|4): Value will not fit in the random variable.
 	    arg_a dist {16'sh8000:=1, 16'sh7FFF:=1};
 	                 |
 xmelab: *W,VALFIT (../tb/tb_classes/min_max_sequence_item.svh,8|18): Value will not fit in the random variable.
@@ -145,29 +151,29 @@ xmelab: *W,VALFIT (../tb/tb_classes/min_max_sequence_item.svh,9|21): Value will 
 			streams:   9, words:  5026
 		worklib.cdns_uvm_pkg:sv <0x664c7246>
 			streams:  10, words:  8472
-		worklib.uvm_pkg:sv <0x664ef5ad>
+		worklib.uvm_pkg:sv <0x0d91c6fb>
+			streams:  24, words: 25195
+		worklib.uvm_pkg:sv <0x4cdc9329>
 			streams:  23, words: 23319
-		worklib.mult_pkg:sv <0x69c3479c>
+		worklib.mult_pkg:sv <0x5dd86866>
 			streams:   8, words:  4707
 		worklib.uvm_pkg:sv <0x50c5e39c>
 			streams:   7, words:  2972
-		worklib.uvm_pkg:sv <0x584e2ae9>
+		worklib.uvm_pkg:sv <0x06975099>
 			streams:  24, words: 27536
-		worklib.uvm_pkg:sv <0x1b53b670>
+		worklib.uvm_pkg:sv <0x00561474>
 			streams:  48, words: 45627
-		worklib.uvm_pkg:sv <0x4c22eb9c>
+		worklib.uvm_pkg:sv <0x6f726f20>
 			streams:  38, words: 34459
-		worklib.uvm_pkg:sv <0x3851f91f>
+		worklib.uvm_pkg:sv <0x4ccf5e14>
 			streams:  55, words: 51621
-		worklib.uvm_pkg:sv <0x095d01a7>
+		worklib.uvm_pkg:sv <0x540dd001>
 			streams:  25, words: 33333
+		worklib.uvm_pkg:sv <0x46f78fad>
+			streams:  25, words: 41112
 		worklib.uvm_pkg:sv <0x612b18be>
 			streams:  35, words: 55090
-		worklib.uvm_pkg:sv <0x38ca853b>
-			streams: 219, words: 299539
-		worklib.uvm_pkg:sv <0x17abd2c0>
-			streams:  24, words: 25195
-		worklib.mult_bfm:sv <0x4485d9d9>
+		worklib.mult_bfm:sv <0x1c4ce784>
 			streams: 214, words: 315241
 		worklib.mult_pkg:sv <0x7ac4b1fe>
 			streams:   8, words: 11509
@@ -189,12 +195,12 @@ xmelab: *W,VALFIT (../tb/tb_classes/min_max_sequence_item.svh,9|21): Value will 
 		Modules:                       2       2
 		Interfaces:                    1       1
 		Verilog packages:              5       5
-		Registers:                 17083   11792
+		Registers:                 16773   11792
 		Scalar wires:                 17       -
 		Vectored wires:               10       -
 		Named events:                  4      12
 		Always blocks:                 3       3
-		Initial blocks:              339     169
+		Initial blocks:              338     169
 		Parallel blocks:              27      28
 		Cont. assignments:            10      10
 		Pseudo assignments:           12      12
@@ -202,6 +208,6 @@ xmelab: *W,VALFIT (../tb/tb_classes/min_max_sequence_item.svh,9|21): Value will 
 		Covergroup Instances:          0       1
 		Compilation units:             1       1
 		SV Class declarations:       239     353
-		SV Class specializations:    471     471
+		SV Class specializations:    458     458
 	Writing initial simulation snapshot: worklib.top:sv
-TOOL:	xrun	21.03-s009: Exiting on Dec 29, 2023 at 16:01:53 CET  (total: 00:00:04)
+TOOL:	xrun	21.03-s009: Exiting on Dec 29, 2023 at 16:34:07 CET  (total: 00:00:03)

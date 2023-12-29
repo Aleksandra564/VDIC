@@ -1,4 +1,4 @@
-class min_max_sequence extends uvm_sequence #(min_max_sequence_item);
+class min_max_sequence extends uvm_sequence #(sequence_item);
     `uvm_object_utils(min_max_sequence)
     
 //------------------------------------------------------------------------------
@@ -26,7 +26,10 @@ class min_max_sequence extends uvm_sequence #(min_max_sequence_item);
 //            start_item(req);
 //            assert(req.randomize());
 //            finish_item(req);
-            `uvm_rand_send(req);
+            `uvm_rand_send_with(req, {
+			    arg_a dist {16'sh8000:=1, 16'sh7FFF:=1};
+		        arg_b dist {16'sh8000:=1, 16'sh7FFF:=1};
+			});
             req.print();
         end
         req.rst_n = 1;
