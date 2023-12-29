@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Dec 29, 2023 at 16:34:02 CET
+TOOL:	xrun	21.03-s009: Started on Dec 29, 2023 at 16:36:55 CET
 xrun
 	-compile
 	-l xrun_compile.log
@@ -54,4 +54,4 @@ file: ../tb/top.sv
 xmvlog: *W,SPDUSD: Include directory ../tb/. given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 1
-TOOL:	xrun	21.03-s009: Exiting on Dec 29, 2023 at 16:34:04 CET  (total: 00:00:02)
+TOOL:	xrun	21.03-s009: Exiting on Dec 29, 2023 at 16:36:56 CET  (total: 00:00:01)

@@ -30,7 +30,7 @@ class min_max_sequence extends uvm_sequence #(sequence_item);
 			    arg_a dist {16'sh8000:=1, 16'sh7FFF:=1};
 		        arg_b dist {16'sh8000:=1, 16'sh7FFF:=1};
 			});
-            req.print();
+//            req.print();
         end
         req.rst_n = 1;
         `uvm_rand_send(req)

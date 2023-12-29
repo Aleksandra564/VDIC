@@ -38,7 +38,6 @@ package mult_pkg;
 // sequence items
 //------------------------------------------------------------------------------
 	`include "sequence_item.svh"
-	`include "min_max_sequence_item.svh"
 	
 	// to be converted into sequence items
 	`include "result_transaction.svh"

@@ -41,7 +41,6 @@
 ../tb/tb_classes/macros/uvm_deprecated_defines.svh
 ../tb/./macros/uvm_deprecated_defines.svh
 ./sequence_item.svh
-./min_max_sequence_item.svh
 ./result_transaction.svh
 ./random_sequence.svh
 ./min_max_sequence.svh
