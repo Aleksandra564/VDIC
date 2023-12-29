@@ -28,5 +28,5 @@ SAWSTP
 all
 -COVOVERWRITE
 -COVTEST
-mult_base_test
+runall_test
 -UPDATE

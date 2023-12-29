@@ -1,4 +1,4 @@
-TOOL:	xrun	21.03-s009: Started on Dec 27, 2023 at 19:14:18 CET
+TOOL:	xrun	21.03-s009: Started on Dec 29, 2023 at 16:01:49 CET
 xrun
 	-elaborate
 	-l xrun_elaborate.log
@@ -55,16 +55,16 @@ xrun
 	Building instance overlay tables: ...........
 	    arg_a dist {[16'sh8000:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFF]:/1};
 	                  |
-xmelab: *W,VALFIT (../tb/tb_classes/sequence_item.svh,43|19): Value will not fit in the random variable.
+xmelab: *W,VALFIT (../tb/tb_classes/sequence_item.svh,34|19): Value will not fit in the random variable.
 	    arg_a dist {[16'sh8000:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFF]:/1};
 	                            |
-xmelab: *W,VALFIT (../tb/tb_classes/sequence_item.svh,43|29): Value will not fit in the random variable.
+xmelab: *W,VALFIT (../tb/tb_classes/sequence_item.svh,34|29): Value will not fit in the random variable.
 	    arg_b dist {[16'sh8000:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFF]:/1};
 	                  |
-xmelab: *W,VALFIT (../tb/tb_classes/sequence_item.svh,44|19): Value will not fit in the random variable.
+xmelab: *W,VALFIT (../tb/tb_classes/sequence_item.svh,35|19): Value will not fit in the random variable.
 	    arg_b dist {[16'sh8000:16'shFFFF]:/1, 16'sh0000:/1, [16'sh0001:16'sh7FFF]:/1};
 	                            |
-xmelab: *W,VALFIT (../tb/tb_classes/sequence_item.svh,44|29): Value will not fit in the random variable.
+xmelab: *W,VALFIT (../tb/tb_classes/sequence_item.svh,35|29): Value will not fit in the random variable.
 ......
 	    arg_a dist {16'sh8000:=1, 16'sh7FFF:=1};
 	                 |
@@ -75,7 +75,7 @@ xmelab: *W,VALFIT (../tb/tb_classes/min_max_sequence_item.svh,9|21): Value will 
 ... Done
 	Enabling instrumentation for coverage types: block expression FSM toggle functional
 	Generating native compiled code:
-		worklib.vdic_dut_2023:svp <0x0bc35e6c>
+		worklib.vdic_dut_2023:svp <0x78bc017e>
 			streams:  58, words: 25281
 		worklib.uvm_pkg:sv <0x249504d9>
 			streams:   8, words:  7892
@@ -145,34 +145,34 @@ xmelab: *W,VALFIT (../tb/tb_classes/min_max_sequence_item.svh,9|21): Value will 
 			streams:   9, words:  5026
 		worklib.cdns_uvm_pkg:sv <0x664c7246>
 			streams:  10, words:  8472
-		worklib.uvm_pkg:sv <0x2897ac2e>
+		worklib.uvm_pkg:sv <0x664ef5ad>
 			streams:  23, words: 23319
-		worklib.mult_pkg:sv <0x335effc2>
+		worklib.mult_pkg:sv <0x69c3479c>
 			streams:   8, words:  4707
 		worklib.uvm_pkg:sv <0x50c5e39c>
 			streams:   7, words:  2972
-		worklib.uvm_pkg:sv <0x250a3f49>
+		worklib.uvm_pkg:sv <0x584e2ae9>
 			streams:  24, words: 27536
-		worklib.uvm_pkg:sv <0x3d93c29b>
+		worklib.uvm_pkg:sv <0x1b53b670>
 			streams:  48, words: 45627
-		worklib.uvm_pkg:sv <0x1945f668>
+		worklib.uvm_pkg:sv <0x4c22eb9c>
 			streams:  38, words: 34459
-		worklib.uvm_pkg:sv <0x6132c7dd>
-			streams:  55, words: 51612
-		worklib.uvm_pkg:sv <0x66ed5020>
+		worklib.uvm_pkg:sv <0x3851f91f>
+			streams:  55, words: 51621
+		worklib.uvm_pkg:sv <0x095d01a7>
 			streams:  25, words: 33333
-		worklib.uvm_pkg:sv <0x14b70a65>
-			streams:  35, words: 47407
-		worklib.uvm_pkg:sv <0x653a219f>
-			streams: 219, words: 292004
-		worklib.uvm_pkg:sv <0x14f31e47>
+		worklib.uvm_pkg:sv <0x612b18be>
+			streams:  35, words: 55090
+		worklib.uvm_pkg:sv <0x38ca853b>
+			streams: 219, words: 299539
+		worklib.uvm_pkg:sv <0x17abd2c0>
 			streams:  24, words: 25195
-		worklib.mult_bfm:sv <0x440cd40f>
+		worklib.mult_bfm:sv <0x4485d9d9>
 			streams: 214, words: 315241
-		worklib.mult_pkg:sv <0x5b241b12>
+		worklib.mult_pkg:sv <0x7ac4b1fe>
 			streams:   8, words: 11509
-		worklib.mult_pkg:sv <0x59fd4e2d>
-			streams: 318, words: 531269
+		worklib.mult_pkg:sv <0x235809fa>
+			streams: 318, words: 497706
 		worklib.cdns_uvm_pkg:sv <0x6c24bf42>
 			streams: 232, words: 440359
 		worklib.cdns_uvmapi:svp <0x54dd376a>
@@ -189,7 +189,7 @@ xmelab: *W,VALFIT (../tb/tb_classes/min_max_sequence_item.svh,9|21): Value will 
 		Modules:                       2       2
 		Interfaces:                    1       1
 		Verilog packages:              5       5
-		Registers:                 17083   11795
+		Registers:                 17083   11792
 		Scalar wires:                 17       -
 		Vectored wires:               10       -
 		Named events:                  4      12
@@ -204,4 +204,4 @@ xmelab: *W,VALFIT (../tb/tb_classes/min_max_sequence_item.svh,9|21): Value will 
 		SV Class declarations:       239     353
 		SV Class specializations:    471     471
 	Writing initial simulation snapshot: worklib.top:sv
-TOOL:	xrun	21.03-s009: Exiting on Dec 27, 2023 at 19:14:22 CET  (total: 00:00:04)
+TOOL:	xrun	21.03-s009: Exiting on Dec 29, 2023 at 16:01:53 CET  (total: 00:00:04)

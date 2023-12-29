@@ -20,6 +20,7 @@
 
 #------------------------------------------------------------------------------
 # The list of tests; in GUI mode only the first test is started.
+# TESTS=(dual_test);
 TESTS=(runall_test);
 #------------------------------------------------------------------------------
 # Default .f file

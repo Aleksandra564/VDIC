@@ -28,13 +28,11 @@ class driver extends uvm_driver #(sequence_item);
         sequence_item cmd;
 
 	    void'(begin_tr(cmd));
-
         forever begin : cmd_loop
             seq_item_port.get_next_item(cmd);
             bfm.send_data(cmd.rst_n, cmd.arg_a, cmd.arg_a_parity, cmd.arg_b, cmd.arg_b_parity);
         	seq_item_port.item_done();
         end : cmd_loop
-        
         end_tr(cmd);
         
     endtask : run_phase

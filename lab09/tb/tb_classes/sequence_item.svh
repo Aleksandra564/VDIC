@@ -11,10 +11,6 @@ class sequence_item extends uvm_sequence_item;
 	rand bit               		arg_a_parity;
 	rand logic signed 	[15:0] 	arg_b;        
 	rand bit               		arg_b_parity;
-	
-	logic signed 		[31:0] 	result;
-	logic 						result_parity;
-	logic 						arg_parity_error;
 
 //------------------------------------------------------------------------------
 // Macros providing copy, compare, pack, record, print functions.
@@ -29,12 +25,7 @@ class sequence_item extends uvm_sequence_item;
 	`uvm_field_int(arg_a_parity, UVM_DEFAULT | UVM_UNSIGNED)
 	`uvm_field_int(arg_b, UVM_DEFAULT)
 	`uvm_field_int(arg_b_parity, UVM_DEFAULT | UVM_UNSIGNED)
-	
-	`uvm_field_int(result, UVM_DEFAULT)
-	`uvm_field_int(result_parity, UVM_DEFAULT | UVM_UNSIGNED)
-	`uvm_field_int(arg_parity_error, UVM_DEFAULT | UVM_UNSIGNED)
 `uvm_object_utils_end
-
 
 //------------------------------------------------------------------------------
 // constraints

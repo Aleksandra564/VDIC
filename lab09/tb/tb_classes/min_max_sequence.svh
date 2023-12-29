@@ -19,14 +19,18 @@ class min_max_sequence extends uvm_sequence #(min_max_sequence_item);
 //------------------------------------------------------------------------------
     task body();
         `uvm_info("SEQ_MIN_MAX", "", UVM_MEDIUM)
-        repeat (10) begin
+        
+        `uvm_create(req);
+        repeat (1000) begin
 //            req = add_sequence_item::type_id::create("req");
 //            start_item(req);
 //            assert(req.randomize());
 //            finish_item(req);
-            `uvm_do(req);
+            `uvm_rand_send(req);
             req.print();
         end
+        req.rst_n = 1;
+        `uvm_rand_send(req)
     endtask : body
     
     

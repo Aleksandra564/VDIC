@@ -112,8 +112,9 @@ class scoreboard extends uvm_subscriber #(result_transaction);
             `uvm_error("SELF CHECKER", {"FAIL: ", data_str})
             test_result = TEST_FAILED;
         end
-        else
+        else begin
             `uvm_info ("SELF CHECKER", {"PASS: ", data_str}, UVM_HIGH)
+	    end
 	endfunction : write
 
 	

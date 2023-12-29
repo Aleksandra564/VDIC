@@ -23,7 +23,7 @@ all
 -covfile
 xrun_covfile.txt
 -covtest
-mult_base_test
-+UVM_TESTNAME=mult_base_test
+runall_test
++UVM_TESTNAME=runall_test
 -l
-xrun_test_mult_base_test.log
+xrun_test_runall_test.log
